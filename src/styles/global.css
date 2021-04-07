@@ -1,0 +1,4373 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #666;
+}
+
+h1 {
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+}
+
+#header {
+  max-width: 1440px !important;
+  margin: 0 auto;
+}
+
+#header header {
+  height: 81px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  z-index: 999;
+  border-bottom: 1px solid #666;
+}
+
+#header.sit header {
+  height: 60px;
+}
+
+#header header #logo {
+  height: 80px;
+  width: 80px;
+  float: left;
+  position: relative;
+  z-index: 99;
+  background-image: url("/images/logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#header.sit header #logo {
+  background-image: url("/images/logo_plain.jpg");
+}
+
+#header header #logo-line {
+  height: 60px;
+  display: none;
+  float: left;
+  width: 1px;
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+}
+
+#header.sit header #logo-line {
+  display: block;
+}
+
+#header header #logo-title {
+  float: left;
+  height: 80px;
+  width: 450px;
+  background-image: url("/images/logo_title.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#header.sit header #logo-title {
+  display: none;
+}
+
+#header header i {
+  font-size: 40px !important;
+  color: #949599;
+  margin: 0;
+}
+
+#header header i:hover {
+  color: #231f20;
+}
+#header header #header-social {
+  margin: 20px 20px 0 0;
+  float: right;
+}
+#header header #header-social i {
+  margin: 0 10px 0 0;
+}
+
+#header .navbar-burger {
+  height: 80px;
+}
+
+#header nav {
+  position: fixed;
+  margin: 81px 0 0 0;
+  font-size: 15px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+#header nav:hover {
+  background-color: #fff;
+}
+
+#header nav .navbar-outer-item,
+#header nav .navbar-link {
+  color: #fff;
+  border-bottom: 3px solid #00000000;
+  font-weight: 500;
+}
+
+#header.sit nav .navbar-outer-item,
+#header.sit nav .navbar-link {
+  color: #000;
+}
+
+#header nav:hover .navbar-outer-item,
+#header nav:hover .navbar-link {
+  color: #000;
+}
+
+#header nav .navbar-outer-item:hover,
+#header nav .navbar-link:hover {
+  border-bottom: 3px solid #d5df22;
+}
+
+#header nav .navbar-inner-item {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-weight: 400;
+  border: none;
+}
+
+#header nav .navbar-inner-item:hover {
+  color: #000;
+  background: #fff;
+}
+
+#header nav #nav-social {
+  display: none;
+}
+
+#header.sit nav .first-menu-item {
+  margin-left: 80px;
+}
+
+.header-slideshow-item {
+  height: 100%;
+  max-width: 1440px;
+  max-height: 850px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  color: #fff;
+}
+.header-slideshow-item h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#header-slideshow {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#header-slideshow ul.slick-dots {
+  transform: translateY(-6em);
+}
+#header-slideshow .slick-dots li button::before {
+  font-size: 20px;
+}
+
+#header-top {
+  height: 280px;
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  margin: 80px 0 0 0;
+  background-color: #f00;
+  background-size: cover !important;
+}
+
+#header-top h1 {
+  font-size: 70px;
+  line-height: 70px;
+  bottom: 0;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  margin: 0 30px 0 30px;
+  padding: 0 0 20px 0;
+}
+
+#header-top.empty {
+  background-color: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#header-top.empty h1 {
+  color: #000;
+}
+
+#header.clean-header nav ul li {
+  color: #000;
+}
+
+#header.sit header {
+  height: 60px;
+  border-bottom: 1px solid #999;
+}
+
+#header.sit header #logo {
+  height: 55px;
+  width: 59px;
+}
+
+#header.sit header #header-social {
+  margin: 10px 15px 0 0;
+  position: relative;
+  z-index: 9;
+}
+
+#header.sit nav {
+  margin: 2px 0 0 0;
+  min-height: 58px;
+}
+
+#header.sit nav .nav-link {
+  color: #000;
+}
+
+#header.sit h1 {
+  display: none;
+}
+
+#home-apply-banner {
+  z-index: 9;
+  background-color: #3fb6e9;
+  width: 40px;
+  height: 150px;
+  right: 0;
+  top: 80px;
+  position: fixed;
+  z-index: 999;
+}
+
+#home-apply-banner label.mfix {
+  left: -42px;
+}
+#home-apply-banner label.mfix img {
+  margin: 2px 12px 0 0;
+}
+#home-apply-banner label {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: absolute;
+  top: 60px;
+  left: -40px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 130px;
+  font-family: "StencilCreek-50";
+  font-size: 18px;
+}
+#home-apply-banner label img {
+  width: 15px;
+  float: right;
+  margin: 5px 8px 0 10px;
+}
+
+#home-apply-banner-side {
+  background-color: #3fb6e9;
+  top: 0;
+  right: -200px;
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  float: right;
+  z-index: 999;
+}
+#home-apply-banner-side h1 {
+  text-transform: uppercase;
+  margin: 70px 20px 10px 20px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+}
+#home-apply-banner-side p {
+  margin: 20px 20px 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+#home-apply-banner-side img {
+  margin: 100px 20px 10px 20px;
+  width: 25px;
+}
+
+#container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.block {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+#page-content #section-menu {
+  margin: 0 30px;
+}
+#page-content nav #section-menu ul a {
+  background-color: #e7e7e8;
+}
+#page-content nav #section-menu ul a:hover {
+  background-color: #7fddff;
+}
+
+#page-content nav #section-menu ul a.active {
+  background-color: #3fb6e9;
+}
+
+#page-content table {
+  margin: 1em 0 1em;
+}
+#page-content table td,
+table td * {
+  vertical-align: top;
+}
+
+#page-content a {
+  color: #d5df22;
+}
+
+#page-content #programmes-home a,
+#page-content #programme-frame a {
+  color: #2cb8eb !important;
+}
+
+#page-content #about-home a,
+#page-content #staff-home-people a,
+#page-content #facilities-home-facility a {
+  color: #f3745e !important;
+}
+
+#page-content nav#article-nav {
+  margin: 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#page-content nav#article-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+#page-content nav#article-nav div {
+  padding: 20px;
+}
+
+#page-content nav#article-nav .current {
+  overflow: hidden;
+  background-color: #e7e7e8;
+}
+
+#page-content nav#article-nav .current:hover {
+  background: #646466
+    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_north_west.png)
+    no-repeat left 15px top 15px;
+  background-size: 22px;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+
+#page-content nav#article-nav .next {
+  float: right;
+  width: 200px;
+  margin: 0 0 0 10px;
+  background-color: #e7e7e8;
+}
+
+#page-content nav#article-nav .next:hover {
+  background: #646466
+    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png)
+    no-repeat right 15px bottom 15px;
+  background-size: 22px;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+
+#page-content nav#article-nav .previous {
+  float: left;
+  width: 200px;
+  margin: 0 10px 0 0;
+  background-color: #e7e7e8;
+}
+
+#page-content nav#article-nav .previous:hover {
+  background: #646466
+    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_west.png)
+    no-repeat left 15px bottom 15px;
+  background-size: 22px;
+  color: #fff;
+  background-repeat: no-repeat;
+}
+
+#home-content-start {
+  height: 30px;
+  background-color: #d5df22;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#container .home-projects {
+  position: relative;
+  background-color: #000;
+  width: 33.33333333333333%;
+  float: left;
+}
+#container .home-projects img {
+  position: relative;
+  opacity: 0.7;
+  display: block;
+}
+
+#container .home-projects div {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#container .home-projects div span {
+  width: 100%;
+  display: block;
+}
+
+#container .home-projects:hover div span {
+  position: absolute;
+  transform: translateY(-50%);
+  background: none !important;
+  top: 50% !important;
+  background-color: transparent !important;
+}
+
+#container .home-projects div h2 {
+  position: absolute;
+  bottom: 0;
+  margin: 0 50px 40px 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+#container .home-projects div h2 i {
+  font-style: normal;
+  color: #d5df22;
+}
+
+#container .home-projects-over div {
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#container .home-projects:hover div h2 {
+  text-align: center !important;
+  margin: 0 50px 0 50px;
+  font-weight: 400;
+  position: relative;
+}
+
+#container .home-projects div p {
+  display: none;
+}
+#container .home-projects:hover div p {
+  position: relative;
+  bottom: 0;
+  margin: 0 0 20px 0;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  color: #d5df22;
+}
+#container .home-projects:hover img {
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+#container .home-projects:hover span {
+  background-color: #000 !important;
+  display: block;
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
+  background-position: bottom 30px right 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+#container .home-projects-more {
+  position: relative;
+  width: 33.33333333333333%;
+  float: left;
+  overflow: hidden;
+  display: inline;
+}
+
+#container .home-projects-more a {
+  color: #231f20;
+}
+
+#container .home-projects-more img {
+  display: block;
+}
+
+#container .home-projects-more-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#container .home-projects-more-text div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#container .home-projects-more-text:hover div,
+#container .home-projects-more-text.on-mob div,
+#container .home-projects-more.block-open .home-projects-more-text div {
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_grey_south_east.png);
+  background-position: bottom 20px right 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+#container .home-projects-more-text span {
+  display: table-cell;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+#container .home-projects-more-text:hover span,
+#container .home-projects-more-text.on-mob span,
+#container .home-projects-more.block-open .home-projects-more-text span {
+  display: block;
+  text-align: left;
+  vertical-align: auto;
+  line-height: 50px;
+  margin: 35px 0 0 35px;
+}
+
+#container .home-projects-more-text p {
+  display: none;
+  margin: 15px 35px 0 35px;
+  line-height: 22px;
+}
+
+#container .home-projects-more-text:hover p,
+#container .home-projects-more-text.on-mob p,
+#container .home-projects-more.block-open .home-projects-more-text p {
+  display: block;
+}
+
+#container .home-programmes-apply {
+  position: relative;
+  width: 33.33333333333333%;
+  float: left;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #2cb8eb;
+}
+#container .home-programmes-apply .home-programmes-apply-text div {
+  padding: 2em;
+}
+
+#container .home-programmes-apply .home-programmes-apply-text span {
+  text-transform: uppercase;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 75px;
+  color: #fff;
+}
+
+#container #home-programmes-info {
+  width: 66.66666666666667%;
+  float: left;
+}
+#container #home-programmes-info h2 {
+  margin: 60px 0 25px 0;
+  color: #231f20;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#home-programmes-info-blocks {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#home-programmes-info-blocks a {
+  color: #000;
+}
+
+.home-programmes-info-block-frame {
+  height: 220px;
+  line-height: 220px;
+  text-align: center;
+  float: left;
+  width: 47%;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.home-programmes-info-block-frame.block1 {
+  margin: 0 2% 0 0;
+}
+
+.home-programmes-info-block-frame.block2 {
+  margin: 0 0 0 2%;
+}
+
+.home-programmes-info-block-frame .home-programmes-info-block {
+  display: inline-block;
+  line-height: normal;
+  margin: 0;
+  width: 100%;
+}
+
+.home-programmes-info-block-frame:hover,
+#home-programmes-info-blocks a .home-programmes-info-block-frame.block-open {
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_grey_south_east.png);
+  background-position: bottom 20px right 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+.home-programmes-info-block-frame .home-programmes-info-block h1 {
+  font-family: "StencilCreek-50";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 20px 0 20px;
+}
+
+.home-programmes-info-block-frame:hover .home-programmes-info-block h1,
+#home-programmes-info-blocks
+  a
+  .home-programmes-info-block-frame.block-open
+  .home-programmes-info-block
+  h1 {
+  margin: 25px 25px 0 25px;
+  text-align: left;
+}
+
+.home-programmes-info-block-frame:hover,
+#home-programmes-info-blocks a .home-programmes-info-block-frame.block-open {
+  line-height: 0;
+}
+
+.home-programmes-info-block-frame .home-programmes-info-block p {
+  display: none;
+  margin: 0 25px;
+  text-align: left;
+}
+.home-programmes-info-block-frame:hover .home-programmes-info-block p,
+#home-programmes-info-blocks
+  a
+  .home-programmes-info-block-frame.block-open
+  .home-programmes-info-block
+  p {
+  display: block;
+}
+
+#container #home-news-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/home_news.jpg");
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+}
+#container #home-news h2 {
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+#container #home-news #home-news-articles {
+  display: inline-block;
+  width: 100%;
+}
+#container #home-news #home-news-articles > div {
+  width: 80%;
+  margin: 0 auto;
+}
+#container #home-news #home-news-articles article {
+  width: 33.33333333333333%;
+  float: left;
+}
+#container #home-news #home-news-articles article > div {
+  margin: 0 30px 0 30px;
+  padding: 0 0 10px 0;
+  border: 2px solid #fff;
+}
+#container #home-news #home-news-articles article p.category {
+  font-size: 12px;
+  line-height: 12px;
+  color: #949599;
+  margin: 10px 20px;
+}
+#container #home-news #home-news-articles article p.title {
+  font-size: 12px;
+  line-height: 12px;
+  color: #d5df22;
+}
+#container #home-news #home-news-articles article p.title span {
+  color: #fff;
+}
+#container #home-news #home-news-articles article p.title a {
+  text-decoration: none;
+}
+#container #home-news #home-news-articles article p {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 20px;
+  color: #fff;
+}
+#container #home-news #home-news-articles article p a {
+  color: #d5df22;
+  text-decoration: underline;
+}
+#container #home-news #home-news-articles article hr {
+  color: #f00;
+  margin: 10px 20px;
+}
+#container #home-news a {
+  text-decoration: none;
+}
+
+#container #home-news button {
+  margin: 60px auto 70px auto;
+  display: block;
+  border: none;
+  padding: 15px 80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#container #home-news button:hover {
+  padding: 15px 145px 15px 15px;
+  text-align: left;
+  background: #fff
+    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_black_south_east.png)
+    no-repeat right 15px bottom 15px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  margin: 60px auto 30px;
+}
+
+#container #home-news button p {
+  margin: 0;
+  padding: 5px 0 0 0;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: left;
+  text-transform: none;
+  display: none;
+}
+
+#container #home-news button:hover p {
+  display: block;
+}
+
+#container #home-partners {
+  overflow: hidden;
+}
+
+#container #home-partners #home-partners-logos .item {
+  border-left: 1px solid #949599;
+}
+#container #home-partners #home-partners-logos .item img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 0 0 10%;
+  padding: 0;
+}
+
+#container #home-partners h2 {
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+#container #home-partners p {
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+#container #home-partners #home-partners-logos {
+  border-top: 1px solid #949599;
+  border-bottom: 1px solid #949599;
+  display: block;
+}
+
+#container #home-partners a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#container #home-partners button {
+  margin: 50px auto 40px auto;
+  display: block;
+  border: none;
+  background-color: #646466;
+  color: #fff;
+  padding: 15px 70px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#container #home-partners button:hover {
+  padding: 15px 145px 15px 15px;
+  text-align: left;
+  background: #646466
+    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png)
+    no-repeat right 15px bottom 15px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+}
+
+#container #home-partners button p {
+  margin: 0;
+  padding: 5px 0 0 0;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: left;
+  text-transform: none;
+  display: none;
+}
+
+#container #home-partners button:hover p {
+  display: block;
+}
+
+#page-content {
+  padding: 390px 0 0 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#page-content nav ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+#page-content nav ul a {
+  display: table-cell;
+  color: #000;
+  text-decoration: none;
+  vertical-align: middle;
+}
+#page-content nav ul li {
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  list-style: none;
+}
+#page-content nav ul a:hover {
+  background-color: #2cb8eb;
+}
+
+#page-content #contact-home {
+  display: block;
+  padding: 0 0 50px 0;
+}
+
+#page-content #contact-home #contact-home-frame {
+  margin: 0 30px;
+  display: inline-block;
+}
+
+#page-content #contact-home #contact-home-frame #contact-text {
+  width: 50%;
+  float: left;
+}
+
+#page-content #contact-home #contact-home-frame #contact-text img {
+  display: none;
+}
+
+#page-content #contact-home #contact-home-frame #contact-text span {
+  font-weight: 500;
+  margin: 20px 0 5px 0;
+  display: block;
+}
+
+#page-content #contact-home #contact-home-frame #contact-text p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 60px;
+}
+
+#page-content #contact-home #contact-home-frame #contact-media {
+  width: 50%;
+  float: left;
+}
+
+#page-content #contact-home #contact-home-frame #contact-media img {
+  width: 100%;
+  margin: 0;
+}
+
+#page-content #contact-home #contact-home-frame #contact-media #contact-map {
+  position: relative;
+}
+
+#page-content
+  #contact-home
+  #contact-home-frame
+  #contact-media
+  #contact-map
+  #contact-map-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+#page-content
+  #contact-home
+  #contact-home-frame
+  #contact-media
+  #contact-map:hover
+  #contact-map-frame {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+#page-content
+  #contact-home
+  #contact-home-frame
+  #contact-media
+  #contact-map
+  #contact-map-frame
+  p {
+  margin: 30px 0 0 30px;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  display: none;
+}
+#page-content
+  #contact-home
+  #contact-home-frame
+  #contact-media
+  #contact-map:hover
+  #contact-map-frame
+  p {
+  display: block;
+}
+
+#page-content
+  #contact-home
+  #contact-home-frame
+  #contact-media
+  #contact-map:hover
+  #contact-map-frame
+  #map-arrow {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 64px;
+  right: 0;
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png);
+  background-size: 22px;
+  background-position: right 20px bottom 20px;
+  background-repeat: no-repeat;
+}
+
+#page-content #about-home-section-spacer {
+  margin: 0 10px;
+}
+
+#std-page {
+  margin: 20px 30px 0 30px;
+}
+
+#facilities-home #section-menu ul li {
+  background-color: #e7e7e8;
+}
+
+#facilities-home nav #section-menu ul li.active {
+  background-color: #f3745e !important;
+}
+
+#facilities-home nav #section-menu ul li:hover {
+  background-color: #ffb7aa !important;
+}
+
+#facilities-home #facilities-home-facility {
+  margin: 20px 20px 0 20px;
+}
+#facilities-home #facilities-home-facility ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#facilities-home #facilities-home-facility ul li {
+  width: 50%;
+  float: left;
+}
+
+#facilities-home #facilities-home-facility ul a {
+  color: #000;
+}
+
+#facilities-home #facilities-home-facility ul li div {
+  margin: 10px;
+  background-color: #f3f3f4;
+}
+
+#facilities-home #facilities-home-facility ul li div img {
+  width: 100%;
+}
+#facilities-home #facilities-home-facility ul li div.facilities-info {
+  height: 340px;
+}
+#facilities-home #facilities-home-facility ul li div h3 {
+  margin: 20px 20px 10px 20px;
+  font-family: "StencilCreek-50";
+  font-size: 38px;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#facilities-home #facilities-home-facility ul li div p {
+  margin: 0 20px 20px 20px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+#page-content #news-article {
+  display: block;
+  margin: 0;
+}
+
+#page-content #news-article #news-article-frame {
+  padding: 30px 20px;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  background-color: #fff;
+}
+
+#page-content #news-article #news-article-frame #contact-text {
+  width: 50%;
+  float: left;
+}
+
+#page-content
+  #news-article
+  #news-article-frame
+  #contact-text
+  #contact-twitter-icon {
+  float: right;
+  font-size: 50px;
+  margin: 20px 60px 0 0;
+}
+
+#page-content #news-article #news-article-frame #contact-text time {
+  border-bottom: 1px solid #000;
+  padding: 0 20px 5px 0;
+}
+
+#page-content #news-article #news-article-frame #contact-text span {
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+  display: block;
+  width: 80%;
+  border-bottom: 1px solid #000;
+  padding: 0 0 20px 0;
+}
+
+#page-content #news-article #news-article-frame #contact-text p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 60px 0 0;
+}
+
+#page-content #news-article #news-article-frame #contact-media {
+  width: 50%;
+  float: right;
+}
+
+#page-content #news-article #news-article-frame #contact-media img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+#page-content #students-article {
+  display: block;
+  margin: 0;
+}
+
+#page-content #students-article #students-article-frame {
+  padding: 30px 20px;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  background-color: #fff;
+}
+
+#page-content #students-article #students-article-frame #contact-text {
+  width: 50%;
+  float: left;
+}
+
+#page-content
+  #students-article
+  #students-article-frame
+  #contact-text
+  #contact-twitter-icon {
+  float: right;
+  font-size: 50px;
+  margin: 20px 60px 0 0;
+}
+
+#page-content #students-article #students-article-frame #contact-text time {
+  border-bottom: 1px solid #000;
+  padding: 0 20px 5px 0;
+}
+
+#page-content #students-article #students-article-frame #contact-text span {
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+  display: block;
+  width: 80%;
+  border-bottom: 1px solid #000;
+  padding: 0 0 20px 0;
+}
+
+#page-content #students-article #students-article-frame #contact-text p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 60px 0 0;
+}
+
+#page-content #students-article #students-article-frame #contact-media {
+  width: 50%;
+  float: right;
+}
+
+#page-content #students-article #students-article-frame #contact-media img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+#partners-home #partners-home-people {
+  margin: 0 20px;
+}
+#partners-home #partners-home-people ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+#partners-home #partners-home-people ul li {
+  width: 25%;
+  float: left;
+}
+
+#partners-home #partners-home-people ul li div.partners-info {
+  border: none;
+}
+
+#partners-home #partners-home-people ul li div {
+  margin: 0;
+  padding: 10px;
+}
+
+#partners-home #partners-home-people ul li div img {
+  width: 100%;
+}
+#partners-home #partners-home-people ul li div p {
+  margin: 10px 20px 0 20px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
+#partners-home #partners-home-people ul li div p a {
+  margin: 0 0 30px 0;
+  color: #d5df22;
+  display: block;
+}
+
+#sponsors-home #sponsors-home-people {
+  margin: 10px 20px 0 20px;
+}
+#sponsors-home #sponsors-home-people ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#sponsors-home #sponsors-home-people ul li {
+  width: 25%;
+  float: left;
+  border-bottom: 1px solid #000;
+}
+
+#sponsors-home #sponsors-home-people ul li div {
+  border-left: 1px solid #000;
+}
+
+#sponsors-home #sponsors-home-people ul li:nth-child(4n + 1) div {
+  border-left: 1px solid #fff;
+}
+
+#sponsors-home #sponsors-home-people ul li div.sponsors-info {
+  border: none;
+}
+
+#sponsors-home #sponsors-home-people ul li div {
+  margin: 0;
+  padding: 10px;
+}
+
+#sponsors-home #sponsors-home-people ul li div img {
+  width: 100%;
+}
+#sponsors-home #sponsors-home-people ul li div p {
+  margin: 10px 20px 0 20px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+
+#sponsors-home #sponsors-home-people ul li div p a {
+  margin: 0 0 30px 0;
+  color: #f3745e;
+  display: block;
+}
+
+#sponsors-home nav #section-menu ul li.active {
+  background-color: #f3745e !important;
+}
+
+#sponsors-home nav #section-menu ul li:hover {
+  background-color: #ffb7aa !important;
+}
+
+#staff-home #section-menu ul li {
+  background-color: #e7e7e8;
+}
+
+#staff-home nav #section-menu ul li.active {
+  background-color: #f3745e !important;
+}
+
+#staff-home nav #section-menu ul li:hover {
+  background-color: #ffb7aa !important;
+}
+
+#staff-home #staff-home-people {
+  margin: 20px 20px 0 20px;
+}
+#staff-home #staff-home-people ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#staff-home #staff-home-people ul li {
+  width: 25%;
+  float: left;
+}
+
+#staff-home #staff-home-people ul li div {
+  margin: 10px;
+  background-color: #e1e1e1;
+}
+
+#staff-home #staff-home-people ul li div img {
+  width: 100%;
+}
+
+#staff-home #staff-home-people ul li:hover div {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#staff-home #staff-home-people ul li div.staff-info {
+  padding: 0 0 10px 0;
+  background: none;
+}
+
+.staff-info-intro::after {
+  content: "...";
+}
+
+#staff-home #staff-home-people ul li .staff-info-frame {
+  position: relative;
+}
+
+#staff-home #staff-home-people ul li .staff-info-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f00;
+  display: none;
+  z-index: 1;
+}
+
+#staff-home #staff-home-people ul li:hover .staff-info-more {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#staff-home
+  #staff-home-people
+  ul
+  li:hover
+  .staff-info-more
+  .staff-info-more-frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: none;
+  color: #fff;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+
+#staff-home #staff-home-people ul li:hover .staff-info-more h3 {
+  opacity: 1;
+  color: #f3745e;
+  font-size: 16px;
+}
+
+#staff-home #staff-home-people ul li:hover .staff-info-more i {
+  opacity: 1;
+}
+
+#staff-home #staff-home-people ul li:hover .staff-info-more p {
+  opacity: 1;
+  margin: 0 15px 10px 15px;
+  font-size: 14px;
+}
+
+#staff-home #staff-home-people ul li div h3 {
+  margin: 10px 15px;
+  font-size: 25px;
+}
+
+#staff-home #staff-home-people ul li:hover div h3 {
+  opacity: 0;
+}
+
+#staff-home #staff-home-people ul li div i {
+  margin: 0 15px;
+  font-size: 18px;
+  display: block;
+}
+
+#staff-home #staff-home-people ul li:hover div i {
+  opacity: 0;
+}
+
+#staff-home #staff-home-people ul li div p {
+  margin: 10px 15px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 200;
+}
+
+#staff-home #staff-home-people ul li div p span.staff-info-mob {
+  display: none;
+}
+
+#staff-home #staff-home-people ul li:hover div p {
+  opacity: 0;
+}
+
+#news-home #section-menu ul li {
+  background-color: #e7e7e8 !important;
+}
+
+#news-home nav #section-menu ul li:hover,
+#news-home nav #section-menu ul li.active {
+  background-color: #d5df22 !important;
+}
+
+#news-home #news-home-articles {
+  margin: 0 20px;
+}
+
+#news-home #news-home-articles ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#news-home #news-home-articles ul a {
+  color: #231f20;
+}
+
+#news-home #news-home-articles ul li {
+  width: 20%;
+  float: left;
+}
+
+#news-home #news-home-articles ul li div {
+  margin: 10px;
+  background-color: #fff;
+  padding: 0 0 20px 0;
+}
+
+#news-home #news-home-articles ul li div img {
+  width: 100%;
+}
+#news-home #news-home-articles ul li div.news-info {
+  height: 220px;
+}
+
+#news-home #news-home-articles ul li div i {
+  margin: 0;
+  font-size: 20px;
+}
+
+#news-home #news-home-articles ul li div time {
+  margin: 10px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#news-home #news-home-articles ul li div #news-twitter-icon {
+  float: right;
+}
+
+#news-home #news-home-articles ul li div h3 {
+  margin: 10px 10px 10px 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+#news-home #news-home-articles ul li div hr {
+  width: 50%;
+  float: left;
+  margin: 0 0 0 10px;
+}
+
+#news-home #news-home-articles ul li div p {
+  margin: 10px 10px 20px 10px;
+  font-size: 14px;
+  line-height: 25px;
+  display: inline-block;
+}
+
+#students-home #section-menu ul li {
+  background-color: #e7e7e8 !important;
+}
+
+#students-home nav #section-menu ul li:hover,
+#students-home nav #section-menu ul li.active {
+  background-color: #d5df22 !important;
+}
+
+#students-home #students-home-articles {
+  margin: 0 20px;
+}
+
+#students-home #students-home-articles ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#students-home #students-home-articles ul a {
+  color: #231f20;
+  width: 20%;
+  text-decoration: none;
+}
+
+#students-home #students-home-articles .students-card {
+  position: relative;
+}
+
+#students-home #students-home-articles ul li div {
+  margin: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+
+#students-home #students-home-articles ul li div:hover:after {
+  width: calc(100% - 20px);
+  background: #dfff00;
+  height: 7px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+}
+
+#students-home #students-home-articles ul li div img {
+  width: 100%;
+}
+#students-home #students-home-articles ul li div i {
+  margin: 0;
+  font-size: 20px;
+}
+
+#students-home #students-home-articles ul li div time {
+  margin: 10px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#students-home #students-home-articles ul li div #students-twitter-icon {
+  float: right;
+}
+
+#students-home #students-home-articles ul li div h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+#students-home #students-home-articles ul li div p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  color: #666;
+}
+
+#programmes-home {
+  display: inline-block;
+  margin: 30px 0 50px 0;
+}
+
+#programmes-home p,
+#programmes-home ul {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#programmes-home .programmes-home-block {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 1;
+}
+#programmes-home .programmes-home-block span {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  display: inline-block;
+  width: 100%;
+}
+
+#programmes-home .programmes-home-block:hover span {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+#programmes-home .programmes-home-block img {
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+#programmes-home .programmes-home-block div {
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+#programmes-home .programmes-home-block div .programme-info {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+#programmes-home .programmes-home-block:hover div .programme-info {
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_blue_south_east.png);
+  background-position: bottom 20px right 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+#programmes-home .programmes-home-block div h2 {
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 40px 20px 40px;
+}
+#programmes-home .programmes-home-block:hover div h2 {
+  color: #28b9eb;
+  padding: 0 40px 0 40px;
+  margin: 0;
+}
+
+#programmes-home .programmes-home-block div p {
+  display: none;
+  padding: 15px 40px 65px 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#programmes-home .programmes-home-block:hover div p {
+  display: block;
+}
+
+#programmes-home #programmes-home-text {
+  width: 100%;
+  float: left;
+}
+
+#programmes-home #programmes-home-text div {
+  padding: 0 20px 0 30px;
+}
+
+#programmes-home #programmes-home-text div h3 {
+  font-size: 17px;
+  line-height: 22px;
+  margin: 20px 0 10px 0;
+}
+
+#programmes-home .programmes-home-section {
+  width: 50%;
+  float: left;
+}
+
+#programmes-home .programmes-home-section .programmes-home-frame {
+  padding: 0 30px 0 10px;
+}
+
+#programmes-home #programmes-home-text-block {
+  display: block;
+  width: 40%;
+  float: left;
+}
+
+#programmes-home #programmes-home-section-block {
+  display: block;
+  width: 60%;
+  float: right;
+}
+
+#page-content #programme-frame {
+  margin: 30px 30px;
+  display: inline-block;
+}
+
+#page-content #programme-frame #programme-info {
+  width: 70%;
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#page-content #programme-frame #programme-info #programme-info-content {
+  margin: 0 80px 0 0;
+}
+
+#page-content #programme-frame #programme-info h1 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  margin: 1.5em 0 0.5em;
+}
+
+#page-content #programme-frame #programme-info h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+}
+
+#page-content #programme-frame #programme-info h3 {
+  margin: 20px 0 10px 0;
+  color: #2cb8eb;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+#page-content #programme-frame #programme-info p {
+  margin: 0 80px 0 0;
+}
+
+#page-content #programme-frame #programme-images {
+  width: 30%;
+  float: left;
+}
+
+#page-content #programme-frame #programme-images img {
+  margin: 0 0 20px 0;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+#page-content #programme-frame #programme-info a {
+  text-decoration: none;
+}
+
+#page-content #programme-frame #programme-info button {
+  margin: 0 0 20px 0;
+  display: block;
+  border: none;
+  background-color: #949599;
+  color: #fff;
+  padding: 15px 70px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#page-content #programme-frame #programme-info button:hover {
+  background-color: #2cb8eb;
+  cursor: pointer;
+}
+
+#page-content #students-projects-home #students-projects-frame {
+  margin: 0 30px;
+}
+
+#page-content #students-projects-home #students-projects-categories {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #students-projects-home #students-projects-categories h3 {
+  margin: 0 30px 10px;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-options {
+  margin: 0 0;
+  padding: 0 0 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option {
+  width: 33.33333333333333%;
+  float: left;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option-block {
+  margin: 0 15px !important;
+  padding: 40px 20px !important;
+  text-align: center;
+  background-color: #d2d3d5;
+  color: #fff;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option-block.mfix {
+  padding: 50px 20px 40px 20px !important;
+}
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option-block.active:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+}
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option-block.active {
+  background-color: #d5df22;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-categories
+  .students-projects-filter-option-block:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+  color: #000;
+}
+
+#page-content #students-projects-home #students-projects-keywords {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #students-projects-home #students-projects-keywords h3 {
+  margin: 20px 30px 10px 30px;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-options {
+  margin: 0;
+  padding: 0 10px 20px;
+  display: inline-block;
+  width: auto;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-option {
+  float: left;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-option-block {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #d2d3d5;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-option-block.active:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-option-block.active {
+  background-color: #d5df22;
+}
+
+#page-content
+  #students-projects-home
+  #students-projects-keywords
+  .students-projects-filter-option-block:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+  color: #000;
+}
+
+#page-content #students-projects-home .students-projects-filter-spacer {
+  margin: 0 15px;
+}
+
+#page-content #students-projects-home .students-projects-box {
+  position: relative;
+  width: 33.33333333333333%;
+  float: left;
+}
+#page-content #students-projects-home .students-projects-box-frame {
+  display: block;
+  padding: 10px 10px 10px 10px !important;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box
+  .students-projects-box-frame
+  .students-projects-info {
+  top: 0;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 1)
+  .students-projects-box-frame {
+  padding: 15px 20px 15px 0;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 1)
+  .students-projects-box-frame
+  .students-projects-info {
+  bottom: 0;
+  margin: 0 20px 0 0;
+  display: block;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:hover
+  .students-projects-box-frame
+  .students-projects-info {
+  transform: translateY(-50%);
+  top: 50% !important;
+}
+#page-content
+  #students-projects-home
+  .students-projects-box
+  .students-projects-box-frame
+  .students-projects-info
+  span {
+  position: relative;
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: left;
+  background: transparent !important;
+}
+#page-content
+  #students-projects-home
+  .students-projects-box:hover
+  .students-projects-box-frame
+  .students-projects-info
+  span {
+  transform: translateY(-50%);
+  top: 50% !important;
+  position: relative;
+  background: none;
+  text-align: center;
+}
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 2)
+  .students-projects-box-frame {
+  padding: 15px 10px;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 3)
+  .students-projects-box-frame {
+  padding: 15px 0 15px 20px;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:hover
+  .students-projects-box-frame
+  .students-projects-info
+  span {
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 2):hover
+  .students-projects-box-frame
+  .students-projects-info
+  span {
+  left: 0;
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content
+  #students-projects-home
+  .students-projects-box:nth-child(3n + 3):hover
+  .students-projects-box-frame
+  .students-projects-info
+  span {
+  left: 10px;
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content #students-projects-home .students-projects-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+#page-content #students-projects-home .students-projects-box:hover img {
+  opacity: 0.2;
+}
+
+#page-content #students-projects-home .students-projects-box-frame span {
+  background-color: #000 !important;
+  display: block;
+}
+
+#page-content #students-projects-home .students-projects-box-frame:hover span {
+  background-color: #000 !important;
+  display: block;
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
+  background-position: bottom 30px right 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+#page-content #students-projects-home .students-projects-box div {
+  color: #fff;
+  height: 100%;
+  position: relative;
+  top: 0;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#page-content #students-projects-home .students-projects-box:hover div {
+  padding: 0 !important;
+  margin: 0;
+}
+
+#page-content #students-projects-home .students-projects-box div h2 {
+  bottom: 0;
+  margin: 0 50px 0 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#page-content #students-projects-home .students-projects-box div h2 i {
+  font-style: normal;
+  color: #d5df22;
+}
+
+#page-content #students-projects-home .students-projects-box:hover div h2 {
+  text-align: center !important;
+  margin: 0 50px 30px 50px;
+}
+
+#page-content #students-projects-home .students-projects-box div p {
+  display: none;
+}
+#page-content #students-projects-home .students-projects-box:hover div p {
+  bottom: 0;
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  color: #d5df22;
+}
+
+#page-content #student-home #student-frame {
+  margin: 0 30px;
+}
+
+#page-content #student-home #student-categories {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #student-home #student-categories h3 {
+  margin: 0 30px 10px;
+}
+
+#page-content #student-home #student-categories .student-filter-options {
+  margin: 0 0;
+  padding: 0 0 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #student-home #student-categories .student-filter-option {
+  width: 33.33333333333333%;
+  float: left;
+}
+
+#page-content #student-home #student-categories .student-filter-option-block {
+  margin: 0 15px !important;
+  padding: 40px 20px !important;
+  text-align: center;
+  background-color: #d2d3d5;
+  color: #fff;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+#page-content
+  #student-home
+  #student-categories
+  .student-filter-option-block.mfix {
+  padding: 50px 20px 40px 20px !important;
+}
+#page-content
+  #student-home
+  #student-categories
+  .student-filter-option-block.active:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+}
+#page-content
+  #student-home
+  #student-categories
+  .student-filter-option-block.active {
+  background-color: #d5df22;
+}
+
+#page-content
+  #student-home
+  #student-categories
+  .student-filter-option-block:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+  color: #000;
+}
+
+#page-content #student-home #student-keywords {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #student-home #student-keywords h3 {
+  margin: 20px 30px 10px 30px;
+}
+
+#page-content #student-home #student-keywords .student-filter-options {
+  margin: 0;
+  padding: 0 10px 20px;
+  display: inline-block;
+  width: auto;
+}
+
+#page-content #student-home #student-keywords .student-filter-option {
+  float: left;
+}
+
+#page-content #student-home #student-keywords .student-filter-option-block {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #d2d3d5;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 14px;
+}
+
+#page-content
+  #student-home
+  #student-keywords
+  .student-filter-option-block.active:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+}
+
+#page-content
+  #student-home
+  #student-keywords
+  .student-filter-option-block.active {
+  background-color: #d5df22;
+}
+
+#page-content
+  #student-home
+  #student-keywords
+  .student-filter-option-block:hover {
+  background-color: #ecff40;
+  cursor: pointer;
+  color: #000;
+}
+
+#page-content #student-home .student-filter-spacer {
+  margin: 0 15px;
+}
+
+#page-content #student-home #student-info {
+  width: 30%;
+  float: left;
+}
+#page-content #student-home #student-info .info-box {
+  margin: 0 20px 0 0;
+}
+#page-content #student-home #student-projects {
+  width: 70%;
+  float: left;
+}
+
+#student-projects .title {
+  font-size: 40px;
+  margin: 0 0 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#student-info .info-box p {
+  font-size: 14px;
+  line-height: 24px;
+}
+#student-info .info-box .name {
+  font-size: 32px;
+  margin: 10px 0 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+#student-info .info-box .alumni {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #666;
+  font-style: italic;
+  line-height: 20px;
+}
+#student-info .info-box .course {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #666;
+  font-style: italic;
+  line-height: 20px;
+}
+#student-info .info-box .year {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #666;
+  font-style: italic;
+  line-height: 20px;
+}
+
+#page-content #student-home .student-box {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+#page-content #student-home .student-box-frame {
+  display: block;
+}
+
+#page-content #student-home .student-box .student-box-frame .student-info {
+  top: 0;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#page-content
+  #student-home
+  .student-box:hover
+  .student-box-frame
+  .student-info {
+  transform: translateY(-50%);
+  top: 50% !important;
+}
+#page-content #student-home .student-box .student-box-frame .student-info span {
+  position: relative;
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: left;
+  background: transparent !important;
+}
+#page-content
+  #student-home
+  .student-box:hover
+  .student-box-frame
+  .student-info
+  span {
+  transform: translateY(-50%);
+  top: 50% !important;
+  position: relative;
+  background: none;
+  text-align: center;
+}
+#page-content #student-home .student-box .student-box-frame {
+  padding: 10px;
+}
+
+#page-content
+  #student-home
+  .student-box:hover
+  .student-box-frame
+  .student-info
+  span {
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content
+  #student-home
+  .student-box:nth-child(3n + 2):hover
+  .student-box-frame
+  .student-info
+  span {
+  left: 0;
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content
+  #student-home
+  .student-box:nth-child(3n + 3):hover
+  .student-box-frame
+  .student-info
+  span {
+  left: 10px;
+  padding: 0 30px;
+  width: auto;
+}
+
+#page-content #student-home .student-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+#page-content #student-home .student-box:hover img {
+  opacity: 0.2;
+}
+
+#page-content #student-home .student-box-frame span {
+  background-color: #000 !important;
+  display: block;
+}
+
+#page-content #student-home .student-box-frame:hover span {
+  background-color: #000 !important;
+  display: block;
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
+  background-position: bottom 30px right 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+}
+
+#page-content #student-home .student-box div {
+  color: #fff;
+  height: 100%;
+  position: relative;
+  top: 0;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#page-content #student-home .student-box:hover div {
+  padding: 0 !important;
+  margin: 0;
+}
+
+#page-content #student-home .student-box div h2 {
+  bottom: 0;
+  margin: 0 50px 0 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#page-content #student-home .student-box div h2 i {
+  font-style: normal;
+  color: #d5df22;
+}
+
+#page-content #student-home .student-box:hover div h2 {
+  text-align: center !important;
+  margin: 0 50px 30px 50px;
+}
+
+#page-content #student-home .student-box div p {
+  display: none;
+}
+#page-content #student-home .student-box:hover div p {
+  bottom: 0;
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  color: #d5df22;
+}
+
+#page-content #student-project #student-project-frame {
+  margin: 0 0 20px 0;
+  padding: 30px 0 0 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#page-content #student-project #student-project-frame #student-project-spacer {
+  margin: 0 25px 0 20px;
+}
+
+#page-content #student-project #student-project-info {
+  float: left;
+  width: 30%;
+}
+
+#page-content #student-project #student-project-info #student-project-feature {
+  display: none;
+  width: 100%;
+}
+
+#page-content #student-project #student-project-info h1 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 30px 20px 20px 0;
+}
+
+#page-content #student-project #student-project-info h1 span {
+  color: #d5df22;
+}
+
+#page-content #student-project #student-project-info p.article-info {
+  font-style: italic;
+  color: #646466;
+  margin: 5px 20px 5px 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#page-content #student-project #student-project-info p.article-keywords {
+  font-size: 14px;
+  margin: 30px 0 5px 0;
+}
+
+#page-content #student-project #student-project-info p,
+#page-content #student-project #student-project-info ul {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#page-content #student-project #student-project-info iframe {
+  width: 100% !important;
+  height: auto !important;
+}
+
+#page-content #student-project #student-project-info .embed-container-mobile {
+  display: none;
+}
+
+#page-content #student-project #student-project-info ul.list {
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #fff;
+}
+
+#page-content #student-project #student-project-info ul.list a {
+  color: #fff;
+}
+
+#page-content #student-project #student-project-info ul.list li {
+  float: left;
+  background-color: #d5df22;
+  margin: 0 5px 5px 0;
+  padding: 5px;
+}
+
+#page-content #student-project #student-project-info ul.list li:hover {
+  background-color: #fff;
+  color: #d5df22;
+}
+
+#page-content #student-project #student-project-info a {
+  text-decoration: none;
+}
+
+#page-content #student-project #student-project-images {
+  float: left;
+  width: 67%;
+  margin: 0 0 0 3%;
+}
+#page-content #student-project #student-project-images img {
+  width: 100%;
+}
+#page-content #student-project #student-project-images iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#page-content #student-project .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+#page-content #student-project .embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#page-content
+  #student-project
+  #student-project-images
+  .student-project-image-extra {
+  width: 50%;
+  float: left;
+}
+#page-content
+  #student-project
+  #student-project-images
+  .student-project-image-extra1 {
+  margin: 10px 10px 10px 0;
+}
+#page-content
+  #student-project
+  #student-project-images
+  .student-project-image-extra2 {
+  margin: 10px 0 10px 10px;
+}
+
+.student-project-block {
+  float: left;
+  width: 50%;
+}
+
+#page-content #about-home {
+  display: block;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+
+#page-content #about-home h3 {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 20px 0;
+}
+
+#page-content #about-home p,
+#page-content #about-home ul {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#page-content #about-home .about-home-block {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  z-index: 1;
+}
+
+#page-content #about-home .about-home-block span {
+  display: inline-block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) repeat scroll 0 0;
+}
+
+#page-content #about-home .about-home-block:hover span {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#page-content #about-home .about-home-block img {
+  position: relative;
+  display: block;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+#page-content #about-home .about-home-block div {
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  bottom: 0;
+}
+
+#page-content #about-home .about-home-block div h2 {
+  margin: 0;
+  padding: 0 0 30px 50px;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-size: 40px;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#page-content #about-home .about-home-block:hover div h2 {
+  padding: 0 0 0 50px;
+}
+
+#page-content #about-home .about-home-block div p {
+  display: none;
+}
+
+#page-content #about-home .about-home-block:hover div p {
+  display: block;
+  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_orange_south_east.png);
+  background-position: bottom 20px right 20px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  padding: 0 40px 50px 50px;
+  color: #fff;
+  line-height: 20px;
+}
+
+#page-content #about-home .about-home-section {
+  width: 33.33333333333333%;
+  float: left;
+}
+
+#page-content #about-home .about-home-section .about-home-frame {
+  padding: 0 20px;
+}
+
+#page-content #about-home #about-home-text div {
+  padding: 0 30px;
+}
+
+#page-content #about-home-text {
+  position: relative;
+  clear: both;
+  min-height: 450px;
+  display: inline-block;
+  margin: 30px 0 0 0;
+}
+#page-content #about-home-text #info-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 450px;
+  margin: 0 30px 0 80px;
+  background-color: #f3745e;
+  text-align: center;
+  color: #fff;
+}
+#page-content #about-home-text #text-box {
+  margin: 0 550px 0 0;
+}
+
+#page-content #about-home-text #info-box h1 {
+  margin: 100px 0 0 0;
+  text-transform: uppercase;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 60px;
+}
+
+#page-content #about-home-text #info-box div {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+footer {
+  background-color: #404041;
+  color: #a0a0a0;
+  display: flex;
+  width: 100%;
+  padding: 50px 0 80px 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+footer .block {
+  width: auto;
+}
+
+footer strong {
+  color: #fff;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: #a0a0a0;
+}
+
+footer #footer-address {
+  width: 36%;
+  float: left;
+  margin: 0;
+}
+
+footer #footer-address img {
+  float: left;
+  margin: 0 20px;
+  max-width: 80px;
+}
+
+footer #footer-address div {
+  margin: 0 0 0 140px;
+  line-height: 24px;
+}
+
+footer #footer-contact {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 150px;
+  width: 26%;
+  float: left;
+  border-left: 1px solid #a0a0a0;
+}
+footer #footer-queen-mary {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 150px;
+  width: 22%;
+  float: left;
+  border-left: 1px solid #a0a0a0;
+  line-height: 16px;
+}
+
+footer #footer-queen-mary img {
+  max-width: 200px;
+  margin: 0 0 20px 0;
+}
+
+footer #footer-nick-watts {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 150px;
+  width: 16%;
+  float: left;
+  border-left: 1px solid #a0a0a0;
+}
+
+footer #footer-nick-watts img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+footer .footer-block {
+  padding: 0 30px;
+}
+
+/*laptop version*/
+
+@media screen and (max-width: 1200px) {
+  #one,
+  #two,
+  #three,
+  #four {
+    display: none;
+  }
+
+  #two {
+    display: block;
+  }
+
+  #header-top h1 {
+    font-size: 60px;
+  }
+
+  #header header h1 {
+    line-height: 40px;
+  }
+
+  .header-slideshow-item h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  #container .home-programmes-apply {
+    width: 33.33333333333333%;
+  }
+
+  #container #home-programmes-info {
+    width: 66.66666666666667%;
+  }
+
+  #container #home-programmes-info h2 {
+    font-size: 70px;
+    margin: 30px 0 20px;
+  }
+
+  .home-programmes-info-block-frame {
+    height: 170px;
+    line-height: 170px;
+  }
+
+  .home-programmes-info-block-frame:hover {
+    background-position: bottom 20px right 20px;
+    background-size: 36px;
+  }
+
+  .home-programmes-info-block-frame:hover,
+  #home-programmes-info-blocks a .home-programmes-info-block-frame.block-open {
+    background-position: bottom 20px right 20px;
+    background-size: 36px;
+  }
+
+  .home-programmes-info-block-frame .home-programmes-info-block h1 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0 20px 0 20px;
+  }
+
+  .home-programmes-info-block-frame:hover .home-programmes-info-block h1,
+  #home-programmes-info-blocks
+    a
+    .home-programmes-info-block-frame.block-open
+    .home-programmes-info-block
+    h1 {
+    margin: 15px 20px 0 20px;
+  }
+
+  .home-programmes-info-block-frame .home-programmes-info-block p {
+    margin: 0 20px;
+  }
+
+  #page-content #about-home-text #text-box {
+    margin: 0 450px 0 0;
+  }
+
+  #page-content #about-home-text #info-box {
+    height: 350px;
+    width: 350px;
+  }
+
+  #page-content #about-home-text #info-box h1 {
+    margin: 50px 0 0 0;
+    text-transform: uppercase;
+    font-family: "StencilCreek-50";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+  }
+
+  #page-content #about-home .about-home-block div h2 {
+    font-size: 35px;
+    padding: 0 0 25px 40px;
+  }
+
+  #page-content #about-home .about-home-block:hover div h2 {
+    padding: 0 0 0 40px;
+  }
+
+  #page-content #about-home .about-home-block:hover div p {
+    padding: 0 40px 40px 40px;
+  }
+
+  #staff-home #staff-home-people ul li div h3 {
+    font-size: 22px;
+    margin: 10px 10px;
+  }
+
+  #staff-home #staff-home-people ul li div i {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  #staff-home #staff-home-people ul li div p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 10px;
+  }
+
+  #staff-home #staff-home-people ul li:hover .staff-info-more p {
+    font-size: 14px;
+    margin: 0 10px 10px 10px;
+    opacity: 1;
+  }
+
+  #facilities-home #facilities-home-facility ul li div p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #news-home #news-home-articles ul li div p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  #page-content #students-projects-home .students-projects-box div h2 {
+    margin: 0 40px 30px 40px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #page-content #students-projects-home .students-projects-box:hover div h2 {
+    margin: 0 20px 65px 20px;
+  }
+
+  #page-content #students-projects-home .students-projects-box:hover div p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block {
+    font-size: 35px;
+    margin: 0 15px !important;
+    padding: 20px 15px !important;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block.mfix {
+    padding: 30px 15px 20px 15px !important;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box
+    .students-projects-box-frame
+    .students-projects-info
+    span {
+    bottom: 10px;
+  }
+
+  #page-content #student-home .student-box div h2 {
+    margin: 0 40px 30px 40px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #page-content #student-home .student-box:hover div h2 {
+    margin: 0 20px 65px 20px;
+  }
+
+  #page-content #student-home .student-box:hover div p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #page-content #student-home #student-categories .student-filter-option-block {
+    font-size: 35px;
+    margin: 0 15px !important;
+    padding: 20px 15px !important;
+  }
+
+  #page-content
+    #student-home
+    #student-categories
+    .student-filter-option-block.mfix {
+    padding: 30px 15px 20px 15px !important;
+  }
+
+  #page-content
+    #student-home
+    .student-box
+    .student-box-frame
+    .student-info
+    span {
+    bottom: 10px;
+  }
+
+  #programmes-home .programmes-home-block div h2 {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 0 30px 10px 30px;
+  }
+
+  #programmes-home .programmes-home-block:hover div h2 {
+    padding: 0 30px 0 30px;
+  }
+
+  #programmes-home .programmes-home-block div p {
+    padding: 15px 30px 45px 30px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+  footer .footer-block {
+    padding: 0 20px;
+  }
+
+  footer #footer-address div {
+    line-height: 20px;
+  }
+
+  footer #footer-queen-mary {
+    line-height: 12px;
+  }
+  footer #footer-queen-mary img {
+    margin: 0 0 20px;
+    max-width: 180px;
+  }
+}
+
+/*tablet version*/
+
+@media screen and (max-width: 1000px) {
+  #one,
+  #two,
+  #three,
+  #four {
+    display: none;
+  }
+
+  #three {
+    display: block;
+  }
+
+  #header nav ul {
+    font-size: 13px;
+  }
+
+  #header nav ul li {
+    margin: 10px 10px;
+  }
+
+  #header-top h1 {
+    font-size: 50px;
+  }
+
+  #header header h1 {
+    padding: 26px 0 0 120px !important;
+    max-width: 370px;
+    height: 54px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .header-slideshow-item h1 {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
+  #container .home-projects div h2 {
+    font-size: 15px;
+    line-height: 18px !important;
+    margin: 0 15px 60px 15px !important;
+  }
+
+  #container .home-projects:hover div p {
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  #container .home-projects-more-text span {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  #container .home-projects-more-text:hover span,
+  #container .home-projects-more-text.on-mob span,
+  #container .home-projects-more.block-open .home-projects-more-text span {
+    line-height: 28px;
+    margin: 10px 0 0 10px;
+  }
+
+  #container .home-projects-more-text:hover p,
+  #container .home-projects-more-text.on-mob p,
+  #container .home-projects-more.block-open .home-projects-more-text p {
+    line-height: 17px;
+    font-size: 12px;
+    margin: 5px 10px 0 10px;
+  }
+
+  #container .home-programmes-apply .home-programmes-apply-text span {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #container #home-programmes-info h2 {
+    font-size: 50px;
+    margin: 15px 0 10px;
+  }
+
+  .home-programmes-info-block-frame {
+    height: 125px;
+    line-height: 125px;
+  }
+
+  .home-programmes-info-block-frame:hover {
+    background-position: bottom 20px right 20px;
+    background-size: 22px;
+  }
+
+  .home-programmes-info-block-frame:hover {
+    background-position: bottom 20px right 20px;
+    background-size: 22px;
+  }
+
+  #home-programmes-info-blocks a .home-programmes-info-block-frame.block-open {
+    background-position: bottom 15px right 15px;
+    background-size: 24px;
+  }
+
+  .home-programmes-info-block-frame .home-programmes-info-block h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 20px 0 20px;
+  }
+
+  .home-programmes-info-block-frame .home-programmes-info-block p {
+    font-size: 12px;
+  }
+
+  .home-programmes-info-block-frame:hover .home-programmes-info-block h1,
+  #home-programmes-info-blocks
+    a
+    .home-programmes-info-block-frame.block-open
+    .home-programmes-info-block
+    h1 {
+    margin: 15px 20px 0 20px;
+  }
+
+  .home-programmes-info-block-frame .home-programmes-info-block p {
+    margin: 0 20px;
+  }
+
+  #container #home-news #home-news-articles article > div {
+    margin: 0 10px;
+  }
+
+  #container #home-news #home-news-articles article p {
+    line-height: 22px;
+  }
+
+  #page-content #student-home #student-info {
+    width: 100%;
+    float: none;
+  }
+  #page-content #student-home #student-projects {
+    width: 100%;
+    float: none;
+  }
+
+  #student-projects .title {
+    margin: 30px 0 0 0;
+  }
+  #page-content #student-home #student-frame {
+    margin: 0 20px;
+  }
+
+  #page-content {
+    padding: 390px 0 0;
+  }
+
+  #page-content #about-home .about-home-section .about-home-frame {
+    padding: 0 10px;
+  }
+
+  #page-content #about-home-text #text-box {
+    margin: 0 400px 0 0;
+  }
+
+  #page-content #about-home-text #info-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  #page-content #about-home .about-home-block div h2 {
+    font-size: 0px;
+    padding: 0 0 15px 20px;
+  }
+
+  #page-content #about-home .about-home-block:hover div h2 {
+    padding: 0 0 0 20px;
+  }
+
+  #page-content #about-home .about-home-block:hover div p {
+    font-size: 13px;
+    padding: 0 20px 15px 20px;
+  }
+
+  #programmes-home .programmes-home-block div h2 {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 15px 10px 15px;
+  }
+
+  #programmes-home .programmes-home-block:hover div h2 {
+    padding: 0 15px 0 15px;
+  }
+
+  #programmes-home .programmes-home-block div p {
+    padding: 5px 15px 25px 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #news-home #news-home-articles ul li div h3 {
+    line-height: 20px;
+    margin: 5px;
+  }
+
+  #news-home #news-home-articles ul li div hr {
+    margin: 0 0 0 5px;
+  }
+
+  #news-home #news-home-articles ul li div p {
+    line-height: 18px;
+    margin: 10px 5px 20px 5px;
+  }
+
+  #staff-home #staff-home-people ul li div h3 {
+    font-size: 20px;
+    margin: 5px 5px;
+  }
+
+  #staff-home #staff-home-people ul li div i {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  #staff-home #staff-home-people ul li div p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 5px;
+  }
+
+  #staff-home #staff-home-people ul li:hover .staff-info-more h3 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  #staff-home #staff-home-people ul li:hover .staff-info-more p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 5px 10px 5px;
+  }
+
+  #facilities-home #facilities-home-facility ul li div.facilities-info {
+    height: 400px;
+  }
+
+  #facilities-home #facilities-home-facility ul li div h3 {
+    font-size: 36px;
+    margin: 10px 15px 0;
+  }
+
+  #facilities-home #facilities-home-facility ul li div p {
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 15px 15px;
+  }
+
+  #page-content #students-projects-home .students-projects-box div h2 {
+    margin: 0 15px 15px 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #page-content #students-projects-home .students-projects-box:hover div h2 {
+    margin: 0 20px 35px 20px;
+  }
+
+  #page-content #students-projects-home .students-projects-box:hover div p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box-frame:hover
+    span {
+    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
+    background-position: bottom 10px right 10px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box:nth-child(3n + 1)
+    .students-projects-box-frame {
+    padding: 10px 10px 10px 0;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box:nth-child(3n + 2)
+    .students-projects-box-frame {
+    padding: 10px 5px;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box:nth-child(3n + 3)
+    .students-projects-box-frame {
+    padding: 10px 0 10px 10px;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block {
+    font-size: 30px;
+    margin: 0 15px !important;
+    padding: 20px 10px !important;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block.mfix {
+    padding: 30px 10px 20px 10px !important;
+  }
+
+  #page-content #student-home .student-box div h2 {
+    margin: 0 15px 15px 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #page-content #student-home .student-box:hover div h2 {
+    margin: 0 20px 35px 20px;
+  }
+
+  #page-content #student-home .student-box:hover div p {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #page-content #student-home .student-box-frame:hover span {
+    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
+    background-position: bottom 10px right 10px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+  }
+
+  #page-content #student-home .student-box {
+    float: none;
+    width: 100%;
+  }
+
+  #page-content #student-home .student-box .student-box-frame {
+    padding: 10px;
+  }
+
+  #page-content #student-home #student-categories .student-filter-option-block {
+    font-size: 30px;
+    margin: 0 15px !important;
+    padding: 20px 10px !important;
+  }
+
+  #page-content
+    #student-home
+    #student-categories
+    .student-filter-option-block.mfix {
+    padding: 30px 10px 20px 10px !important;
+  }
+
+  footer {
+    padding: 50px 0 0;
+  }
+
+  footer a {
+    background-color: #646466;
+    padding: 8px;
+    display: block;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  footer #footer-address {
+    width: 100%;
+    margin: 0 0 30px 0;
+    border-bottom: none;
+  }
+
+  footer #footer-address img {
+    float: none;
+    margin: 0 20px 20px 20px;
+    max-width: 60px;
+  }
+
+  footer #footer-address div {
+    margin: 0 20px;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid #a0a0a0;
+  }
+
+  footer #footer-contact {
+    width: 100%;
+  }
+
+  footer #footer-contact .footer-block {
+    margin: 0 20px;
+    padding: 0 0 20px 0 !important;
+    border-bottom: 1px solid #a0a0a0;
+  }
+
+  footer #footer-queen-mary {
+    width: 100%;
+  }
+
+  footer #footer-queen-mary .footer-block {
+    border-bottom: 1px solid #a0a0a0;
+    padding: 20px 0;
+    margin: 0 20px;
+    display: block;
+  }
+
+  footer #footer-nick-watts {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  footer #footer-nick-watts img {
+    display: none;
+  }
+}
+
+/*mobile version*/
+
+@media screen and (max-width: 680px) {
+  #one,
+  #two,
+  #three,
+  #four {
+    display: none;
+  }
+
+  #four {
+    display: block;
+  }
+
+  #page-content #students-projects-home #students-projects-keywords,
+  #page-content #students-projects-home #students-projects-categories {
+    display: none !important;
+  }
+
+  #page-content #student-home #student-keywords,
+  #page-content #student-home #student-categories {
+    display: none !important;
+  }
+
+  #header header {
+    height: 61px;
+  }
+
+  #header header #logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  #header header #logo-title {
+    height: 60px;
+    width: 167px;
+    background-image: url("/images/logo_title_mini.gif");
+  }
+
+  #header header #header-social {
+    display: none;
+  }
+
+  #header .navbar-burger {
+    height: 60px;
+  }
+
+  #header nav {
+    margin: 0px;
+  }
+
+  #header nav .navbar-outer-item,
+  #header nav .navbar-link {
+    color: #000;
+  }
+
+  #header nav .navbar-outer-item:hover,
+  #header nav .navbar-link:hover {
+    border-bottom: 3px solid #00000000;
+  }
+
+  #header-top {
+    height: 200px;
+    margin: 60px 0 0 0;
+  }
+
+  #header-top h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  #header header h1 {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 19px 0 0 90px !important;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    height: 41px !important;
+  }
+
+  #header header #mobile-menu {
+    display: block;
+  }
+
+  #header nav #nav-social {
+    display: block;
+    margin: -4px 0 0 0;
+  }
+
+  #header nav #nav-social div {
+    width: 50%;
+    float: left;
+    background-color: #d2d3d5;
+    text-align: center;
+  }
+  #header nav #nav-social div#nav-social-vimeo div {
+    border-right: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+
+  #header nav #nav-social div i {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #231f20;
+  }
+
+  .header-slideshow-item h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  #home-apply-banner {
+    background-color: #3fb6e9;
+    height: 55px;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 80px;
+    z-index: 99;
+  }
+
+  #home-apply-banner label.mfix {
+    margin-top: 4px;
+    left: auto;
+    width: 100%;
+  }
+
+  #home-apply-banner label {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 60px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-family: "StencilCreek-50";
+  }
+  #home-apply-banner label img {
+    display: none;
+  }
+
+  #home-apply-banner-side {
+    background-color: #3fb6e9;
+    top: 0;
+    height: auto;
+    display: none;
+    right: -800px;
+    position: fixed;
+    width: 100%;
+    float: right;
+    z-index: 99;
+  }
+  #home-apply-banner-side h1 {
+    text-transform: uppercase;
+    margin: 10px 10% 10px 25%;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #home-apply-banner-side p {
+    margin: 10px 25% 10px 25%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #home-apply-banner-side img {
+    margin: 90px 30px 10px;
+    width: 20px;
+  }
+
+  #home-apply-banner-side img#home-apply-banner-arrow {
+    float: right;
+    padding: 0;
+  }
+
+  .student-project-block {
+    width: 100%;
+  }
+
+  #page-content.page-header-plain {
+    padding: 190px 0 0;
+  }
+
+  #page-content {
+    padding: 280px 0 0;
+  }
+
+  #page-content nav ul li {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  #container .home-projects {
+    width: 100%;
+  }
+
+  #container .home-projects#home-project4,
+  #container .home-projects#home-project5 {
+    display: none !important;
+  }
+
+  #container .home-projects div h2 {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 30px 25px;
+  }
+
+  #container .home-projects-more {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  #container .home-projects-more a {
+    pointer-events: none;
+  }
+
+  #container .home-projects-more-text span {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #container .home-projects-more-text:hover span,
+  #container .home-projects-more-text.on-mob span,
+  #container .home-projects-more.block-open .home-projects-more-text span {
+    line-height: 40px;
+    margin: 20px 20px 0;
+  }
+
+  #container .home-projects-more-text:hover p,
+  #container .home-projects-more-text.on-mob p,
+  #container .home-projects-more.block-open .home-projects-more-text p {
+    line-height: 14px;
+    font-size: 14px;
+    margin: 5px 20px 0 20px;
+  }
+
+  #container .home-programmes-apply a {
+    pointer-events: none;
+  }
+
+  #container .home-programmes-apply {
+    display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+  }
+
+  #container .home-programmes-apply .home-programmes-apply-text span {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  #container #home-programmes-info h2 {
+    font-size: 40px;
+    margin: 15px 0;
+  }
+
+  #container #home-programmes-info {
+    width: 100%;
+  }
+
+  #container #home-programmes-info div {
+    float: none;
+    width: 84%;
+    margin: 25px 8%;
+  }
+
+  .home-programmes-info-block-frame:hover {
+    background-position: bottom 20px right 20px;
+    background-size: 22px;
+  }
+
+  #container #home-programmes-info div {
+    float: none;
+    padding: 0;
+  }
+
+  #home-programmes-info-blocks .home-programmes-info-block-frame a {
+    pointer-events: none;
+  }
+
+  .home-programmes-info-block-frame.block1 {
+    margin: 0;
+  }
+
+  .home-programmes-info-block-frame.block2 {
+    margin: 0;
+  }
+
+  #page-content #programme-frame #programme-images img {
+    max-width: none;
+  }
+
+  #students-home #students-home-articles ul a {
+    width: 50%;
+  }
+
+  #container #home-news h2 {
+    font-size: 40px;
+    margin: 50px 0 30px;
+  }
+
+  #container #home-news #home-news-articles article {
+    float: none;
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  #container #home-news button {
+    margin: 20px auto 40px auto;
+  }
+
+  #container #home-partners h2 {
+    font-size: 40px;
+    margin: 50px 0 20px;
+  }
+
+  #container #home-partners p {
+    font-size: 16px;
+    margin: 0 10px 20px 10px;
+  }
+
+  #container #home-sponsors h2 {
+    font-size: 40px;
+    margin: 50px 0 20px;
+  }
+
+  #container #home-sponsors p {
+    font-size: 16px;
+    margin: 0 10px 20px 10px;
+  }
+
+  #page-content nav#article-nav .current:hover {
+    background-color: #e7e7e8;
+    background-image: none;
+    color: #000;
+  }
+  #page-content nav#article-nav .next:hover {
+    background-color: #e7e7e8;
+    background-image: none;
+    color: #000;
+  }
+
+  #page-content nav#article-nav .previous:hover {
+    background-color: #e7e7e8;
+    background-image: none;
+    color: #000;
+  }
+
+  #page-content nav#article-nav div {
+    padding: 10px;
+  }
+
+  #programmes-home #programmes-home-text-block {
+    width: 100%;
+    float: right;
+  }
+
+  #programmes-home #programmes-home-text div {
+    padding: 0 30px;
+  }
+
+  #programmes-home #programmes-home-section-block {
+    width: 100%;
+    float: left;
+  }
+
+  #programmes-home .programmes-home-block div h2 {
+    padding: 0 20px 5px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #programmes-home .programmes-home-block:hover div h2 {
+    padding: 0 20px 5px 20px;
+  }
+
+  #programmes-home .programmes-home-block div p {
+    padding: 0 20px 30px 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #programmes-home
+    .programmes-home-section:nth-child(odd)
+    .programmes-home-frame {
+    padding: 0 5px 0 15px;
+  }
+  #programmes-home
+    .programmes-home-section:nth-child(even)
+    .programmes-home-frame {
+    padding: 0 15px 0 5px;
+  }
+
+  #programmes-home .programmes-home-block:hover div .programme-info {
+    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_blue_south_east.png);
+    background-position: bottom 20px right 20px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+  }
+
+  #page-content #programme-frame {
+    margin: 10px 30px 30px;
+  }
+
+  #page-content #programme-frame #programme-images {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  #page-content #programme-frame #programme-info {
+    width: 100%;
+  }
+
+  #page-content #programme-frame #programme-info #programme-info-content {
+    margin: 0;
+  }
+
+  #page-content #programme-frame #programme-info h2 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  #page-content #programme-frame #programme-info h3 {
+    font-size: 16px;
+  }
+
+  #page-content #programme-frame #programme-info p {
+    margin: 0;
+  }
+
+  #page-content #programme-frame #programme-info button {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box:hover
+    .students-projects-box-frame
+    .students-projects-info {
+    margin: 0;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box:hover
+    .students-projects-box-frame
+    .students-projects-info
+    span {
+    padding: 0 30px !important;
+    width: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  #page-content #students-projects-home .students-projects-filter-spacer {
+    margin: 0 15px;
+  }
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-options {
+    margin: 0 0 10px 0;
+    padding: 0 !important;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block {
+    font-size: 12px;
+    margin: 0 5px !important;
+    padding: 14px 10px !important;
+    top: 100px;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-categories
+    .students-projects-filter-option-block.mfix {
+    padding: 20px 10px 14px 10px !important;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-keywords
+    .students-projects-filter-options {
+    padding: 0 0 10px 0;
+    margin: 0 10px;
+  }
+
+  #page-content
+    #students-projects-home
+    #students-projects-keywords
+    .students-projects-filter-option-block {
+    padding: 5px 8px;
+  }
+
+  #page-content #students-projects-home .students-projects-box {
+    width: 100%;
+    float: none;
+  }
+
+  #page-content
+    #students-projects-home
+    .students-projects-box
+    .students-projects-box-frame {
+    padding: 10px 0 !important;
+  }
+
+  #page-content #student-project #student-project-frame {
+    margin: 0 20px 0;
+    padding: 15px 0 0;
+  }
+
+  #page-content #student-project #student-project-info {
+    width: 100%;
+  }
+
+  #page-content #student-project #student-project-images iframe {
+    display: none !important;
+  }
+
+  #page-content #student-project #student-project-info .embed-container-mobile {
+    display: block !important;
+    height: 100px !important;
+  }
+
+  #page-content
+    #student-project
+    #student-project-info
+    .embed-container
+    embed-container-mobile
+    iframe {
+    height: 100% !important;
+    display: block;
+  }
+
+  #page-content #student-project .embed-container {
+    padding-bottom: 40px;
+  }
+  #page-content #student-project #student-project-info h1 {
+    margin: 30px 20px 10px 0;
+  }
+  #page-content #student-project #student-project-info p.article-keywords {
+    margin: 20px 0 5px;
+  }
+
+  #page-content
+    #student-project
+    #student-project-info
+    #student-project-feature {
+    display: block;
+  }
+
+  #page-content #student-project #student-project-images {
+    width: 100%;
+  }
+
+  #page-content #student-project #student-project-images img {
+    display: none;
+  }
+
+  #page-content
+    #student-project
+    #student-project-images
+    .student-project-image-extra {
+    width: 100%;
+  }
+  #page-content
+    #student-project
+    #student-project-images
+    .student-project-image-extra1 {
+    margin: 10px 0;
+  }
+
+  #page-content
+    #student-project
+    #student-project-images
+    .student-project-image-extra1
+    img {
+    width: 100%;
+    display: block;
+  }
+
+  #page-content
+    #student-project
+    #student-project-images
+    .student-project-image-extra2 {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #page-content
+    #student-project
+    #student-project-images
+    .student-project-image-extra2
+    img {
+    width: 100%;
+    display: block;
+  }
+
+  #page-content #contact-home #contact-home-frame #contact-text {
+    width: 100%;
+    float: none;
+  }
+
+  #page-content #contact-home #contact-home-frame #contact-text img {
+    display: block;
+    width: 100%;
+  }
+
+  #page-content #contact-home #contact-home-frame #contact-media {
+    width: 100%;
+    float: none;
+  }
+
+  #page-content #contact-home #contact-home-frame #contact-media img {
+    display: none;
+  }
+
+  #page-content
+    #contact-home
+    #contact-home-frame
+    #contact-media
+    #contact-map
+    img {
+    display: block;
+  }
+
+  #page-content #about-home-section-spacer {
+    margin: 0 30px;
+  }
+
+  #page-content #about-home-text {
+    margin: 20px 0 0;
+  }
+
+  #page-content #about-home-text #text-box {
+    margin: 0;
+    position: relative;
+  }
+
+  #page-content #about-home-text #info-box {
+    position: relative;
+    margin: 0 30px;
+    width: auto;
+  }
+
+  #page-content #about-home-text #info-box {
+    height: auto;
+  }
+  #page-content #about-home-text #info-box h1 {
+    margin: 50px 0 50px 0;
+    font-size: 35px;
+    display: inline-block;
+  }
+
+  #page-content #about-home .about-home-block:hover div p {
+    background-image: none;
+  }
+
+  #page-content #about-home .about-home-block:hover div p {
+    display: none;
+  }
+
+  #page-content #about-home .about-home-block:hover div h2 {
+    padding: 0 0 10px 20px;
+  }
+
+  #page-content #about-home .about-home-block:hover span {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0 0;
+  }
+
+  #page-content #about-home .about-home-block div h2 {
+    padding: 0 0 8px 6px;
+    font-size: 14px;
+  }
+
+  #page-content #about-home .about-home-block span {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+
+  #page-content #about-home .about-home-section .about-home-frame {
+    padding: 0 5px;
+  }
+
+  #partners-home #partners-home-people {
+    margin: 0;
+  }
+
+  #partners-home #partners-home-people ul li {
+    width: 100%;
+  }
+
+  #partners-home #partners-home-people ul li div {
+    border-left: none;
+    padding: 10px 15%;
+  }
+
+  #sponsors-home #sponsors-home-people {
+    margin: 0;
+  }
+
+  #sponsors-home #sponsors-home-people ul li {
+    width: 100%;
+  }
+
+  #sponsors-home #sponsors-home-people ul li div {
+    border-left: none;
+    padding: 10px 15%;
+  }
+
+  #staff-home #staff-home-people ul li {
+    width: 100%;
+  }
+
+  #staff-home #staff-home-people ul li div h3 {
+    font-size: 14px;
+    margin: 5px 5px 0 5px;
+  }
+  #staff-home #staff-home-people ul li:hover div h3 {
+    opacity: 1;
+  }
+
+  #staff-home #staff-home-people ul li div i {
+    font-size: 13px;
+    margin: 5px;
+  }
+
+  #staff-home #staff-home-people ul li:hover div i {
+    opacity: 1;
+  }
+
+  #staff-home #staff-home-people ul li div p {
+    font-size: 12px;
+    margin: 5px;
+    line-height: 16px;
+  }
+  #staff-home #staff-home-people ul li:hover div p {
+    opacity: 1;
+  }
+
+  #staff-home #staff-home-people ul li:hover .staff-info-more {
+    display: none;
+  }
+
+  #staff-home #staff-home-people ul li div p span.staff-info-mob {
+    display: inline;
+  }
+
+  #staff-home #staff-home-people ul li div p span.staff-info-intro {
+    display: none;
+  }
+
+  #news-home #news-home-articles ul li {
+    width: 100%;
+  }
+
+  #news-home #news-home-articles ul li div.news-info {
+    height: auto;
+  }
+
+  #page-content nav#article-nav {
+    font-size: 11px;
+  }
+
+  #page-content nav#article-nav .previous {
+    width: 20%;
+  }
+
+  #page-content nav#article-nav .next {
+    width: 20%;
+  }
+
+  #news-home #news-home-articles ul li div i {
+    font-size: 35px;
+  }
+
+  #news-home #news-home-articles ul li div time {
+    font-size: 18px;
+  }
+
+  #page-content #news-article #news-article-frame #contact-text {
+    width: 100%;
+  }
+
+  #page-content #news-article #news-article-frame #contact-text p {
+    margin: 0;
+  }
+
+  #page-content
+    #news-article
+    #news-article-frame
+    #contact-text
+    #contact-twitter-icon {
+    margin: 0;
+  }
+
+  #page-content #news-article #news-article-frame #contact-media {
+    width: 100%;
+  }
+
+  #facilities-home #facilities-home-facility ul li {
+    width: 100%;
+  }
+
+  #facilities-home #facilities-home-facility ul li div h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 15px 10px 5px;
+  }
+
+  #facilities-home #facilities-home-facility ul li div p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 10px;
+  }
+
+  .iOS-device {
+    top: 4px !important;
+  }
+}
