@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -187,12 +186,14 @@ h1 {
 
 #header-top {
   height: 280px;
-  position: absolute;
   width: 100%;
   max-width: 1440px;
-  margin: 80px 0 0 0;
-  background-color: #f00;
-  background-size: cover !important;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/programmes_header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
 }
 
 #header-top h1 {
@@ -903,8 +904,9 @@ table td * {
 }
 
 #page-content {
-  padding: 390px 0 0 0;
+  padding-top: 81px;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -2776,7 +2778,9 @@ footer {
   background-color: #404041;
   color: #a0a0a0;
   display: flex;
+  max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
   padding: 50px 0 80px 0;
   font-weight: 300;
   font-size: 15px;
@@ -3262,10 +3266,6 @@ footer .footer-block {
     margin: 0 20px;
   }
 
-  #page-content {
-    padding: 390px 0 0;
-  }
-
   #page-content #about-home .about-home-section .about-home-frame {
     padding: 0 10px;
   }
@@ -3597,7 +3597,6 @@ footer .footer-block {
 
   #header-top {
     height: 200px;
-    margin: 60px 0 0 0;
   }
 
   #header-top h1 {
@@ -3723,12 +3722,12 @@ footer .footer-block {
     width: 100%;
   }
 
-  #page-content.page-header-plain {
-    padding: 190px 0 0;
+  #page-content {
+    padding-top: 60px;
   }
 
-  #page-content {
-    padding: 280px 0 0;
+  #page-content.page-header-plain {
+    padding: 190px 0 0;
   }
 
   #page-content nav ul li {
