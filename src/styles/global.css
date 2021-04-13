@@ -9,15 +9,16 @@ body {
   background-color: #666;
 }
 
+#body-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: "StencilCreek-50";
   font-weight: 100;
   font-style: normal;
-}
-
-#header {
-  max-width: 1440px !important;
-  margin: 0 auto;
 }
 
 #header header {
@@ -25,8 +26,6 @@ h1 {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   z-index: 999;
   border-bottom: 1px solid #666;
 }
@@ -98,11 +97,16 @@ h1 {
   height: 80px;
 }
 
+#header .navbar-dropdown {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+
 #header nav {
   position: fixed;
   margin: 81px 0 0 0;
   font-size: 15px;
-  max-width: 1440px;
   width: 100%;
 }
 
@@ -149,14 +153,12 @@ h1 {
 }
 
 #header.sit nav .first-menu-item {
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .header-slideshow-item {
   height: 100%;
-  max-width: 1440px;
   max-height: 850px;
-  margin: 0 auto;
   position: relative;
   top: 0;
   width: 100%;
@@ -173,10 +175,6 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
-#header-slideshow {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 #header-slideshow ul.slick-dots {
   transform: translateY(-6em);
 }
@@ -187,10 +185,8 @@ h1 {
 #header-top {
   height: 280px;
   width: 100%;
-  max-width: 1440px;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/programmes_header.jpg");
+  margin-bottom: 2em;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(1);
@@ -318,15 +314,16 @@ h1 {
 
 #container {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   background-color: #fff;
 }
 .block {
-  max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
   clear: both;
+}
+
+.content-container {
+  margin: 2em 2em 0;
+  padding-bottom: 2em;
 }
 
 #page-content #section-menu {
@@ -355,10 +352,6 @@ table td * {
   color: #d5df22;
 }
 
-#page-content #programmes-home a,
-#page-content #programme-frame a {
-  color: #2cb8eb !important;
-}
 
 #page-content #about-home a,
 #page-content #staff-home-people a,
@@ -431,105 +424,6 @@ table td * {
   height: 30px;
   background-color: #d5df22;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-#container .home-projects {
-  position: relative;
-  background-color: #000;
-  width: 33.33333333333333%;
-  float: left;
-}
-#container .home-projects img {
-  position: relative;
-  opacity: 0.7;
-  display: block;
-}
-
-#container .home-projects div {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#container .home-projects div span {
-  width: 100%;
-  display: block;
-}
-
-#container .home-projects:hover div span {
-  position: absolute;
-  transform: translateY(-50%);
-  background: none !important;
-  top: 50% !important;
-  background-color: transparent !important;
-}
-
-#container .home-projects div h2 {
-  position: absolute;
-  bottom: 0;
-  margin: 0 50px 40px 50px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-}
-#container .home-projects div h2 i {
-  font-style: normal;
-  color: #d5df22;
-}
-
-#container .home-projects-over div {
-  color: #fff;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#container .home-projects:hover div h2 {
-  text-align: center !important;
-  margin: 0 50px 0 50px;
-  font-weight: 400;
-  position: relative;
-}
-
-#container .home-projects div p {
-  display: none;
-}
-#container .home-projects:hover div p {
-  position: relative;
-  bottom: 0;
-  margin: 0 0 20px 0;
-  font-weight: 200;
-  font-size: 16px;
-  line-height: 24px;
-  display: block;
-  text-align: center;
-  font-style: italic;
-  width: 100%;
-  color: #d5df22;
-}
-#container .home-projects:hover img {
-  opacity: 0.2;
-  transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-}
-
-#container .home-projects:hover span {
-  background-color: #000 !important;
-  display: block;
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
-  background-position: bottom 30px right 30px;
-  background-repeat: no-repeat;
-  background-size: 22px;
 }
 
 #container .home-projects-more {
@@ -611,7 +505,7 @@ table td * {
   background-color: #2cb8eb;
 }
 #container .home-programmes-apply .home-programmes-apply-text div {
-  padding: 2em;
+  padding: 3em;
 }
 
 #container .home-programmes-apply .home-programmes-apply-text span {
@@ -905,9 +799,7 @@ table td * {
 
 #page-content {
   padding-top: 81px;
-  max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
   background-color: #fff;
 }
 
@@ -1543,272 +1435,6 @@ table td * {
   font-size: 14px;
   line-height: 25px;
   display: inline-block;
-}
-
-#students-home #section-menu ul li {
-  background-color: #e7e7e8 !important;
-}
-
-#students-home nav #section-menu ul li:hover,
-#students-home nav #section-menu ul li.active {
-  background-color: #d5df22 !important;
-}
-
-#students-home #students-home-articles {
-  margin: 0 20px;
-}
-
-#students-home #students-home-articles ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-#students-home #students-home-articles ul a {
-  color: #231f20;
-  width: 20%;
-  text-decoration: none;
-}
-
-#students-home #students-home-articles .students-card {
-  position: relative;
-}
-
-#students-home #students-home-articles ul li div {
-  margin: 0;
-  background-color: #fff;
-  padding: 10px;
-}
-
-#students-home #students-home-articles ul li div:hover:after {
-  width: calc(100% - 20px);
-  background: #dfff00;
-  height: 7px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -1px;
-}
-
-#students-home #students-home-articles ul li div img {
-  width: 100%;
-}
-#students-home #students-home-articles ul li div i {
-  margin: 0;
-  font-size: 20px;
-}
-
-#students-home #students-home-articles ul li div time {
-  margin: 10px;
-  display: inline-block;
-  font-size: 15px;
-}
-
-#students-home #students-home-articles ul li div #students-twitter-icon {
-  float: right;
-}
-
-#students-home #students-home-articles ul li div h3 {
-  margin: 5px 0;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
-#students-home #students-home-articles ul li div p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
-  display: block;
-  color: #666;
-}
-
-#programmes-home {
-  display: inline-block;
-  margin: 30px 0 50px 0;
-}
-
-#programmes-home p,
-#programmes-home ul {
-  font-size: 14px;
-  line-height: 25px;
-}
-
-#programmes-home .programmes-home-block {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
-}
-#programmes-home .programmes-home-block span {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  display: inline-block;
-  width: 100%;
-}
-
-#programmes-home .programmes-home-block:hover span {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-}
-
-#programmes-home .programmes-home-block img {
-  position: relative;
-  display: block;
-  z-index: -1;
-}
-
-#programmes-home .programmes-home-block div {
-  position: absolute;
-  width: 100%;
-  z-index: 9;
-}
-#programmes-home .programmes-home-block div .programme-info {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-}
-
-#programmes-home .programmes-home-block:hover div .programme-info {
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_blue_south_east.png);
-  background-position: bottom 20px right 20px;
-  background-repeat: no-repeat;
-  background-size: 22px;
-}
-
-#programmes-home .programmes-home-block div h2 {
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-size: 40px;
-  font-style: normal;
-  line-height: 35px;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0 40px 20px 40px;
-}
-#programmes-home .programmes-home-block:hover div h2 {
-  color: #28b9eb;
-  padding: 0 40px 0 40px;
-  margin: 0;
-}
-
-#programmes-home .programmes-home-block div p {
-  display: none;
-  padding: 15px 40px 65px 40px;
-  color: #fff;
-  font-size: 14px;
-}
-
-#programmes-home .programmes-home-block:hover div p {
-  display: block;
-}
-
-#programmes-home #programmes-home-text {
-  width: 100%;
-  float: left;
-}
-
-#programmes-home #programmes-home-text div {
-  padding: 0 20px 0 30px;
-}
-
-#programmes-home #programmes-home-text div h3 {
-  font-size: 17px;
-  line-height: 22px;
-  margin: 20px 0 10px 0;
-}
-
-#programmes-home .programmes-home-section {
-  width: 50%;
-  float: left;
-}
-
-#programmes-home .programmes-home-section .programmes-home-frame {
-  padding: 0 30px 0 10px;
-}
-
-#programmes-home #programmes-home-text-block {
-  display: block;
-  width: 40%;
-  float: left;
-}
-
-#programmes-home #programmes-home-section-block {
-  display: block;
-  width: 60%;
-  float: right;
-}
-
-#page-content #programme-frame {
-  margin: 30px 30px;
-  display: inline-block;
-}
-
-#page-content #programme-frame #programme-info {
-  width: 70%;
-  float: left;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-#page-content #programme-frame #programme-info #programme-info-content {
-  margin: 0 80px 0 0;
-}
-
-#page-content #programme-frame #programme-info h1 {
-  font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  margin: 1.5em 0 0.5em;
-}
-
-#page-content #programme-frame #programme-info h2 {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  margin: 10px 0;
-}
-
-#page-content #programme-frame #programme-info h3 {
-  margin: 20px 0 10px 0;
-  color: #2cb8eb;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-}
-#page-content #programme-frame #programme-info p {
-  margin: 0 80px 0 0;
-}
-
-#page-content #programme-frame #programme-images {
-  width: 30%;
-  float: left;
-}
-
-#page-content #programme-frame #programme-images img {
-  margin: 0 0 20px 0;
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-}
-
-#page-content #programme-frame #programme-info a {
-  text-decoration: none;
-}
-
-#page-content #programme-frame #programme-info button {
-  margin: 0 0 20px 0;
-  display: block;
-  border: none;
-  background-color: #949599;
-  color: #fff;
-  padding: 15px 70px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-#page-content #programme-frame #programme-info button:hover {
-  background-color: #2cb8eb;
-  cursor: pointer;
 }
 
 #page-content #students-projects-home #students-projects-frame {
@@ -2778,9 +2404,7 @@ footer {
   background-color: #404041;
   color: #a0a0a0;
   display: flex;
-  max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
   padding: 50px 0 80px 0;
   font-weight: 300;
   font-size: 15px;
@@ -3081,22 +2705,6 @@ footer .footer-block {
     bottom: 10px;
   }
 
-  #programmes-home .programmes-home-block div h2 {
-    font-size: 30px;
-    line-height: 35px;
-    padding: 0 30px 10px 30px;
-  }
-
-  #programmes-home .programmes-home-block:hover div h2 {
-    padding: 0 30px 0 30px;
-  }
-
-  #programmes-home .programmes-home-block div p {
-    padding: 15px 30px 45px 30px;
-    font-size: 13px;
-    line-height: 22px;
-  }
-
   footer {
     font-size: 13px;
   }
@@ -3155,18 +2763,6 @@ footer .footer-block {
   .header-slideshow-item h1 {
     font-size: 62px;
     line-height: 62px;
-  }
-
-  #container .home-projects div h2 {
-    font-size: 15px;
-    line-height: 18px !important;
-    margin: 0 15px 60px 15px !important;
-  }
-
-  #container .home-projects:hover div p {
-    margin: 0 0 15px 0;
-    font-size: 13px;
-    line-height: 20px;
   }
 
   #container .home-projects-more-text span {
@@ -3291,22 +2887,6 @@ footer .footer-block {
   #page-content #about-home .about-home-block:hover div p {
     font-size: 13px;
     padding: 0 20px 15px 20px;
-  }
-
-  #programmes-home .programmes-home-block div h2 {
-    font-size: 20px;
-    line-height: 22px;
-    padding: 0 15px 10px 15px;
-  }
-
-  #programmes-home .programmes-home-block:hover div h2 {
-    padding: 0 15px 0 15px;
-  }
-
-  #programmes-home .programmes-home-block div p {
-    padding: 5px 15px 25px 15px;
-    font-size: 12px;
-    line-height: 16px;
   }
 
   #news-home #news-home-articles ul li div h3 {
@@ -3833,14 +3413,6 @@ footer .footer-block {
     margin: 0;
   }
 
-  #page-content #programme-frame #programme-images img {
-    max-width: none;
-  }
-
-  #students-home #students-home-articles ul a {
-    width: 50%;
-  }
-
   #container #home-news h2 {
     font-size: 40px;
     margin: 50px 0 30px;
@@ -3909,75 +3481,6 @@ footer .footer-block {
   #programmes-home #programmes-home-section-block {
     width: 100%;
     float: left;
-  }
-
-  #programmes-home .programmes-home-block div h2 {
-    padding: 0 20px 5px 20px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  #programmes-home .programmes-home-block:hover div h2 {
-    padding: 0 20px 5px 20px;
-  }
-
-  #programmes-home .programmes-home-block div p {
-    padding: 0 20px 30px 20px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  #programmes-home
-    .programmes-home-section:nth-child(odd)
-    .programmes-home-frame {
-    padding: 0 5px 0 15px;
-  }
-  #programmes-home
-    .programmes-home-section:nth-child(even)
-    .programmes-home-frame {
-    padding: 0 15px 0 5px;
-  }
-
-  #programmes-home .programmes-home-block:hover div .programme-info {
-    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_blue_south_east.png);
-    background-position: bottom 20px right 20px;
-    background-repeat: no-repeat;
-    background-size: 22px;
-  }
-
-  #page-content #programme-frame {
-    margin: 10px 30px 30px;
-  }
-
-  #page-content #programme-frame #programme-images {
-    width: 100%;
-    margin: 20px 0 0 0;
-  }
-
-  #page-content #programme-frame #programme-info {
-    width: 100%;
-  }
-
-  #page-content #programme-frame #programme-info #programme-info-content {
-    margin: 0;
-  }
-
-  #page-content #programme-frame #programme-info h2 {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-
-  #page-content #programme-frame #programme-info h3 {
-    font-size: 16px;
-  }
-
-  #page-content #programme-frame #programme-info p {
-    margin: 0;
-  }
-
-  #page-content #programme-frame #programme-info button {
-    width: 100%;
-    margin: 30px 0 0;
   }
 
   #page-content
@@ -4364,9 +3867,5 @@ footer .footer-block {
     font-size: 12px;
     line-height: 16px;
     margin: 0 10px;
-  }
-
-  .iOS-device {
-    top: 4px !important;
   }
 }

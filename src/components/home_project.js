@@ -1,27 +1,29 @@
 import React from "react"
 
-export default function HomeProject() {
-    return (
-        <a href="http://www.mat.qmul.ac.uk/students_projects/mouldcraft/">
-        <div class="home-projects" id="home-project1">
-          <span>
-            <img
-              src="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-              width="100%"
-            />
-            <div>
-              <span>
-                <h2>
-                  MouldCraft <i>2019</i>
-                </h2>
+import * as HomeProjectStyle from "./home_project.module.css"
 
-                <p class="article-info">
-                  <strong>Student: </strong>Raphael Kim
-                </p>
-              </span>
-            </div>
-          </span>
-        </div>
-      </a>
-    )
+export default function HomeProject(props) {
+  return (
+    <a href={ props.to }>
+      <div className={HomeProjectStyle.homeProjects}>
+        <span>
+          <img
+            src={ props.img }
+            width="100%"
+          />
+          <div>
+            <span>
+              <h2>
+                { props.title } <i>{ props.year }</i>
+              </h2>
+
+              <p>
+                <strong>Student: </strong>{ props.student }
+              </p>
+            </span>
+          </div>
+        </span>
+      </div>
+    </a>
+  )
 }

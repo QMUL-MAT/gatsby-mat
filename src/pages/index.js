@@ -4,11 +4,11 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+import HomeNewsItem from "../components/home_news_item"
 import HomeProject from "../components/home_project"
 import HomePartner from "../components/home_partner"
 import HomeSlideshowItem from "../components/home_slideshow_item"
 import Layout from "../components/layout"
-import HomeNewsItem from "../components/home_news_item"
 
 export default function Home() {
   const slideshowCarouselSettings = {
@@ -39,11 +39,41 @@ export default function Home() {
       </div>
       <div id="home-content-start"></div>
       <div id="container">
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
+        <HomeProject
+          title="MouldCraft"
+          year="2019"
+          student="Raphael Kim"
+          url="/students_projects/mouldcraft/"
+          img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
+        />
+        <HomeProject
+          title="MouldCraft"
+          year="2019"
+          student="Raphael Kim"
+          url="/students_projects/mouldcraft/"
+          img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
+        />
+        <HomeProject
+          title="MouldCraft"
+          year="2019"
+          student="Raphael Kim"
+          url="/students_projects/mouldcraft/"
+          img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
+        />
+        <HomeProject
+          title="MouldCraft"
+          year="2019"
+          student="Raphael Kim"
+          url="/students_projects/mouldcraft/"
+          img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
+        />
+        <HomeProject
+          title="MouldCraft"
+          year="2019"
+          student="Raphael Kim"
+          url="/students_projects/mouldcraft/"
+          img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
+        />
         <div class="home-projects-more">
           <img src="/images/home_project_blank.jpg" width="100%" />
           <a href="/students-projects/">
