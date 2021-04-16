@@ -22,13 +22,13 @@ export default function About() {
       </div>
       <div class="columns">
         <div class="column is-two-thirds text-content">
-          <h3 class="subtitle">
+          <h4>
             The Media and Arts Technology (MAT) programmes provide a bridge
             between academic research, digital technologies, and creative
             industries. We offer innovative inter-disciplinary programmes in the
             sciences and technologies that transform the creative sector, with a
             special focus on Sound, Music, Media, and Interaction.
-          </h3>
+          </h4>
           <p>
             We aim to produce an elite community of graduates who are excellent
             in technical and scientific research, creativity, building and using

@@ -107,7 +107,7 @@ export default class NavBar extends Component {
                 <a class="navbar-item navbar-outer-item" href="/partners/">
                   Partners
                 </a>
-                <a class="navbar-item navbar-outer-item" href="/mat-news/">
+                <a class="navbar-item navbar-outer-item" href="/news/">
                   News
                 </a>
                 <a class="navbar-item navbar-outer-item" href="/contact/">

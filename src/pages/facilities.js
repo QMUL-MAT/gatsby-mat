@@ -4,7 +4,7 @@ import FacilityCard from "../components/facility_card"
 
 export default function Facilities() {
   return (
-    <ContentPage pageTitle="Facilities">
+    <ContentPage pageTitle="Facilities" grey={true}>
       <div class="columns is-multiline is-mobile">
         <FacilityCard />
         <FacilityCard />

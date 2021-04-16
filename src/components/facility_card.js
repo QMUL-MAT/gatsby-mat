@@ -1,13 +1,13 @@
 import React from "react"
 
-import * as FacilityCardStyle from "./facility_card.module.css"
+import * as CardStyle from "./card.module.css"
 
 export default function FacilityCard() {
   return (
     <div className="column is-6-tablet is-12-mobile">
-      <div className={FacilityCardStyle.card}>
+      <div className={CardStyle.card}>
         <img src="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/01/445_QMUL-Engineerinvg_Materials-Workshop_03.jpg" />
-        <div className={FacilityCardStyle.content}>
+        <div className={CardStyle.content}>
           <h3>MAT Workshop</h3>
           <p>
             Physical computing plays a big part in the Media and Arts Technology

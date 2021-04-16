@@ -198,7 +198,6 @@ h1 {
   height: 280px;
   width: 100%;
   position: relative;
-  margin-bottom: 2em;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(1);
@@ -260,6 +259,36 @@ h1 {
 
 .content-container .text-content p {
   padding: 0.5em 0;
+}
+
+.content-container .text-content h1,
+.content-container .text-content h2,
+.content-container .text-content h3,
+.content-container .text-content h4 {
+  font-weight: 500;
+  padding-top: 0.5em;
+}
+
+.content-container .text-content h1 {
+  font-size: 30px;
+}
+.content-container .text-content h2 {
+  font-size: 26px;
+}
+.content-container .text-content h3 {
+  font-size: 22px;
+}
+.content-container .text-content h4 {
+  font-size: 18px;
+}
+.content-container .text-content a {
+  color: #2CB8EB !important;
+}
+
+.content-container .text-content ul,
+.content-container .text-content ol {
+  list-style-type: disc;
+  margin-left: 2em;
 }
 
 #home-apply-banner {
@@ -338,8 +367,16 @@ h1 {
 }
 
 .content-container {
-  margin: 2em 2em 0;
+  padding: 2em 2em 0;
   padding-bottom: 2em;
+}
+
+.content-container.grey {
+  background-color: #f3f3f3;
+}
+
+.content-container.white {
+  background-color: white;
 }
 
 #page-content #section-menu {
