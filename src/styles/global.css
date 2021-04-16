@@ -733,83 +733,6 @@ table td * {
   display: block;
 }
 
-#container #home-partners {
-  overflow: hidden;
-}
-
-#container #home-partners #home-partners-logos .item {
-  border-left: 1px solid #949599;
-}
-#container #home-partners #home-partners-logos .item img {
-  display: block;
-  width: 80%;
-  height: auto;
-  margin: 0 0 0 10%;
-  padding: 0;
-}
-
-#container #home-partners h2 {
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 50px 0 20px 0;
-}
-#container #home-partners p {
-  text-align: center;
-  margin: 0 0 40px 0;
-  font-size: 18px;
-}
-#container #home-partners #home-partners-logos {
-  border-top: 1px solid #949599;
-  border-bottom: 1px solid #949599;
-  display: block;
-}
-
-#container #home-partners a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#container #home-partners button {
-  margin: 50px auto 40px auto;
-  display: block;
-  border: none;
-  background-color: #646466;
-  color: #fff;
-  padding: 15px 70px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-#container #home-partners button:hover {
-  padding: 15px 145px 15px 15px;
-  text-align: left;
-  background: #646466
-    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png)
-    no-repeat right 15px bottom 15px;
-  background-size: 22px;
-  background-repeat: no-repeat;
-}
-
-#container #home-partners button p {
-  margin: 0;
-  padding: 5px 0 0 0;
-  line-height: 20px;
-  font-size: 10px;
-  text-align: left;
-  text-transform: none;
-  display: none;
-}
-
-#container #home-partners button:hover p {
-  display: block;
-}
-
 #page-content {
   padding-top: 81px;
   width: 100%;
@@ -951,9 +874,6 @@ table td * {
   background-repeat: no-repeat;
 }
 
-#page-content #about-home-section-spacer {
-  margin: 0 10px;
-}
 
 #std-page {
   margin: 20px 30px 0 30px;
@@ -1071,109 +991,6 @@ table td * {
 #page-content #students-article #students-article-frame #contact-media img {
   width: 100%;
   margin: 0 0 20px 0;
-}
-
-#partners-home #partners-home-people {
-  margin: 0 20px;
-}
-#partners-home #partners-home-people ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: block;
-  width: 100%;
-}
-
-#partners-home #partners-home-people ul li {
-  width: 25%;
-  float: left;
-}
-
-#partners-home #partners-home-people ul li div.partners-info {
-  border: none;
-}
-
-#partners-home #partners-home-people ul li div {
-  margin: 0;
-  padding: 10px;
-}
-
-#partners-home #partners-home-people ul li div img {
-  width: 100%;
-}
-#partners-home #partners-home-people ul li div p {
-  margin: 10px 20px 0 20px;
-  padding: 0;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 200;
-  text-align: center;
-}
-
-#partners-home #partners-home-people ul li div p a {
-  margin: 0 0 30px 0;
-  color: #d5df22;
-  display: block;
-}
-
-#sponsors-home #sponsors-home-people {
-  margin: 10px 20px 0 20px;
-}
-#sponsors-home #sponsors-home-people ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#sponsors-home #sponsors-home-people ul li {
-  width: 25%;
-  float: left;
-  border-bottom: 1px solid #000;
-}
-
-#sponsors-home #sponsors-home-people ul li div {
-  border-left: 1px solid #000;
-}
-
-#sponsors-home #sponsors-home-people ul li:nth-child(4n + 1) div {
-  border-left: 1px solid #fff;
-}
-
-#sponsors-home #sponsors-home-people ul li div.sponsors-info {
-  border: none;
-}
-
-#sponsors-home #sponsors-home-people ul li div {
-  margin: 0;
-  padding: 10px;
-}
-
-#sponsors-home #sponsors-home-people ul li div img {
-  width: 100%;
-}
-#sponsors-home #sponsors-home-people ul li div p {
-  margin: 10px 20px 0 20px;
-  padding: 0;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 200;
-  text-align: center;
-}
-
-#sponsors-home #sponsors-home-people ul li div p a {
-  margin: 0 0 30px 0;
-  color: #f3745e;
-  display: block;
-}
-
-#sponsors-home nav #section-menu ul li.active {
-  background-color: #f3745e !important;
-}
-
-#sponsors-home nav #section-menu ul li:hover {
-  background-color: #ffb7aa !important;
 }
 
 #news-home #section-menu ul li {
@@ -2086,137 +1903,6 @@ table td * {
   width: 50%;
 }
 
-#page-content #about-home {
-  display: block;
-  margin: 0;
-  padding: 0 0 50px 0;
-}
-
-#page-content #about-home h3 {
-  font-size: 16px;
-  line-height: 22px;
-  margin: 0 0 20px 0;
-}
-
-#page-content #about-home p,
-#page-content #about-home ul {
-  font-size: 14px;
-  line-height: 25px;
-}
-
-#page-content #about-home .about-home-block {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
-}
-
-#page-content #about-home .about-home-block span {
-  display: inline-block;
-  width: 100%;
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) repeat scroll 0 0;
-}
-
-#page-content #about-home .about-home-block:hover span {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-
-#page-content #about-home .about-home-block img {
-  position: relative;
-  display: block;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-}
-
-#page-content #about-home .about-home-block div {
-  position: absolute;
-  width: 100%;
-  z-index: 9;
-  bottom: 0;
-}
-
-#page-content #about-home .about-home-block div h2 {
-  margin: 0;
-  padding: 0 0 30px 50px;
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-size: 40px;
-  font-style: normal;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-#page-content #about-home .about-home-block:hover div h2 {
-  padding: 0 0 0 50px;
-}
-
-#page-content #about-home .about-home-block div p {
-  display: none;
-}
-
-#page-content #about-home .about-home-block:hover div p {
-  display: block;
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_orange_south_east.png);
-  background-position: bottom 20px right 20px;
-  background-repeat: no-repeat;
-  background-size: 22px;
-  padding: 0 40px 50px 50px;
-  color: #fff;
-  line-height: 20px;
-}
-
-#page-content #about-home .about-home-section {
-  width: 33.33333333333333%;
-  float: left;
-}
-
-#page-content #about-home .about-home-section .about-home-frame {
-  padding: 0 20px;
-}
-
-#page-content #about-home #about-home-text div {
-  padding: 0 30px;
-}
-
-#page-content #about-home-text {
-  position: relative;
-  clear: both;
-  min-height: 450px;
-  display: inline-block;
-  margin: 30px 0 0 0;
-}
-#page-content #about-home-text #info-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 450px;
-  height: 450px;
-  margin: 0 30px 0 80px;
-  background-color: #f3745e;
-  text-align: center;
-  color: #fff;
-}
-#page-content #about-home-text #text-box {
-  margin: 0 550px 0 0;
-}
-
-#page-content #about-home-text #info-box h1 {
-  margin: 100px 0 0 0;
-  text-transform: uppercase;
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 60px;
-}
-
-#page-content #about-home-text #info-box div {
-  margin: 0;
-  font-size: 13px;
-  line-height: 25px;
-}
-
 footer {
   background-color: #404041;
   color: #a0a0a0;
@@ -2378,37 +2064,6 @@ footer .footer-block {
 
   .home-programmes-info-block-frame .home-programmes-info-block p {
     margin: 0 20px;
-  }
-
-  #page-content #about-home-text #text-box {
-    margin: 0 450px 0 0;
-  }
-
-  #page-content #about-home-text #info-box {
-    height: 350px;
-    width: 350px;
-  }
-
-  #page-content #about-home-text #info-box h1 {
-    margin: 50px 0 0 0;
-    text-transform: uppercase;
-    font-family: "StencilCreek-50";
-    font-weight: 100;
-    font-style: normal;
-    font-size: 50px;
-  }
-
-  #page-content #about-home .about-home-block div h2 {
-    font-size: 35px;
-    padding: 0 0 25px 40px;
-  }
-
-  #page-content #about-home .about-home-block:hover div h2 {
-    padding: 0 0 0 40px;
-  }
-
-  #page-content #about-home .about-home-block:hover div p {
-    padding: 0 40px 40px 40px;
   }
 
   #news-home #news-home-articles ul li div p {
@@ -2650,33 +2305,6 @@ footer .footer-block {
   }
   #page-content #student-home #student-frame {
     margin: 0 20px;
-  }
-
-  #page-content #about-home .about-home-section .about-home-frame {
-    padding: 0 10px;
-  }
-
-  #page-content #about-home-text #text-box {
-    margin: 0 400px 0 0;
-  }
-
-  #page-content #about-home-text #info-box {
-    height: 300px;
-    width: 300px;
-  }
-
-  #page-content #about-home .about-home-block div h2 {
-    font-size: 0px;
-    padding: 0 0 15px 20px;
-  }
-
-  #page-content #about-home .about-home-block:hover div h2 {
-    padding: 0 0 0 20px;
-  }
-
-  #page-content #about-home .about-home-block:hover div p {
-    font-size: 13px;
-    padding: 0 20px 15px 20px;
   }
 
   #news-home #news-home-articles ul li div h3 {
@@ -3176,26 +2804,6 @@ footer .footer-block {
     margin: 20px auto 40px auto;
   }
 
-  #container #home-partners h2 {
-    font-size: 40px;
-    margin: 50px 0 20px;
-  }
-
-  #container #home-partners p {
-    font-size: 16px;
-    margin: 0 10px 20px 10px;
-  }
-
-  #container #home-sponsors h2 {
-    font-size: 40px;
-    margin: 50px 0 20px;
-  }
-
-  #container #home-sponsors p {
-    font-size: 16px;
-    margin: 0 10px 20px 10px;
-  }
-
   #page-content nav#article-nav .current:hover {
     background-color: #e7e7e8;
     background-image: none;
@@ -3425,90 +3033,6 @@ footer .footer-block {
     #contact-map
     img {
     display: block;
-  }
-
-  #page-content #about-home-section-spacer {
-    margin: 0 30px;
-  }
-
-  #page-content #about-home-text {
-    margin: 20px 0 0;
-  }
-
-  #page-content #about-home-text #text-box {
-    margin: 0;
-    position: relative;
-  }
-
-  #page-content #about-home-text #info-box {
-    position: relative;
-    margin: 0 30px;
-    width: auto;
-  }
-
-  #page-content #about-home-text #info-box {
-    height: auto;
-  }
-  #page-content #about-home-text #info-box h1 {
-    margin: 50px 0 50px 0;
-    font-size: 35px;
-    display: inline-block;
-  }
-
-  #page-content #about-home .about-home-block:hover div p {
-    background-image: none;
-  }
-
-  #page-content #about-home .about-home-block:hover div p {
-    display: none;
-  }
-
-  #page-content #about-home .about-home-block:hover div h2 {
-    padding: 0 0 10px 20px;
-  }
-
-  #page-content #about-home .about-home-block:hover span {
-    background: rgba(0, 0, 0, 0)
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) repeat scroll 0 0;
-  }
-
-  #page-content #about-home .about-home-block div h2 {
-    padding: 0 0 8px 6px;
-    font-size: 14px;
-  }
-
-  #page-content #about-home .about-home-block span {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  }
-
-  #page-content #about-home .about-home-section .about-home-frame {
-    padding: 0 5px;
-  }
-
-  #partners-home #partners-home-people {
-    margin: 0;
-  }
-
-  #partners-home #partners-home-people ul li {
-    width: 100%;
-  }
-
-  #partners-home #partners-home-people ul li div {
-    border-left: none;
-    padding: 10px 15%;
-  }
-
-  #sponsors-home #sponsors-home-people {
-    margin: 0;
-  }
-
-  #sponsors-home #sponsors-home-people ul li {
-    width: 100%;
-  }
-
-  #sponsors-home #sponsors-home-people ul li div {
-    border-left: none;
-    padding: 10px 15%;
   }
 
   #news-home #news-home-articles ul li {
