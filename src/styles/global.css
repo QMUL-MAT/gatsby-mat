@@ -426,6 +426,10 @@ table td * {
   width: 100%;
 }
 
+#home-projects {
+  margin-bottom: 0;
+}
+
 #container .home-projects-more {
   position: relative;
   width: 33.33333333333333%;

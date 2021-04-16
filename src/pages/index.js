@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div id="home-content-start"></div>
       <div id="container">
-        <div class="columns is-gapless is-multiline is-mobile">
+        <div id="home-projects" class="columns is-gapless is-multiline is-mobile">
           <ProjectCard
             title="MouldCraft"
             year="2019"
