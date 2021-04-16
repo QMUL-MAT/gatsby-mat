@@ -1,0 +1,70 @@
+.projects {
+  position: relative;
+  background-color: black;
+}
+
+.projects img {
+  display: block;
+  opacity: 0.7;
+}
+
+.projects div {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.projects div h2 {
+  margin: 1em 1.5em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.projects div h2 i {
+  font-style: normal;
+  color: #d5df22;
+}
+
+.projects div p {
+  display: none;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  width: 100%;
+  color: #d5df22;
+}
+
+.projects:hover div {
+  top: calc(50% - 1em);
+  text-align: center;
+}
+
+.projects:hover div h2 {
+  margin: 0;
+}
+
+.projects:hover div p {
+  display: block;
+}
+
+.projects:hover img {
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.projects:hover .arrow {
+  background-image: url(/images/arrow_white_south_east.png);
+  background-position: bottom 30px right 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+}

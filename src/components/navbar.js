@@ -79,7 +79,7 @@ export default class NavBar extends Component {
                 </a>
                 <a
                   class="navbar-item navbar-outer-item"
-                  href="/students-projects/"
+                  href="/projects/"
                 >
                   Projects
                 </a>

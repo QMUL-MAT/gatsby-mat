@@ -1,5 +1,4 @@
 import React from "react"
-import HomeProject from "../components/home_project"
 
 import ContentPage from "../components/content_page"
 import * as ProgrammesStyle from "./programmes.module.css"
