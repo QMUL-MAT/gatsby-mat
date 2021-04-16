@@ -26,6 +26,7 @@ h1 {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  max-width: 1440px;
   z-index: 999;
   border-bottom: 1px solid #666;
 }
@@ -108,6 +109,7 @@ h1 {
   margin: 81px 0 0 0;
   font-size: 15px;
   width: 100%;
+  max-width: 1440px;
 }
 
 #header nav:hover {
@@ -154,6 +156,16 @@ h1 {
 
 #header.sit nav .first-menu-item {
   margin-left: 60px;
+}
+
+#header nav.bright {
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+#header nav.bright .navbar-outer-item,
+#header nav.bright .navbar-link {
+  color: black;
 }
 
 .header-slideshow-item {
@@ -244,6 +256,10 @@ h1 {
 
 #header.sit h1 {
   display: none;
+}
+
+.content-container .text-content p {
+  padding: 0.5em 0;
 }
 
 #home-apply-banner {
@@ -350,13 +366,6 @@ table td * {
 
 #page-content a {
   color: #d5df22;
-}
-
-
-#page-content #about-home a,
-#page-content #staff-home-people a,
-#page-content #facilities-home-facility a {
-  color: #f3745e !important;
 }
 
 #page-content nav#article-nav {
@@ -950,65 +959,6 @@ table td * {
   margin: 20px 30px 0 30px;
 }
 
-#facilities-home #section-menu ul li {
-  background-color: #e7e7e8;
-}
-
-#facilities-home nav #section-menu ul li.active {
-  background-color: #f3745e !important;
-}
-
-#facilities-home nav #section-menu ul li:hover {
-  background-color: #ffb7aa !important;
-}
-
-#facilities-home #facilities-home-facility {
-  margin: 20px 20px 0 20px;
-}
-#facilities-home #facilities-home-facility ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#facilities-home #facilities-home-facility ul li {
-  width: 50%;
-  float: left;
-}
-
-#facilities-home #facilities-home-facility ul a {
-  color: #000;
-}
-
-#facilities-home #facilities-home-facility ul li div {
-  margin: 10px;
-  background-color: #f3f3f4;
-}
-
-#facilities-home #facilities-home-facility ul li div img {
-  width: 100%;
-}
-#facilities-home #facilities-home-facility ul li div.facilities-info {
-  height: 340px;
-}
-#facilities-home #facilities-home-facility ul li div h3 {
-  margin: 20px 20px 10px 20px;
-  font-family: "StencilCreek-50";
-  font-size: 38px;
-  font-weight: 200;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-#facilities-home #facilities-home-facility ul li div p {
-  margin: 0 20px 20px 20px;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 300;
-}
-
 #page-content #news-article {
   display: block;
   margin: 0;
@@ -1224,143 +1174,6 @@ table td * {
 
 #sponsors-home nav #section-menu ul li:hover {
   background-color: #ffb7aa !important;
-}
-
-#staff-home #section-menu ul li {
-  background-color: #e7e7e8;
-}
-
-#staff-home nav #section-menu ul li.active {
-  background-color: #f3745e !important;
-}
-
-#staff-home nav #section-menu ul li:hover {
-  background-color: #ffb7aa !important;
-}
-
-#staff-home #staff-home-people {
-  margin: 20px 20px 0 20px;
-}
-#staff-home #staff-home-people ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#staff-home #staff-home-people ul li {
-  width: 25%;
-  float: left;
-}
-
-#staff-home #staff-home-people ul li div {
-  margin: 10px;
-  background-color: #e1e1e1;
-}
-
-#staff-home #staff-home-people ul li div img {
-  width: 100%;
-}
-
-#staff-home #staff-home-people ul li:hover div {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-
-#staff-home #staff-home-people ul li div.staff-info {
-  padding: 0 0 10px 0;
-  background: none;
-}
-
-.staff-info-intro::after {
-  content: "...";
-}
-
-#staff-home #staff-home-people ul li .staff-info-frame {
-  position: relative;
-}
-
-#staff-home #staff-home-people ul li .staff-info-more {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #f00;
-  display: none;
-  z-index: 1;
-}
-
-#staff-home #staff-home-people ul li:hover .staff-info-more {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-#staff-home
-  #staff-home-people
-  ul
-  li:hover
-  .staff-info-more
-  .staff-info-more-frame {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: none;
-  color: #fff;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-word;
-  word-break: break-word;
-}
-
-#staff-home #staff-home-people ul li:hover .staff-info-more h3 {
-  opacity: 1;
-  color: #f3745e;
-  font-size: 16px;
-}
-
-#staff-home #staff-home-people ul li:hover .staff-info-more i {
-  opacity: 1;
-}
-
-#staff-home #staff-home-people ul li:hover .staff-info-more p {
-  opacity: 1;
-  margin: 0 15px 10px 15px;
-  font-size: 14px;
-}
-
-#staff-home #staff-home-people ul li div h3 {
-  margin: 10px 15px;
-  font-size: 25px;
-}
-
-#staff-home #staff-home-people ul li:hover div h3 {
-  opacity: 0;
-}
-
-#staff-home #staff-home-people ul li div i {
-  margin: 0 15px;
-  font-size: 18px;
-  display: block;
-}
-
-#staff-home #staff-home-people ul li:hover div i {
-  opacity: 0;
-}
-
-#staff-home #staff-home-people ul li div p {
-  margin: 10px 15px;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 200;
-}
-
-#staff-home #staff-home-people ul li div p span.staff-info-mob {
-  display: none;
-}
-
-#staff-home #staff-home-people ul li:hover div p {
-  opacity: 0;
 }
 
 #news-home #section-menu ul li {
@@ -2598,33 +2411,6 @@ footer .footer-block {
     padding: 0 40px 40px 40px;
   }
 
-  #staff-home #staff-home-people ul li div h3 {
-    font-size: 22px;
-    margin: 10px 10px;
-  }
-
-  #staff-home #staff-home-people ul li div i {
-    font-size: 16px;
-    margin: 0 10px;
-  }
-
-  #staff-home #staff-home-people ul li div p {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 10px 10px;
-  }
-
-  #staff-home #staff-home-people ul li:hover .staff-info-more p {
-    font-size: 14px;
-    margin: 0 10px 10px 10px;
-    opacity: 1;
-  }
-
-  #facilities-home #facilities-home-facility ul li div p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
   #news-home #news-home-articles ul li div p {
     font-size: 13px;
     line-height: 22px;
@@ -2905,48 +2691,6 @@ footer .footer-block {
   #news-home #news-home-articles ul li div p {
     line-height: 18px;
     margin: 10px 5px 20px 5px;
-  }
-
-  #staff-home #staff-home-people ul li div h3 {
-    font-size: 20px;
-    margin: 5px 5px;
-  }
-
-  #staff-home #staff-home-people ul li div i {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-
-  #staff-home #staff-home-people ul li div p {
-    font-size: 12px;
-    line-height: 15px;
-    margin: 10px 5px;
-  }
-
-  #staff-home #staff-home-people ul li:hover .staff-info-more h3 {
-    font-size: 15px;
-    line-height: 16px;
-  }
-
-  #staff-home #staff-home-people ul li:hover .staff-info-more p {
-    font-size: 12px;
-    line-height: 15px;
-    margin: 0 5px 10px 5px;
-  }
-
-  #facilities-home #facilities-home-facility ul li div.facilities-info {
-    height: 400px;
-  }
-
-  #facilities-home #facilities-home-facility ul li div h3 {
-    font-size: 36px;
-    margin: 10px 15px 0;
-  }
-
-  #facilities-home #facilities-home-facility ul li div p {
-    font-size: 13px;
-    line-height: 19px;
-    margin: 0 15px 15px;
   }
 
   #page-content #students-projects-home .students-projects-box div h2 {
@@ -3767,48 +3511,6 @@ footer .footer-block {
     padding: 10px 15%;
   }
 
-  #staff-home #staff-home-people ul li {
-    width: 100%;
-  }
-
-  #staff-home #staff-home-people ul li div h3 {
-    font-size: 14px;
-    margin: 5px 5px 0 5px;
-  }
-  #staff-home #staff-home-people ul li:hover div h3 {
-    opacity: 1;
-  }
-
-  #staff-home #staff-home-people ul li div i {
-    font-size: 13px;
-    margin: 5px;
-  }
-
-  #staff-home #staff-home-people ul li:hover div i {
-    opacity: 1;
-  }
-
-  #staff-home #staff-home-people ul li div p {
-    font-size: 12px;
-    margin: 5px;
-    line-height: 16px;
-  }
-  #staff-home #staff-home-people ul li:hover div p {
-    opacity: 1;
-  }
-
-  #staff-home #staff-home-people ul li:hover .staff-info-more {
-    display: none;
-  }
-
-  #staff-home #staff-home-people ul li div p span.staff-info-mob {
-    display: inline;
-  }
-
-  #staff-home #staff-home-people ul li div p span.staff-info-intro {
-    display: none;
-  }
-
   #news-home #news-home-articles ul li {
     width: 100%;
   }
@@ -3855,21 +3557,5 @@ footer .footer-block {
 
   #page-content #news-article #news-article-frame #contact-media {
     width: 100%;
-  }
-
-  #facilities-home #facilities-home-facility ul li {
-    width: 100%;
-  }
-
-  #facilities-home #facilities-home-facility ul li div h3 {
-    font-size: 22px;
-    line-height: 24px;
-    margin: 15px 10px 5px;
-  }
-
-  #facilities-home #facilities-home-facility ul li div p {
-    font-size: 12px;
-    line-height: 16px;
-    margin: 0 10px;
   }
 }

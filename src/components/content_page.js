@@ -4,9 +4,9 @@ import Layout from "./layout"
 
 export default function ContentPage(props) {
   return (
-    <Layout>
+    <Layout bright={!('headerClass' in props)}>
       <div id="page-content">
-        <div id="header-top" class={ props.headerClass }>
+        <div id="header-top" className={ props.headerClass || "empty" }>
           <h1>{ props.pageTitle }</h1>
         </div>
 

@@ -1,0 +1,55 @@
+.card {
+  background-color: #e1e1e1;
+}
+
+.card .content {
+  margin: 0 1em;
+  padding: 1em 0;
+}
+
+.card .content h3 {
+  font-size: 25px;
+}
+
+.card .content .bio {
+  padding: 1em 0 1em;
+}
+
+.card .content a {
+  color: #F3745E !important;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+  .card .content {
+    position: relative;
+    min-height: 5rem;
+  }
+
+  .card .content .bio,
+  .card .content a {
+    display: none;
+  }
+
+  .card .content div {
+    position: absolute;
+    bottom: 1em;
+  }
+
+  .card:hover {
+    background: black;
+    color: white;
+  }
+  .card:hover img {
+    opacity: 0.3;
+  }
+
+  .card:hover .content h3 {
+    color: #F3745E;
+  }
+
+  .card:hover .content .bio,
+  .card:hover .content a {
+    display: block;
+  }
+}

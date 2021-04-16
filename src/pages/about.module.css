@@ -1,0 +1,68 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/about_header.jpg");
+}
+
+.card {
+  position: relative;
+  background-color: black;
+}
+
+.card img {
+  display: block;
+  opacity: 0.7;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 0;
+  margin: 1em;
+  font-family: 'StencilCreek-50';
+  font-weight: 100;
+  font-size: 40px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.card:hover img {
+  opacity: 0.5;
+}
+
+.card:hover h2 {
+  transform: translateY(-1em);
+}
+
+.card:hover .arrow {
+  background-image: url(/images/arrow_orange_south_east.png);
+  background-position: bottom 30px right 30px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.info-box {
+  background-color: #f3745e;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-box h1 {
+  text-transform: uppercase;
+  font-family: "StencilCreek-50";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .info-box h1 {
+    font-size: 35px;
+  }
+}

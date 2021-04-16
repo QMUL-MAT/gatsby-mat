@@ -7,7 +7,7 @@ export default function Programme() {
   return (
     <ContentPage pageTitle="PhD Programme" headerClass={ProgrammesStyle.header}>
       <div class="columns">
-        <div class="column">
+        <div class="column text-content">
           <h2>
             The PhD in Media and Arts Technology is an innovative four year full
             time programme, unique in the UK.

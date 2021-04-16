@@ -5,10 +5,11 @@ import Head from "./head"
 import NavBar from "./navbar"
 
 export default function Layout(props) {
+  const { bright = false } = props
   return (
     <div id="body-container">
       <Head></Head>
-      <NavBar></NavBar>
+      <NavBar bright={bright}></NavBar>
       {props.children}
       <Footer></Footer>
     </div>

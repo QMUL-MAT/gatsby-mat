@@ -40,8 +40,8 @@ export default function Programmes() {
             </div>
           </a>
         </div>
-        <div class="column">
-          <h1>PhD and Masters Programmes in Media and Arts Technology</h1>
+        <div class="column text-content">
+          <h1 class="title">PhD and Masters Programmes in Media and Arts Technology</h1>
           <p>
             Our unique four year PhD programme and one year Masters by Research
             in Media and Arts Technology are built around core courses in

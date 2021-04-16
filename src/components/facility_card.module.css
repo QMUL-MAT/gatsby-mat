@@ -1,0 +1,20 @@
+.card {
+  background-color: #f3f3f4;
+}
+
+.card h3 {
+  font-family: "StencilCreek-50";
+  font-size: 38px;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.card .content {
+  margin: 0 2em;
+  padding: 2em 0;
+}
+
+.card .content p {
+  padding: 0.5em 0;
+}

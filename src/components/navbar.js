@@ -28,7 +28,11 @@ export default class NavBar extends Component {
           id="header"
           className={`header-home ${this.state.sit ? "sit" : ""}`}
         >
-          <header class="navbar" role="navigation" aria-label="main navigation">
+          <header
+            className="navbar"
+            role="navigation"
+            aria-label="main navigation"
+          >
             <a href="/">
               <div id="logo" />
               <div id="logo-line"></div>
@@ -50,9 +54,10 @@ export default class NavBar extends Component {
             </a>
 
             <nav
-              className={`navbar-menu ${
-                this.state.navbarActive ? "is-active" : ""
-              }`}
+              className={`navbar-menu
+                ${this.state.navbarActive ? "is-active" : ""}
+                ${this.props.bright ? "bright" : ""}
+              `}
             >
               <div class="navbar-start">
                 <div class="navbar-item has-dropdown is-hoverable navbar-outer-item first-menu-item">
@@ -77,15 +82,12 @@ export default class NavBar extends Component {
                 <a class="navbar-item navbar-outer-item" href="/students/">
                   Students
                 </a>
-                <a
-                  class="navbar-item navbar-outer-item"
-                  href="/projects/"
-                >
+                <a class="navbar-item navbar-outer-item" href="/projects/">
                   Projects
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable navbar-outer-item">
-                  <a class="navbar-link is-arrowless" href="/about-us/">
-                    About Us
+                  <a class="navbar-link is-arrowless" href="/about/">
+                    About
                   </a>
                   <div class="navbar-dropdown">
                     <a class="navbar-item navbar-inner-item" href="/staff/">
