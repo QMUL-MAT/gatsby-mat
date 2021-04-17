@@ -1,11 +1,9 @@
 import React from "react"
 import ContentPage from "../components/content_page"
 
-import * as ContactStyle from "./contact.module.css"
-
 export default function Contact() {
   return (
-    <ContentPage pageTitle="Contact" headerClass={ContactStyle.header}>
+    <ContentPage pageTitle="Contact" header="/images/contact_header.jpg">
       <div class="columns">
         <div class="column is-two-thirds text-content">
           <h2>Postal address</h2>
@@ -50,7 +48,7 @@ export default function Contact() {
             travel information, please refer to the main College website.
           </p>
         </div>
-        <div>
+        <div class="column">
           <img src="http://www.mat.qmul.ac.uk/wp-content/uploads/2016/11/contact_feature.jpg" />
 
           <iframe

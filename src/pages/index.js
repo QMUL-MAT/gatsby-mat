@@ -130,7 +130,7 @@ export default function Home() {
               <HomeNewsItem />
               <HomeNewsItem />
             </div>
-            <a href="/mat-news/">
+            <a href="/news/">
               <button>
                 View All
                 <p>

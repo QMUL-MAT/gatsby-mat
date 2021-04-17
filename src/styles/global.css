@@ -257,6 +257,14 @@ h1 {
   display: none;
 }
 
+.content-container .text-content p:first-child,
+.content-container .text-content h1:first-child,
+.content-container .text-content h2:first-child,
+.content-container .text-content h3:first-child,
+.content-container .text-content h4:first-child {
+  margin-top: 0;
+}
+
 .content-container .text-content p {
   padding: 0.5em 0;
 }
@@ -266,7 +274,7 @@ h1 {
 .content-container .text-content h3,
 .content-container .text-content h4 {
   font-weight: 500;
-  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .content-container .text-content h1 {
@@ -764,6 +772,68 @@ table td * {
   text-align: left;
   text-transform: none;
   display: none;
+}
+
+#container #home-partners {
+  overflow: hidden;
+}
+
+#container #home-partners h2 {
+  font-family: 'StencilCreek-50';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+
+#container #home-partners p {
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-size: 18px;
+}
+
+#container #home-partners a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#container #home-partners button {
+  margin: 50px auto 40px auto;
+  display: block;
+  border: none;
+  background-color: #646466;
+  color: #FFF;
+  padding: 15px 70px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#container #home-partners button p {
+  margin: 0;
+  padding: 5px 0 0 0;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: left;
+  text-transform: none;
+  display: none;
+}
+
+#container #home-partners button:hover {
+  padding: 15px 145px 15px 15px;
+  text-align: left;
+  background: #646466 url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png) no-repeat right 15px bottom 15px;
+      background-repeat: no-repeat;
+      background-size: auto;
+  background-size: 22px;
+  background-repeat: no-repeat;
+}
+
+#container #home-partners button:hover p {
+  display: block;
 }
 
 #container #home-news button:hover p {

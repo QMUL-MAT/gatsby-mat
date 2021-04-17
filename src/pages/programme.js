@@ -5,7 +5,7 @@ import * as ProgrammesStyle from "./programmes.module.css"
 
 export default function Programme() {
   return (
-    <ContentPage pageTitle="PhD Programme" headerClass={ProgrammesStyle.header}>
+    <ContentPage pageTitle="PhD Programme" header="/images/programmes_header.jpg">
       <div class="columns">
         <div class="column text-content">
           <h2>

@@ -2,11 +2,10 @@ import React from "react"
 
 import ContentPage from "../components/content_page"
 import ProjectCard from "../components/project_card"
-import * as ProjectsStyle from "./projects.module.css"
 
 export default function Projects() {
   return (
-    <ContentPage pageTitle="Projects" headerClass={ProjectsStyle.header}>
+    <ContentPage pageTitle="Projects" header="/images/projects_header.jpg">
       <div className="columns is-mobile is-multiline">
         <ProjectCard
           title="MouldCraft"

@@ -5,7 +5,7 @@ import * as ProgrammesStyle from "./programmes.module.css"
 
 export default function Programmes() {
   return (
-    <ContentPage headerClass={ProgrammesStyle.header} pageTitle="Programmes">
+    <ContentPage pageTitle="Programmes" header="/images/programmes_header.jpg">
       <div class="columns is-multiline is-mobile">
         <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop">
           <a href="/programmes/phd-programme/">
@@ -41,7 +41,7 @@ export default function Programmes() {
           </a>
         </div>
         <div class="column text-content">
-          <h1>PhD and Masters Programmes in Media and Arts Technology</h1>
+          <h2>PhD and Masters Programmes in Media and Arts Technology</h2>
           <p>
             Our unique four year PhD programme and one year Masters by Research
             in Media and Arts Technology are built around core courses in

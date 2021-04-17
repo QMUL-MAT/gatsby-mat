@@ -6,7 +6,7 @@ import * as AboutStyle from "./about.module.css"
 export default function About() {
   const links = ["staff", "sponsors", "facilities"]
   return (
-    <ContentPage pageTitle="About us" headerClass={AboutStyle.header}>
+    <ContentPage pageTitle="About us" header="/images/about_header.jpg">
       <div class="columns">
         {links.map(link => (
           <div class="column">
