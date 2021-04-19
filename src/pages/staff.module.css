@@ -1,0 +1,64 @@
+.card {
+  background-color: white;
+}
+
+.card .content {
+  margin: 0 1em;
+  padding: 1em 0;
+  position: relative;
+}
+
+.card .content h3 {
+  font-size: 25px;
+}
+
+.card .content .bio {
+  padding: 1em 0 1em;
+}
+
+.card .content a {
+  color: #F3745E !important;
+  text-decoration: underline;
+}
+
+.card .content .intro {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .card .content .intro {
+    display: inline;
+  }
+
+  .card .content .bio,
+  .card .content a {
+    display: none;
+  }
+
+  .card:hover {
+    background: black;
+    color: white;
+  }
+
+  .card:hover img {
+    opacity: 0.3 !important;
+  }
+
+  .card:hover .content .intro {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .card:hover .content .bio {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .card:hover .content .bio,
+  .card:hover .content a {
+    display: block;
+  }
+
+  .card:hover .content .bio h3 {
+    color: #F3745E;
+  }
+}
