@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -6,11 +8,31 @@ import "slick-carousel/slick/slick-theme.css"
 
 import HomeNewsItem from "../components/home_news_item"
 import ProjectCard from "../components/project_card"
-import HomePartner from "../components/home_partner"
 import HomeSlideshowItem from "../components/home_slideshow_item"
 import Layout from "../components/layout"
 
 export default function Home() {
+  const partnersData = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(
+        filter: { fields: { category: { eq: "partners" } } }
+        sort: { order: ASC, fields: frontmatter___order }
+      ) {
+        nodes {
+          frontmatter {
+            image {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+          fields {
+            category
+          }
+        }
+      }
+    }
+  `)
   const slideshowCarouselSettings = {
     infinite: true,
     dots: true,
@@ -147,15 +169,11 @@ export default function Home() {
           <p>Some of the organisations we work with:</p>
           <div id="home-partners-logos">
             <Slider {...partnersCarouselSettings}>
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
-              <HomePartner />
+              {partnersData.allMarkdownRemark.nodes.map(element => (
+                <div class="item">
+                  <GatsbyImage image={getImage(element.frontmatter.image)} />
+                </div>
+              ))}
             </Slider>
           </div>
           <a href="/partners/">

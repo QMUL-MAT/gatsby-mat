@@ -774,6 +774,11 @@ table td * {
   display: none;
 }
 
+#container #home-partners .item {
+  border: solid black;
+  border-width: 1px 1px 1px 0px;
+}
+
 #container #home-partners {
   overflow: hidden;
 }
