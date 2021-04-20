@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -8,13 +8,27 @@ import "slick-carousel/slick/slick-theme.css"
 
 import HomeNewsItem from "../components/home_news_item"
 import ProjectCard from "../components/project_card"
-import HomeSlideshowItem from "../components/home_slideshow_item"
 import Layout from "../components/layout"
 
 export default function Home() {
-  const partnersData = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(
+      slideshow: allMarkdownRemark(
+        filter: { fields: { category: { eq: "slideshow" } } }
+        sort: { order: ASC, fields: fields___slug }
+      ) {
+        nodes {
+          frontmatter {
+            title
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 1440)
+              }
+            }
+          }
+        }
+      }
+      partners: allMarkdownRemark(
         filter: { fields: { category: { eq: "partners" } } }
         sort: { order: ASC, fields: frontmatter___order }
       ) {
@@ -25,9 +39,6 @@ export default function Home() {
                 gatsbyImageData
               }
             }
-          }
-          fields {
-            category
           }
         }
       }
@@ -53,10 +64,12 @@ export default function Home() {
     <Layout>
       <div id="header-slideshow">
         <Slider {...slideshowCarouselSettings}>
-          <HomeSlideshowItem />
-          <HomeSlideshowItem />
-          <HomeSlideshowItem />
-          <HomeSlideshowItem />
+          {data.slideshow.nodes.map(element => (
+            <div class="header-slideshow-item">
+              <div style={{background: `url(${getSrc(element.frontmatter.image)})`}}/>
+              <h1>{element.frontmatter.title}</h1>
+            </div>
+          ))}
         </Slider>
       </div>
       <div id="home-content-start"></div>
@@ -169,7 +182,7 @@ export default function Home() {
           <p>Some of the organisations we work with:</p>
           <div id="home-partners-logos">
             <Slider {...partnersCarouselSettings}>
-              {partnersData.allMarkdownRemark.nodes.map(element => (
+              {data.partners.nodes.map(element => (
                 <div class="item">
                   <GatsbyImage image={getImage(element.frontmatter.image)} />
                 </div>
