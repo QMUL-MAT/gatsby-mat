@@ -298,9 +298,13 @@ h1 {
 
 .content-container .text-content ul,
 .content-container .text-content ol {
-  list-style-type: disc;
   margin-left: 2em;
 }
+
+.content-container .text-content ul {
+  list-style-type: disc;
+}
+
 
 #home-apply-banner {
   z-index: 9;
