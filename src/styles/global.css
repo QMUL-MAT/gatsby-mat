@@ -248,7 +248,7 @@ h1 {
 }
 
 #header.sit nav {
-  margin: 2px 0 0 0;
+  margin: 1px 0 0 0;
   min-height: 58px;
 }
 
@@ -587,15 +587,20 @@ table td * {
   width: 66.66666666666667%;
   float: left;
 }
-#container #home-programmes-info h2 {
+#container #home-programmes-info h2,
+#container #home-news h2,
+#container #home-partners h2 {
   margin: 60px 0 25px 0;
-  color: #231f20;
   font-family: "StencilCreek-50";
   font-weight: 100;
   font-style: normal;
   font-size: 70px;
   text-transform: uppercase;
   text-align: center;
+}
+
+#container #home-programmes-info h2 {
+  color: #231f20;
 }
 
 #home-programmes-info-blocks {
@@ -688,14 +693,7 @@ table td * {
   width: 100%;
 }
 #container #home-news h2 {
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 80px;
   color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 80px 0 40px 0;
 }
 #container #home-news #home-news-articles {
   display: inline-block;
@@ -788,16 +786,6 @@ table td * {
 
 #container #home-partners {
   overflow: hidden;
-}
-
-#container #home-partners h2 {
-  font-family: 'StencilCreek-50';
-  font-weight: 100;
-  font-style: normal;
-  font-size: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 50px 0 20px 0;
 }
 
 #container #home-partners p {
@@ -2034,6 +2022,8 @@ footer {
 
 footer .block {
   width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 footer strong {
@@ -2145,9 +2135,11 @@ footer .footer-block {
     width: 66.66666666666667%;
   }
 
-  #container #home-programmes-info h2 {
-    font-size: 70px;
-    margin: 30px 0 20px;
+  #container #home-programmes-info h2,
+  #container #home-news h2,
+  #container #home-partners h2 {
+    font-size: 50px;
+    margin: 15px 0 10px;
   }
 
   .home-programmes-info-block-frame {
@@ -2352,11 +2344,6 @@ footer .footer-block {
   #container .home-programmes-apply .home-programmes-apply-text span {
     font-size: 50px;
     line-height: 50px;
-  }
-
-  #container #home-programmes-info h2 {
-    font-size: 50px;
-    margin: 15px 0 10px;
   }
 
   .home-programmes-info-block-frame {
@@ -2871,7 +2858,9 @@ footer .footer-block {
     line-height: 40px;
   }
 
-  #container #home-programmes-info h2 {
+  #container #home-programmes-info h2,
+  #container #home-news h2,
+  #container #home-partners h2 {
     font-size: 40px;
     margin: 15px 0;
   }
@@ -2906,11 +2895,6 @@ footer .footer-block {
 
   .home-programmes-info-block-frame.block2 {
     margin: 0;
-  }
-
-  #container #home-news h2 {
-    font-size: 40px;
-    margin: 50px 0 30px;
   }
 
   #container #home-news #home-news-articles article {
