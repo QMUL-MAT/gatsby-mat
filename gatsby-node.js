@@ -1,7 +1,10 @@
 const path = require("path")
+const { createRemoteFileNode } = require('gatsby-source-filesystem');
 
-module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
+module.exports.onCreateNode = async ({
+  node, actions, store, getCache, createNodeId
+}) => {
+  const { createNode, createNodeField } = actions
 
   if (node.internal.type === "MarkdownRemark") {
     const fields = {
@@ -10,6 +13,23 @@ module.exports.onCreateNode = ({ node, actions }) => {
     }
     for (const [name, value] of Object.entries(fields)) {
       createNodeField({ node, name, value })
+    }
+  }
+
+  if (node.internal.type === "twitterStatusesUserTimelineTimeline") {
+    const image_url = node?.retweeted_status?.user?.profile_banner_url;
+    if (image_url) {
+      const fileNode = await createRemoteFileNode({
+        url: image_url,
+        parentNodeId: node.id,
+        store,
+        getCache,
+        createNode,
+        createNodeId,
+      });
+      if (fileNode) {
+        node.image___NODE = fileNode.id
+      }
     }
   }
 }

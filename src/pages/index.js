@@ -6,7 +6,6 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import HomeNewsItem from "../components/home_news_item"
 import ProjectCard from "../components/project_card"
 import Layout from "../components/layout"
 
@@ -37,6 +36,25 @@ export default function Home() {
             image {
               childImageSharp {
                 gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+      news: allTwitterStatusesUserTimelineTimeline(limit: 3) {
+        edges {
+          node {
+            full_text
+            id_str
+            image {
+              childImageSharp {
+                gatsbyImageData(height: 200, width: 600)
+              }
+            }
+            retweeted_status {
+              user {
+                name
+                profile_banner_url
               }
             }
           }
@@ -161,9 +179,27 @@ export default function Home() {
           <div class="block" id="home-news">
             <h2>News</h2>
             <div id="home-news-articles">
-              <HomeNewsItem />
-              <HomeNewsItem />
-              <HomeNewsItem />
+              {data.news.edges.map(element => (
+                <article>
+                  <div>
+                    <GatsbyImage image={getImage(element.node.image)} />
+                    <hr />
+                    <p>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: element.node.full_text,
+                        }}
+                      ></div>
+                      <a
+                        href={`https://twitter.com/QMUL_MAT/status/${element.node.id_str}`}
+                        target="_blank"
+                      >
+                        Read more
+                      </a>
+                    </p>
+                  </div>
+                </article>
+              ))}
             </div>
             <a href="/news/">
               <button>
