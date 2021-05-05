@@ -160,8 +160,13 @@ body {
 }
 
 #header nav.bright {
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
   background-color: white;
+}
+
+#header.sit nav.bright {
+  border-top: none;
 }
 
 #header nav.bright .navbar-outer-item,
@@ -190,6 +195,7 @@ body {
   line-height: 80px;
   text-transform: uppercase;
   text-align: center;
+  font-family: "StencilCreek-50";;
 }
 #header-slideshow ul.slick-dots {
   transform: translateY(-6em);
