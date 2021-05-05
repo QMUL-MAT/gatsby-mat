@@ -15,12 +15,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-}
-
 #header header {
   height: 81px;
   background-color: #fff;
@@ -207,6 +201,7 @@ h1 {
 }
 
 #header-top h1 {
+  font-family: "StencilCreek-50";
   font-size: 70px;
   line-height: 70px;
   bottom: 0;
@@ -293,7 +288,7 @@ h1 {
   font-size: 18px;
 }
 .content-container .text-content a {
-  color: #2CB8EB !important;
+  color: #2CB8EB;
 }
 
 .content-container .text-content ul,
@@ -303,6 +298,11 @@ h1 {
 
 .content-container .text-content ul {
   list-style-type: disc;
+}
+
+.content-container .text-content td {
+  padding: 0.3em;
+  border: 1px solid black;
 }
 
 
@@ -416,7 +416,7 @@ table td * {
   vertical-align: top;
 }
 
-#page-content a {
+a {
   color: #d5df22;
 }
 

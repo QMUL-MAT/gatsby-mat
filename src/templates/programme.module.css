@@ -1,0 +1,12 @@
+.apply-now {
+  display: block;
+  background-color: #949599;
+  color: #FFF !important;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.apply-now:hover {
+  background-color: #2CB8EB;
+}
