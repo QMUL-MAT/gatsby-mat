@@ -57,6 +57,7 @@ export default function Staff() {
                       <a
                         target="_blank"
                         href={`${element.frontmatter.website}`}
+                        rel="noreferrer"
                       >
                         Homepage
                       </a>

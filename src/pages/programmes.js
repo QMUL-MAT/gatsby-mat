@@ -11,7 +11,7 @@ export default function Programmes() {
           <a href="/programmes/phd-programme/">
             <div className={ProgrammesStyle.frame}>
               <span>
-                <img src="/images/phd_programme_frame.jpg" />
+                <img src="/images/phd_programme_frame.jpg" alt="PhD Programme" />
               </span>
               <div>
                 <div className={ProgrammesStyle.info}>
@@ -27,7 +27,7 @@ export default function Programmes() {
           <a href="/programmes/masters-programme/">
             <div className={ProgrammesStyle.frame}>
               <span>
-                <img src="/images/masters_programme_frame.jpg" />
+                <img src="/images/masters_programme_frame.jpg" alt="Masters Programme" />
               </span>
               <div>
                 <div className={ProgrammesStyle.info}>

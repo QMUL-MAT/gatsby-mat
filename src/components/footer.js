@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div class="block">
         <div id="footer-address">
-          <img src="/images/footer_logo.jpg" />
+          <img src="/images/footer_logo.jpg" alt="MAT logo" />
           <div>
             <strong>Media and Arts Technology CDT</strong>
             <br />
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
         <div id="footer-queen-mary">
           <div class="footer-block">
-            <img src="/images/footer_queen_mary.jpg" />
+            <img src="/images/footer_queen_mary.jpg" alt="QMUL ogo" />
             <p>Funded by EPSRC &amp; AHRC</p>
             <p>Hosted by Dept of EECS</p>
             <p>Part of QMUL</p>
@@ -44,9 +44,9 @@ export default function Footer() {
         <div id="footer-nick-watts">
           <div class="footer-block">
             <p>Website design:</p>
-            <img src="/images/footer_nick_watts.jpg" />
+            <img src="/images/footer_nick_watts.jpg" alt="Nick Watts Design logo" />
             <p>
-              <a href="http://www.nickwattsdesign.co.uk" target="_blank">
+              <a href="http://www.nickwattsdesign.co.uk" target="_blank" rel="noreferrer">
                 Nick Watts Design
               </a>
             </p>

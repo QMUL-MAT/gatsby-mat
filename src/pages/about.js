@@ -13,7 +13,7 @@ export default function About() {
             <div className={AboutStyle.card}>
               <a href={`/${link}/`}>
                 <span className={AboutStyle.arrow}></span>
-                <img src={`/images/about_${link}.jpg`} />
+                <img src={`/images/about_${link}.jpg`} alt={`${link}`} />
                 <h2>{link}</h2>
               </a>
             </div>

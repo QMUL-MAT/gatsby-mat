@@ -45,6 +45,7 @@ export default function News() {
                 <a
                   href={`https://twitter.com/QMUL_MAT/status/${element.node.id_str}`}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Read more
                 </a>

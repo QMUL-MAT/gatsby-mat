@@ -35,7 +35,12 @@ export default function Post(props) {
       <div class="columns">
         <div class="column text-content">
           <h2>{element.frontmatter.subtitle}</h2>
-          <a className={`my-4 ${ProgrammeStyle.applyNow}`} href={`${element.frontmatter.registration_link}`} target="_blank">
+          <a
+            className={`my-4 ${ProgrammeStyle.applyNow}`}
+            href={`${element.frontmatter.registration_link}`}
+            target="_blank"
+            rel="noreferrer"
+          >
             {element.frontmatter.registration_text}
           </a>
           <div dangerouslySetInnerHTML={{ __html: element.html }}></div>

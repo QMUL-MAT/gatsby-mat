@@ -44,7 +44,7 @@ export default function Partners() {
               <div className={CardStyle.content}>
                 <div dangerouslySetInnerHTML={{ __html: element.html }}></div>
                 {element.frontmatter.website !== null ? (
-                  <a target="_blank" href={`${element.frontmatter.website}`}>
+                  <a target="_blank" href={`${element.frontmatter.website}`} rel="noreferrer">
                     Link to Partner website &gt;
                   </a>
                 ) : (

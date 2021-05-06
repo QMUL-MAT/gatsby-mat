@@ -39,19 +39,21 @@ export default class NavBar extends Component {
               <div id="logo-title"></div>
             </a>
 
-            <a
+            <span
               role="button"
               class={`navbar-burger ${
                 this.state.navbarActive ? "is-active" : ""
               }`}
               aria-label="menu"
               aria-expanded="false"
+              onKeyDown={this.handleNavbarBurgerClick}
               onClick={this.handleNavbarBurgerClick}
+              tabIndex={0}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
-            </a>
+            </span>
 
             <nav
               className={`navbar-menu

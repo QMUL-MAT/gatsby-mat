@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 
@@ -129,7 +129,7 @@ export default function Home() {
             img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
           />
           <div class="column home-projects-more">
-            <img src="/images/home_project_blank.jpg" width="100%" />
+            <img src="/images/home_project_blank.jpg" width="100%" alt="More projects" />
             <a href="/students-projects/">
               <div class="home-projects-more-text">
                 <div>
@@ -155,7 +155,7 @@ export default function Home() {
           <h2>Programmes</h2>
 
           <div id="home-programmes-info-blocks">
-            <a href="http://www.mat.qmul.ac.uk/programmes/phd-programme/">
+            <a href="/programmes/phd-programme/">
               <div class="home-programmes-info-block-frame block1">
                 <span class="home-programmes-info-block">
                   <h1>PhD</h1>
@@ -163,7 +163,7 @@ export default function Home() {
                 </span>
               </div>
             </a>
-            <a href="http://www.mat.qmul.ac.uk/programmes/masters-programme/">
+            <a href="/programmes/masters-programme/">
               <div class="home-programmes-info-block-frame block2">
                 <span class="home-programmes-info-block">
                   <h1>Masters</h1>
@@ -193,6 +193,7 @@ export default function Home() {
                       <a
                         href={`https://twitter.com/QMUL_MAT/status/${element.node.id_str}`}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         Read more
                       </a>
