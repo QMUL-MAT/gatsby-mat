@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import ContentPage from "../components/content_page"
@@ -40,7 +40,7 @@ export default function Students() {
             className={`column is-half-mobile is-one-quarter-tablet is-2-desktop ${StudentsStyle.card}`}
           >
             <div class={StudentsStyle.hover}></div>
-            <a href={`${element.fields.slug}`}>
+            <Link to={`${element.fields.slug}`}>
               <GatsbyImage image={getImage(element.frontmatter.image)} />
               <div>
                 <h3>{element.frontmatter.name}</h3>
@@ -62,7 +62,7 @@ export default function Students() {
                   </em>
                 </p>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

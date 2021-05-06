@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 
 import ContentPage from "../components/content_page"
 import * as AboutStyle from "./about.module.css"
@@ -11,11 +12,11 @@ export default function About() {
         {links.map(link => (
           <div class="column">
             <div className={AboutStyle.card}>
-              <a href={`/${link}/`}>
+              <Link to={`/${link}/`}>
                 <span className={AboutStyle.arrow}></span>
                 <img src={`/images/about_${link}.jpg`} alt={`${link}`} />
                 <h2>{link}</h2>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

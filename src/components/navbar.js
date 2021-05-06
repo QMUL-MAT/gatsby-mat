@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -33,15 +34,15 @@ export default class NavBar extends Component {
             role="navigation"
             aria-label="main navigation"
           >
-            <a href="/">
+            <Link to="/">
               <div id="logo" />
               <div id="logo-line"></div>
               <div id="logo-title"></div>
-            </a>
+            </Link>
 
             <span
               role="button"
-              class={`navbar-burger ${
+              className={`navbar-burger ${
                 this.state.navbarActive ? "is-active" : ""
               }`}
               aria-label="menu"
@@ -61,60 +62,60 @@ export default class NavBar extends Component {
                 ${this.props.bright ? "bright" : ""}
               `}
             >
-              <div class="navbar-start">
-                <div class="navbar-item has-dropdown is-hoverable navbar-outer-item first-menu-item">
-                  <a class="navbar-link is-arrowless" href="/programmes/">
+              <div className="navbar-start">
+                <div className="navbar-item has-dropdown is-hoverable navbar-outer-item first-menu-item">
+                  <Link to="/programmes/" className="navbar-link is-arrowless">
                     Programmes
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a
-                      class="navbar-item navbar-inner-item"
-                      href="/programmes/phd-programme/"
+                  </Link>
+                  <div className="navbar-dropdown">
+                    <Link
+                      className="navbar-item navbar-inner-item"
+                      to="/programmes/phd-programme/"
                     >
                       PhD Programme
-                    </a>
-                    <a
-                      class="navbar-item navbar-inner-item"
-                      href="/programmes/masters-programme/"
+                    </Link>
+                    <Link
+                      className="navbar-item navbar-inner-item"
+                      to="/programmes/masters-programme/"
                     >
                       Masters Programme
-                    </a>
+                    </Link>
                   </div>
                 </div>
-                <a class="navbar-item navbar-outer-item" href="/students/">
+                <Link className="navbar-item navbar-outer-item" to="/students/">
                   Students
-                </a>
-                <a class="navbar-item navbar-outer-item" href="/projects/">
+                </Link>
+                <Link className="navbar-item navbar-outer-item" to="/projects/">
                   Projects
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable navbar-outer-item">
-                  <a class="navbar-link is-arrowless" href="/about/">
+                </Link>
+                <div className="navbar-item has-dropdown is-hoverable navbar-outer-item">
+                  <Link className="navbar-link is-arrowless" to="/about/">
                     About
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item navbar-inner-item" href="/staff/">
+                  </Link>
+                  <div className="navbar-dropdown">
+                    <Link className="navbar-item navbar-inner-item" to="/staff/">
                       Staff
-                    </a>
-                    <a class="navbar-item navbar-inner-item" href="/sponsors/">
+                    </Link>
+                    <Link className="navbar-item navbar-inner-item" to="/sponsors/">
                       Sponsors
-                    </a>
-                    <a
-                      class="navbar-item navbar-inner-item"
-                      href="/facilities/"
+                    </Link>
+                    <Link
+                      className="navbar-item navbar-inner-item"
+                      to="/facilities/"
                     >
                       Facilities
-                    </a>
+                    </Link>
                   </div>
                 </div>
-                <a class="navbar-item navbar-outer-item" href="/partners/">
+                <Link className="navbar-item navbar-outer-item" to="/partners/">
                   Partners
-                </a>
-                <a class="navbar-item navbar-outer-item" href="/news/">
+                </Link>
+                <Link className="navbar-item navbar-outer-item" to="/news/">
                   News
-                </a>
-                <a class="navbar-item navbar-outer-item" href="/contact/">
+                </Link>
+                <Link className="navbar-item navbar-outer-item" to="/contact/">
                   Contact
-                </a>
+                </Link>
               </div>
             </nav>
           </header>

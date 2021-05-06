@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "gatsby"
+
 import ContentPage from "../components/content_page"
 
 export default function Contact() {
@@ -22,11 +24,7 @@ export default function Contact() {
             <br />
             Fax: +44 (0)20 8980 6533
             <br />
-            Please email the relevant person on
-            <a href="/programmes/">
-              MAT Programme
-            </a>
-            application pages.
+            Please email the relevant person on <Link to="/programmes/">MAT Programme</Link> application pages.
           </p>
           <h2>Public Transport</h2>
           <p>

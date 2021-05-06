@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 
 import Slider from "react-slick"
@@ -130,7 +130,7 @@ export default function Home() {
           />
           <div class="column home-projects-more">
             <img src="/images/home_project_blank.jpg" width="100%" alt="More projects" />
-            <a href="/students-projects/">
+            <Link to="/students-projects/">
               <div class="home-projects-more-text">
                 <div>
                   <span>
@@ -140,7 +140,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
         <div class="home-programmes-apply">
@@ -155,15 +155,15 @@ export default function Home() {
           <h2>Programmes</h2>
 
           <div id="home-programmes-info-blocks">
-            <a href="/programmes/phd-programme/">
+            <Link to="/programmes/phd-programme/">
               <div class="home-programmes-info-block-frame block1">
                 <span class="home-programmes-info-block">
                   <h1>PhD</h1>
                   <p>Find out more about our PhD Programme and APPLY HERE.</p>
                 </span>
               </div>
-            </a>
-            <a href="/programmes/masters-programme/">
+            </Link>
+            <Link to="/programmes/masters-programme/">
               <div class="home-programmes-info-block-frame block2">
                 <span class="home-programmes-info-block">
                   <h1>Masters</h1>
@@ -172,7 +172,7 @@ export default function Home() {
                   </p>
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
         <div id="home-news-bg">
@@ -202,7 +202,7 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            <a href="/news/">
+            <Link to="/news/">
               <button>
                 View All
                 <p>
@@ -211,7 +211,7 @@ export default function Home() {
                   Tweets from MAT
                 </p>
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div id="home-partners">
@@ -226,7 +226,7 @@ export default function Home() {
               ))}
             </Slider>
           </div>
-          <a href="/partners/">
+          <Link to="/partners/">
             <button>
               View All
               <p>
@@ -235,7 +235,7 @@ export default function Home() {
                 we work with
               </p>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </Layout>

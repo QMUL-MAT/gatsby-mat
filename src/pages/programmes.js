@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 
 import ContentPage from "../components/content_page"
 import * as ProgrammesStyle from "./programmes.module.css"
@@ -8,7 +9,7 @@ export default function Programmes() {
     <ContentPage pageTitle="Programmes" header="/images/programmes_header.jpg">
       <div class="columns is-multiline is-mobile">
         <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop">
-          <a href="/programmes/phd-programme/">
+          <Link to="/programmes/phd-programme/">
             <div className={ProgrammesStyle.frame}>
               <span>
                 <img src="/images/phd_programme_frame.jpg" alt="PhD Programme" />
@@ -20,11 +21,11 @@ export default function Programmes() {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div class="column is-half-mobile is-half-tablet is-one-quarter-desktop">
-          <a href="/programmes/masters-programme/">
+          <Link to="/programmes/masters-programme/">
             <div className={ProgrammesStyle.frame}>
               <span>
                 <img src="/images/masters_programme_frame.jpg" alt="Masters Programme" />
@@ -38,7 +39,7 @@ export default function Programmes() {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div class="column text-content">
           <h2>PhD and Masters Programmes in Media and Arts Technology</h2>
