@@ -29,7 +29,7 @@ export default function Post(props) {
   const element = props.data.markdownRemark
   return (
     <ContentPage
-      pageTitle="PhD Programme"
+      pageTitle={element.frontmatter.title}
       header="/images/programmes_header.jpg"
     >
       <div class="columns">
