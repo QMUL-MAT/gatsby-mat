@@ -38,7 +38,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const templates = {
-    programmes: path.resolve("./src/templates/programme.js")
+    programmes: path.resolve("./src/templates/programme.js"),
+    students: path.resolve("./src/templates/student.js"),
   }
   const res = await graphql(`
     query {
