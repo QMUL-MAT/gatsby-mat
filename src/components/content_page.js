@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "./layout"
 
 export default function ContentPage(props) {
-  const hasHeader = "header" in props
+  const hasHeader = ("header" in props) && (props.header != null)
   const headerStyle = {}
   if (hasHeader) {
     headerStyle.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${props.header})`

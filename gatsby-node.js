@@ -1,8 +1,12 @@
 const path = require("path")
-const { createRemoteFileNode } = require('gatsby-source-filesystem');
+const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
 module.exports.onCreateNode = async ({
-  node, actions, store, getCache, createNodeId
+  node,
+  actions,
+  store,
+  getCache,
+  createNodeId,
 }) => {
   const { createNode, createNodeField } = actions
 
@@ -17,7 +21,7 @@ module.exports.onCreateNode = async ({
   }
 
   if (node.internal.type === "twitterStatusesUserTimelineTimeline") {
-    const image_url = node?.retweeted_status?.user?.profile_banner_url;
+    const image_url = node?.retweeted_status?.user?.profile_banner_url
     if (image_url) {
       const fileNode = await createRemoteFileNode({
         url: image_url,
@@ -26,7 +30,7 @@ module.exports.onCreateNode = async ({
         getCache,
         createNode,
         createNodeId,
-      });
+      })
       if (fileNode) {
         node.image___NODE = fileNode.id
       }
@@ -54,6 +58,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  // Create pages for programmes and students
   res.data.allMarkdownRemark.nodes.forEach(node => {
     if (node.fields.category in templates) {
       const category = node.fields.category
@@ -61,8 +66,27 @@ module.exports.createPages = async ({ graphql, actions }) => {
       createPage({
         component: templates[category],
         path: `/${category}/${slug}`,
-        context: {category, slug},
+        context: { category, slug },
       })
     }
+  })
+
+  // Create partners and sponsors pages
+  const partnersSponsorsTemplate = path.resolve(
+    "./src/templates/partners_sponsors.js"
+  )
+  createPage({
+    component: partnersSponsorsTemplate,
+    path: "/partners",
+    context: {
+      category: "partners",
+      pageTitle: "Partners we have worked with",
+      header: "/images/partners_header.jpg",
+    },
+  })
+  createPage({
+    component: partnersSponsorsTemplate,
+    path: "/sponsors",
+    context: { category: "sponsors", pageTitle: "Sponsors" },
   })
 }

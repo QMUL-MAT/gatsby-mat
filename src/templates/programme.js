@@ -25,8 +25,8 @@ export const query = graphql`
     }
   }
 `
-export default function Post(props) {
-  const element = props.data.markdownRemark
+export default function Programme({data}) {
+  const element = data.markdownRemark
   return (
     <ContentPage
       pageTitle={element.frontmatter.title}

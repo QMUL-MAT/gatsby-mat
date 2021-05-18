@@ -25,8 +25,8 @@ export const query = graphql`
     }
   }
 `
-export default function Post(props) {
-  const element = props.data.markdownRemark
+export default function Student({data}) {
+  const element = data.markdownRemark
   return (
     <ContentPage pageTitle="Student" header="/images/students_header.jpg">
       <div class="columns">

@@ -1,39 +1,39 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import ContentPage from "../components/content_page"
 import * as CardStyle from "../components/card.module.css"
 
-export default function Partners() {
-  const data = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(
-        filter: { fields: { category: { eq: "partners" } } }
-        sort: { order: ASC, fields: frontmatter___order }
-      ) {
-        nodes {
-          frontmatter {
-            website
-            image {
-              childImageSharp {
-                gatsbyImageData
-              }
+export const query = graphql`
+  query($category: String!) {
+    allMarkdownRemark(
+      filter: { fields: { category: { eq: $category } } }
+      sort: { order: ASC, fields: frontmatter___order }
+    ) {
+      nodes {
+        frontmatter {
+          website
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 400, height: 250)
             }
           }
-          html
-          fields {
-            category
-          }
+        }
+        html
+        fields {
+          category
         }
       }
     }
-  `)
+  }
+`
 
+export default function PartnersSponsors({data, pageContext}) {
   return (
     <ContentPage
-      pageTitle="Partners we have worked with"
-      header="/images/partners_header.jpg"
+      pageTitle={pageContext.pageTitle}
+      header={pageContext.header}
       grey={true}
     >
       <div class="columns is-multiline is-mobile">
@@ -44,8 +44,12 @@ export default function Partners() {
               <div className={CardStyle.content}>
                 <div dangerouslySetInnerHTML={{ __html: element.html }}></div>
                 {element.frontmatter.website !== null ? (
-                  <a target="_blank" href={`${element.frontmatter.website}`} rel="noreferrer">
-                    Link to Partner website &gt;
+                  <a
+                    target="_blank"
+                    href={`${element.frontmatter.website}`}
+                    rel="noreferrer"
+                  >
+                    Website &gt;
                   </a>
                 ) : (
                   <></>
