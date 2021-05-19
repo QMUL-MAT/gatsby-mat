@@ -28,8 +28,11 @@ export default function Home() {
         }
       }
       projects: allMarkdownRemark(
-        filter: {fields: {category: {eq: "projects"}}, frontmatter: {featured: {eq: true}}}
-        ) {
+        filter: {
+          fields: { category: { eq: "projects" } }
+          frontmatter: { featured: { eq: true } }
+        }
+      ) {
         nodes {
           frontmatter {
             title
@@ -126,13 +129,15 @@ export default function Home() {
           class="columns is-gapless is-multiline is-mobile"
         >
           {data.projects.nodes.map(element => (
-            <ProjectCard
-              title={element.frontmatter.title}
-              year={element.frontmatter.year}
-              student={element.frontmatter.student}
-              url={element.fields.slug}
-              image={element.frontmatter.image}
-            />
+            <div className="column is-one-third-tablet is-full-mobile">
+              <ProjectCard
+                title={element.frontmatter.title}
+                year={element.frontmatter.year}
+                student={element.frontmatter.student}
+                slug={element.fields.slug}
+                image={element.frontmatter.image}
+              />
+            </div>
           ))}
 
           <div class="column home-projects-more">

@@ -1,6 +1,6 @@
 ---
 title: "MAT Cruftfest Schleikess (\"suspenders\" in Yiddish)"
-student: "nagasaki45/"
+student: "nagasaki45"
 year: "2016"
 image: "./mat-cruftfest-schleikess-suspenders-in-yiddish.jpg"
 ---
