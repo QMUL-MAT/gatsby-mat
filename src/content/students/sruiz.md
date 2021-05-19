@@ -1,9 +1,9 @@
 ---
-name: Sebastian Ruiz
-course: MAT PhD
-year: 2016
+name: "Sebastian Ruiz"
+course: "MAT PhD"
+year: "2016"
 alumni: False
-image: ./sruiz.jpg
+image: "./sruiz.jpg"
 ---
 My current research interests are:
 - Non-verbal voice: what information is conveyed by the human voice? Why is singing such a powerful expressive medium? What are the acoustic characteristics of human voice that are deemed of extreme relevance by human perception? Why does group singing is so effective facilitating bonding? What is the physiology of singing together? 

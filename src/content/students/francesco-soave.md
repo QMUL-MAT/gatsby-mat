@@ -1,10 +1,10 @@
 ---
-name: Francesco Soave
-course: MAT PhD
-year: 2017
-website: http://francescosoave.com/
+name: "Francesco Soave"
+course: "MAT PhD"
+year: "2017"
+website: "http://francescosoave.com/"
 alumni: False
-image: ./francesco-soave.jpg
+image: "./francesco-soave.jpg"
 ---
 Hi!
 

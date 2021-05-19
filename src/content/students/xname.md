@@ -1,10 +1,10 @@
 ---
-name: xname
-course: MAT PhD
-year: 2012
-website: http://xname.cc
+name: "xname"
+course: "MAT PhD"
+year: "2012"
+website: "http://xname.cc"
 alumni: True
-image: ./xname.jpg
+image: "./xname.jpg"
 ---
 Drawing upon her personal experience with audio and video manipulation and interactive art, Eleonora Oreggia experiments with the electromagnetic field as a sensor system. Her research explores the concept of illusion by creating electromagnetic environments that stimulate new forms of perception. 
 

@@ -1,0 +1,10 @@
+---
+title: "The Distant Heart"
+abstract: "The Distant Heart: Mediating Long-Distance Relationships through Connected Computational Jewellery"
+year: "2013"
+image: "./the-distant-heart-mediating-long-distance-relationships-through-connected-computational-jewelry-may-2015.jpg"
+---
+The long distance relationships are a prevalent cause of stress and can generate a profound sense of longing and nostalgia. It is common to use a variety of methods to stay in touch with each other. But despite wide availability of audio, video and written communications, it is not unusual for us to experience occasions when all we want is to share a moment with the loved-ones and let them know that we are thinking of them without having to say or write any words. It is equally important to know that the other person cares and thinks about one, even if they do not necessarily directly communicate such emotions in voice or writing.
+One of the cultural practices that allow individuals to intimately and meaningfully conjure up memories and presence of each other is an ancient practice of exchanging love-tokens and keepsakes such as wedding rings and pendent lockets. The rapid development of the new multidisciplinary field of computational jewelry (colloquially known as smart or digital jewelry) is on a brink of merging technological potential of wearables with aesthetic and cultural significance of jewellery. But as the field is young, there are many unanswered questions.
+The Distant Heart is a computational necklace, developed as a part of the research into rectifying the emotional void created when families, friends and loved ones move away from each other. The system was designed for two people that love and miss each-other, but are separated by distance. One of them would measure and share his or her heartbeat through a dedicated Twitter account, another would wear The Distant Heart necklace just as any other necklace. When the necklace wireless detects the shared heartbeat, it would have it revealed to the wearer, giving an intimate glimpse of the other person.
+http://www.yuliasilina.com/the-distant-heart.html

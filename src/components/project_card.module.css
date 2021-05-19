@@ -3,31 +3,31 @@
   background-color: black;
 }
 
-.card img {
-  display: block;
+.card .image {
   opacity: 0.7;
+  display: block;
 }
 
-.card div {
+.card .card-content {
   color: #fff;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
-.card div h2 {
+.card .card-content h2 {
   margin: 1em 1.5em;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-.card div h2 i {
+.card .card-content h2 i {
   font-style: normal;
   color: #d5df22;
 }
 
-.card div p {
+.card .card-content p {
   display: none;
   font-weight: 200;
   font-size: 16px;
@@ -37,20 +37,20 @@
   color: #d5df22;
 }
 
-.card:hover div {
+.card:hover .card-content {
   top: calc(50% - 1em);
   text-align: center;
 }
 
-.card:hover div h2 {
+.card:hover .card-content h2 {
   margin: 0;
 }
 
-.card:hover div p {
+.card:hover .card-content p {
   display: block;
 }
 
-.card:hover img {
+.card:hover .image {
   opacity: 0.2;
   transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;

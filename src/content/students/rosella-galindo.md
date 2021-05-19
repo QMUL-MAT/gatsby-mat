@@ -1,10 +1,10 @@
 ---
-name: Rosella Galindo
-course: MAT PhD
-year: 2015
-website: https://rosellagalindoe.wixsite.com/rpgedanz2
+name: "Rosella Galindo"
+course: "MAT PhD"
+year: "2015"
+website: "https://rosellagalindoe.wixsite.com/rpgedanz2"
 alumni: False
-image: ./rosella-galindo.jpg
+image: "./rosella-galindo.jpg"
 ---
 Rosella Galindo is an artist and researcher working with performing arts and interactive technology. Her multidisciplinary background includes dance, art theory, creative computing and interaction design.
 

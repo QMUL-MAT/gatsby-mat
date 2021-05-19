@@ -1,10 +1,10 @@
 ---
-name: Sophie Skach
-course: MAT PhD
-year: 2015
-website: www.sophieskach.com
+name: "Sophie Skach"
+course: "MAT PhD"
+year: "2015"
+website: "www.sophieskach.com"
 alumni: True
-image: ./sophiesk.jpg
+image: "./sophiesk.jpg"
 ---
 I'm researching on how to use textile sensing to capture social behaviours. Currently, I work on ‘smart’ trousers that distinguish between speakers and listeners.
 

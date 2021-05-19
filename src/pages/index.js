@@ -27,6 +27,31 @@ export default function Home() {
           }
         }
       }
+      projects: allMarkdownRemark(
+        filter: {fields: {category: {eq: "projects"}}, frontmatter: {featured: {eq: true}}}
+        ) {
+        nodes {
+          frontmatter {
+            title
+            year
+            student {
+              frontmatter {
+                name
+              }
+            }
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 800, height: 450)
+              }
+            }
+          }
+          fields {
+            category
+            slug
+            sortYear
+          }
+        }
+      }
       partners: allMarkdownRemark(
         filter: { fields: { category: { eq: "partners" } } }
         sort: { order: ASC, fields: frontmatter___order }
@@ -84,7 +109,11 @@ export default function Home() {
         <Slider {...slideshowCarouselSettings}>
           {data.slideshow.nodes.map(element => (
             <div class="header-slideshow-item">
-              <div style={{background: `url(${getSrc(element.frontmatter.image)})`}}/>
+              <div
+                style={{
+                  background: `url(${getSrc(element.frontmatter.image)})`,
+                }}
+              />
               <h1>{element.frontmatter.title}</h1>
             </div>
           ))}
@@ -92,45 +121,27 @@ export default function Home() {
       </div>
       <div id="home-content-start"></div>
       <div id="container">
-        <div id="home-projects" class="columns is-gapless is-multiline is-mobile">
-          <ProjectCard
-            title="MouldCraft"
-            year="2019"
-            student="Raphael Kim"
-            url="/students_projects/mouldcraft/"
-            img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-          />
-          <ProjectCard
-            title="MouldCraft"
-            year="2019"
-            student="Raphael Kim"
-            url="/students_projects/mouldcraft/"
-            img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-          />
-          <ProjectCard
-            title="MouldCraft"
-            year="2019"
-            student="Raphael Kim"
-            url="/students_projects/mouldcraft/"
-            img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-          />
-          <ProjectCard
-            title="MouldCraft"
-            year="2019"
-            student="Raphael Kim"
-            url="/students_projects/mouldcraft/"
-            img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-          />
-          <ProjectCard
-            title="MouldCraft"
-            year="2019"
-            student="Raphael Kim"
-            url="/students_projects/mouldcraft/"
-            img="http://www.mat.qmul.ac.uk/wp-content/uploads/2019/03/IMG_8430-800x450.jpg"
-          />
+        <div
+          id="home-projects"
+          class="columns is-gapless is-multiline is-mobile"
+        >
+          {data.projects.nodes.map(element => (
+            <ProjectCard
+              title={element.frontmatter.title}
+              year={element.frontmatter.year}
+              student={element.frontmatter.student}
+              url={element.fields.slug}
+              image={element.frontmatter.image}
+            />
+          ))}
+
           <div class="column home-projects-more">
-            <img src="/images/home_project_blank.jpg" width="100%" alt="More projects" />
-            <Link to="/students-projects/">
+            <img
+              src="/images/home_project_blank.jpg"
+              width="100%"
+              alt="More projects"
+            />
+            <Link to="/projects">
               <div class="home-projects-more-text">
                 <div>
                   <span>
