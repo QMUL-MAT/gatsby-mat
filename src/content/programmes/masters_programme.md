@@ -148,8 +148,6 @@ Details about the modules can be found [here](http://eecs.qmul.ac.uk/postgraduat
 
 # Testimonials
 
-TODO migrate to MDX to create testminy component here.
-
 ![Sara Anne Wigglesworth](./masters_programme_sara.jpg)
 
 _“Queen Mary is a welcoming institution and provides excellent facilities for its students. In the Media and Arts Technology Masters, I found rich opportunities to freely exercise my creative vision in many projects. My success in the programme would not have been possible without all the support I received from my classmates, professors, and the staff. I enjoyed every minute of it. My teachers were engaging, inspirational and continuously pushed me to advance my research!”_
