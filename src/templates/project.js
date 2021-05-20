@@ -26,7 +26,7 @@ export const query = graphql`
         }
         image {
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(width: 1000, quality: 100)
           }
         }
       }
