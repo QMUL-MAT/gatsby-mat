@@ -38,8 +38,9 @@
 }
 
 .card:hover .card-content {
-  top: calc(50% - 1em);
+  top: calc(50% - 3em);
   text-align: center;
+  padding: 2em;
 }
 
 .card:hover .card-content h2 {
