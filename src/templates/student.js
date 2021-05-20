@@ -16,6 +16,7 @@ export const query = graphql`
         alumni
         course
         year
+        website
         image {
           childImageSharp {
             gatsbyImageData(width: 600)
@@ -65,6 +66,16 @@ export default function Student({ data }) {
             <p>
               <b>Year:</b> {element.frontmatter.year}
             </p>
+            {element.frontmatter.website ? (
+              <p>
+                <b>Website:</b>{" "}
+                <a href={`${element.frontmatter.website}`}>
+                  {element.frontmatter.website}
+                </a>
+              </p>
+            ) : (
+              <></>
+            )}
           </div>
           <div dangerouslySetInnerHTML={{ __html: element.html }}></div>
         </div>
