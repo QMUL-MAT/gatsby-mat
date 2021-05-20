@@ -1,5 +1,5 @@
 ---
-title: "Mazi' (μαζί)"
+title: "Mazi"
 abstract: "Sonic Tangible User Interface For Children With Autism"
 student: "ant"
 year: "2018"
