@@ -5,7 +5,7 @@ student: "rosella-galindo"
 year: "2015"
 host: "Split Britches"
 host_website: "http://www.split-britches.com/greenscreening"
-image: "./performing-embodiment.jpg"
+image: "./performing-embodiment.png"
 ---
 Interactive scenography designed to enhance the use of embodied imagination in a stroke survivors’ intervention called The Green Screening workshop, conceived by the company Split Britches. 
 The project combines live motion capture with performance techniques to provide participants with an abstract visual world that helps them to enact fantasy scenes they create in front of an audience. 

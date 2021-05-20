@@ -1,7 +1,7 @@
 ---
 title: "MAT Intersections Transfigured Night"
 year: "2016"
-image: "./intersections-transfigured-night.jpg"
+image: "./intersections-transfigured-night.png"
 featured: true
 ---
 Transfigured Night. A night of experimental electronic music featuring live electronics, live coding, audio-visual works, new instruments.

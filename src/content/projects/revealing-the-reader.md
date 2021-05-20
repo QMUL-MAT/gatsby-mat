@@ -3,6 +3,6 @@ title: "Revealing the Reader"
 abstract: "Revealing the Reader: Investigating Public Engagement in Academics and Creatives Network through Interactive Performance"
 student: "betulaksu/"
 year: "2016"
-image: "./revealing-the-reader.jpg"
+image: "./revealing-the-reader.png"
 ---
 The advanced placement project focused on introducing The Culture Capital Exchange (TCCE)’s press release to a wide public through conducting an experiment in an interactive installation setting. The project examines how a complex message addressed from a company to its readers would be conveyed in diverse media settings, focusing on whether readers experience spatial presence while reading through diverse media in an interactive installation setting. Thus, the following questions are aimed to be answered; first, whether a message conveyed through rich media facilitates the experience of spatial presence relative to when rich media is not present. Second, whether including spatial verbal cues in the message would facilitate the experience of spatial presence relative to when such verbal cues are not present. The evaluation of the data obtained from questionnaire responses and video annotations reveal that, media richness including interactivity facilitates the experience of spatial presence compared to low-immersive text. These findings reveal the importance of interactivity in the experience of spatial presence and the need to take verbal spatial cues into account while introducing the setting of a room via text.

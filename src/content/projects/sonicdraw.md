@@ -5,7 +5,7 @@ student: "teodannemann"
 year: "2020"
 host: "Github"
 host_website: "https://teo523.github.io/sonicDraw/public/"
-image: "./sonicdraw.jpg"
+image: "./sonicdraw.png"
 ---
 Sonicdraw is an interactive web app that translates drawings into sound in real-time.
 Lines, shapes and airbrushes are intuitively mapped to sound oscillators, noises and filters, enabling visitors to explore visual textures and quickly create looped sound pieces. Visitors are invited to share their finished sound drawings and explore the work of others in an online gallery.
