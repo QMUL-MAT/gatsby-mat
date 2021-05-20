@@ -4,7 +4,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import ContentPage from "../components/content_page"
 import ProjectCard from "../components/project_card"
-import * as StudentStyle from "./student.module.css"
 
 export const query = graphql`
   query($slug: String!, $category: String!) {
@@ -58,7 +57,7 @@ export default function Student({ data }) {
         <div class="column is-one-third text-content">
           <GatsbyImage image={getImage(element.frontmatter.image)} />
           <h1>{element.frontmatter.name}</h1>
-          <div className={StudentStyle.metadata}>
+          <div className="metadata">
             {element.frontmatter.alumni ? <p>MAT Alumni</p> : <></>}
             <p>
               <b>Course:</b> {element.frontmatter.course}
@@ -86,7 +85,7 @@ export default function Student({ data }) {
                 <ProjectCard
                   title={element.frontmatter.title}
                   year={element.frontmatter.year}
-                  url={element.fields.slug}
+                  slug={element.fields.slug}
                   image={element.frontmatter.image}
                 />
               </div>

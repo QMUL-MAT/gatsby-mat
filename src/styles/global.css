@@ -318,6 +318,16 @@ body {
   border: 1px solid black;
 }
 
+.content-container .text-content .metadata {
+  color: #666;
+  font-style: italic;
+  line-height: 15px;
+  padding: 1em 0em;
+}
+
+.content-container .text-content .metadata a {
+  color: #d5df22;
+}
 
 #home-apply-banner {
   z-index: 9;
