@@ -3,16 +3,23 @@ import React from "react"
 import Layout from "./layout"
 
 export default function ContentPage(props) {
-  const hasHeader = ("header" in props) && (props.header != null)
+  const hasHeader = "header" in props && props.header != null
   const headerStyle = {}
   if (hasHeader) {
     headerStyle.background = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${props.header})`
-    headerStyle.backgroundSize = 'cover'
+    headerStyle.backgroundSize = "cover"
   }
   return (
-    <Layout brightNavbar={!hasHeader}>
+    <Layout
+      brightNavbar={!hasHeader}
+      title={props.headTitle || props.pageTitle}
+    >
       <div id="page-content">
-        <div id="header-top" className={hasHeader ? '' : 'empty'} style={headerStyle}>
+        <div
+          id="header-top"
+          className={hasHeader ? "" : "empty"}
+          style={headerStyle}
+        >
           <h1>{props.pageTitle}</h1>
         </div>
 

@@ -8,7 +8,7 @@ export default function Layout(props) {
   const { brightNavbar = false } = props
   return (
     <div id="body-container">
-      <Head></Head>
+      <Head title={props.title}></Head>
       <NavBar bright={brightNavbar}></NavBar>
       {props.children}
       <Footer></Footer>

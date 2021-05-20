@@ -52,7 +52,11 @@ export const query = graphql`
 export default function Student({ data }) {
   const element = data.student
   return (
-    <ContentPage pageTitle="Student" header="/images/students_header.jpg">
+    <ContentPage
+      pageTitle="Student"
+      headTitle={element.frontmatter.name}
+      header="/images/students_header.jpg"
+    >
       <div class="columns">
         <div class="column is-one-third text-content">
           <GatsbyImage image={getImage(element.frontmatter.image)} />

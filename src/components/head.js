@@ -1,7 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default function Head() {
+export default function Head(props) {
+  const title = props.title || "Home"
   return (
     <Helmet>
       <meta charset="UTF-8" />
@@ -21,7 +22,7 @@ export default function Head() {
         rel="stylesheet"
         href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
       />
-      <title>Home | Media and Arts Technology</title>
+      <title>{`${title} | Media and Arts Technology`}</title>
     </Helmet>
   )
 }

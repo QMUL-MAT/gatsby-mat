@@ -37,7 +37,11 @@ export const query = graphql`
 export default function Project({ data }) {
   const element = data.markdownRemark
   return (
-    <ContentPage pageTitle="Project" header="/images/projects_header.jpg">
+    <ContentPage
+      pageTitle="Project"
+      headTitle={element.frontmatter.title}
+      header="/images/projects_header.jpg"
+    >
       <div class="columns">
         <div class="column is-one-third text-content">
           <h1>
