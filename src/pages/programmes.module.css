@@ -1,48 +1,35 @@
 .frame {
   position: relative;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
-}
-.frame span {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  display: inline-block;
-  width: 100%;
-}
-.frame span img {
-  width: 100%;
-}
-
-.frame:hover span {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: black;
 }
 
 .frame img {
-  position: relative;
-  display: block;
-  z-index: -1;
+  opacity: 0.6 !important;
 }
 
-.frame div {
-  position: absolute;
-  width: 100%;
-  z-index: 9;
+.frame:hover img {
+  opacity: 0.3 !important;
 }
-.frame div .info {
+
+.frame > div {
+  display: block;
+}
+
+.frame .frame-content .info {
   position: absolute;
   bottom: 0;
   margin: 0;
   padding: 0 20px 20px;
 }
 
-.frame:hover div .info {
+.frame:hover .frame-content .info {
   background-image: url(/images/arrow_blue_south_east.png);
   background-position: bottom 20px right 20px;
   background-repeat: no-repeat;
   background-size: 22px;
 }
 
-.frame div h2 {
+.frame .frame-content h2 {
   font-family: "StencilCreek-50";
   font-weight: 100;
   font-size: 40px;
@@ -51,30 +38,30 @@
   color: #fff;
   text-transform: uppercase;
 }
-.frame:hover div h2 {
+.frame:hover .frame-content h2 {
   color: #28b9eb;
 }
 
-.frame div p {
+.frame .frame-content p {
   display: none;
   color: #fff;
   font-size: 14px;
   padding-bottom: 40px;
 }
 
-.frame:hover div p {
+.frame:hover .frame-content p {
   display: block;
 }
 
 @media screen and (max-width: 1200px) {
-  .frame div h2 {
+  .frame .frame-content h2 {
     font-size: 35px;
     line-height: 30px;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .frame div h2 {
+  .frame .frame-content h2 {
     font-size: 25px;
     line-height: 25px;
   }
