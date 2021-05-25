@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import ContentPage from "../components/content_page"
 import * as ProjectStyle from "./project.module.css"
+import Video from "../components/video"
 
 export const query = graphql`
   query($slug: String!, $category: String!) {
@@ -16,6 +17,8 @@ export const query = graphql`
         abstract
         host
         host_website
+        video_provider
+        video_id
         student {
           frontmatter {
             name
@@ -90,7 +93,16 @@ export default function Project({ data }) {
           <div dangerouslySetInnerHTML={{ __html: element.html }}></div>
         </div>
         <div class="column is-two-third">
-          <GatsbyImage image={getImage(element.frontmatter.image)} />
+          {element.frontmatter.video_provider &&
+          element.frontmatter.video_id ? (
+            <Video
+              provider={element.frontmatter.video_provider}
+              id={element.frontmatter.video_id}
+              title={element.frontmatter.title}
+            />
+          ) : (
+            <GatsbyImage image={getImage(element.frontmatter.image)} />
+          )}
         </div>
       </div>
     </ContentPage>

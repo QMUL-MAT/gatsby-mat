@@ -3,6 +3,8 @@ title: "MAT Intersections Magnetic Attraction"
 year: "2016"
 image: "./intersections-magnetic-attraction.png"
 featured: true
+video_provider: "vimeo"
+video_id: "185694346"
 ---
 An evening of music performed on the magnetic resonator piano by Kate Ryder. The programme features pieces written especially for the instrument and improvisations with Alice Eldridge (amplified cello) and Roger Redgate (violin/fx pedal).
 Pieces performed:

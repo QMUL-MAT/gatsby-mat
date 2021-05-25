@@ -3,6 +3,8 @@ title: "Olly"
 student: "ant"
 year: "2019"
 image: "./olly.jpg"
+video_provider: "vimeo"
+video_id: "358480037"
 ---
 Όλοι (pronounced Olly – from the Greek “All/Everybody”) is a sonic Tangible User Interface made in natural wool fabric and stretch lycra designed for a group of five minimally verbal children with autism to promote social play and provide self-regulation.
 Olly is made by using an inflated therapy ball placed on a 3 mm felt base. The ball is wrapped in 3 mm felt sheets cut to shape by sewing together four slices of felt that adhere to the circular shape of the ball. The installation is topped with 5 stretchy lycra bands sewn on the top of the wool in which the ball it’s wrapped to form 5 coloured elastic ribbons.

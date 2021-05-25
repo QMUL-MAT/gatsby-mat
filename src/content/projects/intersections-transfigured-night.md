@@ -3,6 +3,8 @@ title: "MAT Intersections Transfigured Night"
 year: "2016"
 image: "./intersections-transfigured-night.png"
 featured: true
+video_provider: "vimeo"
+video_id: "185675071"
 ---
 Transfigured Night. A night of experimental electronic music featuring live electronics, live coding, audio-visual works, new instruments.
 Part of Intersections – a series of events on interdisciplinary research and the symbiotic relationship between the arts and science, presenting and discussing innovative work from the Media and Arts Technology programme at Queen Mary University of London.

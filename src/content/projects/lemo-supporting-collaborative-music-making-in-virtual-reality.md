@@ -4,6 +4,8 @@ abstract: "LeMo aims at exploring the impact of different interaction cues (visu
 student: "liangmen"
 year: "2015"
 image: "./lemo-supporting-collaborative-music-making-in-virtual-reality.jpg"
+video_provider: "youtube"
+video_id: "PNaeaVopmxk"
 ---
 Virtual Reality may provide a greater sense of community and more intuitive interactions in comparison to traditional media, and may also offer new opportunities human-computer interaction and human-to-human interaction.
 Whilst the potential of multi-user immersive virtual reality to facilitate social activities is well established, few VR applications currently exist in the field of music collaboration. Consequently, there are many open research questions on how to design VR user experiences to support Collaborative Music Making (CMM).

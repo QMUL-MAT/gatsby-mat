@@ -4,6 +4,8 @@ abstract: "Portable foot controller for the performance of live music."
 student: "lalepre"
 year: "2017"
 image: "./happy-pedal.jpeg"
+video_provider: "youtube"
+video_id: "qbAbhyyCeWE"
 ---
 This happy controller is designed for the electro-instrumental practice of clarinet and electronics. This pedal rack is suitable to simultaneously interact with the clarinet and the electronic. The Happy Pedal is conceived to control in real-time whatever software unit.
 A suitable interface that could allow a direct and reliable control of DSP algorithms. Portable and robust, it fits into a backpack.

@@ -4,6 +4,8 @@ abstract: "Interactive Sonic Sculpture"
 student: "lalepre"
 year: "2018"
 image: "./chowndolo-magnetic-pendulum.jpeg"
+video_provider: "vimeo"
+video_id: "325707625"
 ---
 The Chowndolo is an Interactive Sonic Sculpture based on a Magnetic Pendulum: an oscillating stick whose trajectories are altered by magnets placed underneath the device.
 The unstable patterns produced by the pendulum oscillations are transformed into sound, articulating a music which evolves based on the pendulum motions.

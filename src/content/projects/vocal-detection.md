@@ -6,6 +6,8 @@ year: "2019"
 host: "MXX"
 host_website: "http://www.mxxmusic.com"
 image: "./vocal-detection.png"
+video_provider: "youtube"
+video_id: "M7K5tstueWI"
 ---
 Using a convolutional neural network, I built a system that could identify to significant accuracy, thee presence and location of vocal activity an a song.
 Using sonic visualiser, I was able to plot the predictions against the waveform to visually see how its . predictions aligned with the ground truth. 0 (bottom value) indicates no vocals and 1 (top value) indicates vocals. Green contours represent the detectors certainty. The higher this contour is the more certain the detector is of vocals being present.

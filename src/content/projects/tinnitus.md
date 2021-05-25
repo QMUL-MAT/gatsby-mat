@@ -4,6 +4,8 @@ abstract: "Tinnitus is an interactive sound sculpture that mimics the uneasy env
 student: "betulaksu"
 year: "2019"
 image: "./tinnitus.jpg"
+video_provider: "vimeo"
+video_id: "347257463"
 ---
 Tinnitus is often described as a ringing or buzzing, as a combination of intermixing sounds that induces a feeling of helplessness. As tinnitus is a natural compensatory mechanism of one’s own brain, the mere acceptance of it as such can bring relief. The sculpture aims to take part in this acceptance by recreating the sleeping pillow of a patient with Tinnitus.
 The sculpture consists of a touch-sensitive sleeping pillow placed on a transparent box that intentionally displays the sources of digital artefacts. The pillow mimics the sound mixtures reported by patients, consisting of high-frequency tones on a fluctuating noise background. The installation invites spectators to explore the role of interactivity and control the intensity of their tinnitus by figuring out their own acceptance levels.

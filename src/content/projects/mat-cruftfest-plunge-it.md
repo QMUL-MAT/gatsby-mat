@@ -4,6 +4,8 @@ abstract: "Plunge-it! It’s an enhanced plunger which, on top of its primary fu
 student: "francesco-soave"
 year: "2017"
 image: "./mat-cruftfest-plunge-it.jpg"
+video_provider: "vimeo"
+video_id: "325409885"
 ---
 Deceptive:
  1. likely to deceive; capable of deception.

@@ -2,6 +2,8 @@
 title: "Aural Fabric"
 year: "2016"
 image: "./aural-fabric.jpg"
+video_provider: "youtube"
+video_id: "9XZ_ByjULBk"
 ---
 Aural Fabric : Greenwich consists in an interactive textile pieces hosting the experiences from some soundwalks in Greenwich, London. These soundwalks are part of the research project Aural Character of Places, investigating how people with different experience and familiarity attribute meaning to soundscapes, while raising awareness on how architecture influence the creation and spread of sound.
 auralcharacter.wordpress.com/aural-fabric/
