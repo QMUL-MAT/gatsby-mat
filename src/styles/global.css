@@ -184,6 +184,7 @@ body {
 }
 .header-slideshow-item > div {
   height: 100vh;
+  max-height: 800px;
   opacity: 0.7;
 }
 .header-slideshow-item h1 {

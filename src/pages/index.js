@@ -21,7 +21,7 @@ export default function Home() {
             title
             image {
               childImageSharp {
-                gatsbyImageData(width: 1440)
+                gatsbyImageData(width: 1440, height: 800)
               }
             }
           }
