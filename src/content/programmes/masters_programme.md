@@ -14,7 +14,7 @@ Be part of a new generation of designers, engineers and researchers who are appl
 - Be taught by expert academics who are undertaking innovative and world-class research in creative computing.
 - Benefit from a flexible and cross-disciplinary programme structure organised around three themes: _1) Sound, Image, and Games_, _2) Interaction, Intelligence, and Sensing_ and _3) Creative Industry_.
 - Tailor your degree to your interests and choose from a wide variety of technical, practical and business-oriented modules.
-- Access to our [state-of-the-art facilities](http://www.mat.qmul.ac.uk/facilities/) including the world-class qMedia Studios, the Materials Processing Lab, MAT equipment and the Electronics Lab.
+- Access to our [state-of-the-art facilities](/facilities/) including the world-class qMedia Studios, the Materials Processing Lab, MAT equipment and the Electronics Lab.
 - Wide range of career opportunities in industry and academia.
 
 # What you’ll study
