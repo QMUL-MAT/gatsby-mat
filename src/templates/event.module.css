@@ -8,3 +8,8 @@
   text-align: center;
   font-family: 'StencilCreek-50';
 }
+
+.gallery {
+  max-width: 1000px;
+  margin: auto;
+}

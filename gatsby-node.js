@@ -10,9 +10,11 @@ module.exports.onCreateNode = async ({
 }) => {
   const { createNode, createNodeField } = actions
 
+  const contentDir = path.resolve("./src/content")
+
   if (node.internal.type === "MarkdownRemark") {
     const fields = {
-      category: path.basename(path.dirname(node.fileAbsolutePath)),
+      category: path.dirname(path.relative(contentDir, node.fileAbsolutePath)),
       slug: path.basename(node.fileAbsolutePath, ".md").replace("_", "-"),
       sortYear: node.frontmatter.year || "1970"
     }
@@ -47,6 +49,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     students: path.resolve("./src/templates/student.js"),
     projects: path.resolve("./src/templates/project.js"),
     events: path.resolve("./src/templates/event.js"),
+    "events/ars-2019": path.resolve("./src/templates/ars2019project.js"),
   }
   const res = await graphql(`
     query {
@@ -61,7 +64,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  // Create pages for programmes and students
+  // Create pages from items in categories and templates
   res.data.allMarkdownRemark.nodes.forEach(node => {
     if (node.fields.category in templates) {
       const category = node.fields.category
@@ -69,7 +72,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       createPage({
         component: templates[category],
         path: `/${category}/${slug}`,
-        context: { category, slug },
+        context: { category, slug, subItems: `${category}/${slug}` },
       })
     }
   })
