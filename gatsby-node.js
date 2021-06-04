@@ -44,6 +44,33 @@ module.exports.onCreateNode = async ({
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
+  const queryResults = await graphql(`
+  query {
+    all: allMarkdownRemark {
+      nodes {
+        fields {
+          category
+          slug
+        }
+      }
+    }
+    projects: allMarkdownRemark(filter: {fields: {category: {eq: "projects"}}}) {
+      nodes {
+        fields {
+          slug
+        }
+      }
+    }
+    arsProjects: allMarkdownRemark(filter: {fields: {category: {eq: "events/ars-2019"}}}) {
+      nodes {
+        fields {
+          slug
+        }
+      }
+    }
+  }
+`)
+
   const templates = {
     programmes: path.resolve("./src/templates/programme.js"),
     students: path.resolve("./src/templates/student.js"),
@@ -51,21 +78,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
     events: path.resolve("./src/templates/event.js"),
     "events/ars-2019": path.resolve("./src/templates/ars2019project.js"),
   }
-  const res = await graphql(`
-    query {
-      allMarkdownRemark {
-        nodes {
-          fields {
-            category
-            slug
-          }
-        }
-      }
-    }
-  `)
 
   // Create pages from items in categories and templates
-  res.data.allMarkdownRemark.nodes.forEach(node => {
+  queryResults.data.all.nodes.forEach(node => {
     if (node.fields.category in templates) {
       const category = node.fields.category
       const slug = node.fields.slug
@@ -95,6 +110,33 @@ module.exports.createPages = async ({ graphql, actions }) => {
     path: "/sponsors",
     context: { category: "sponsors", pageTitle: "Sponsors" },
   })
+
+  // Create client side redirects for backwards compatibility of URLs with old WP site
+  const redirectTemplate = path.resolve("./src/templates/redirect.js")
+  const redirects = {
+    "/students-projects/": "/projects/",
+    "/about-us/": "/about/",
+    "/mat-news/": "/news/",
+    "/ars-2019/": "/events/ars-2019/",
+    "/chi2019/": "/events/chi2019/",
+    "/nime2020/": "/events/nime2020",
+    "/xr-chi-2021/": "/events/xr-chi-2021",
+  }
+
+  queryResults.data.projects.nodes.forEach(project => {
+    redirects[`/students_projects/${project.fields.slug}/`] = `/projects/${project.fields.slug}`
+  })
+  queryResults.data.arsProjects.nodes.forEach(project => {
+    redirects[`/ars-2019/${project.fields.slug}/`] = `/events/ars-2019/${project.fields.slug}`
+  })
+
+  for (const [from, to] of Object.entries(redirects)) {
+    createPage({
+      component: redirectTemplate,
+      path: from,
+      context: { to },
+    })
+  }
 }
 
 // Add students to projects (psuedo-join)

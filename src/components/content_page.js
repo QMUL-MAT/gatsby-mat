@@ -13,6 +13,7 @@ export default function ContentPage(props) {
     <Layout
       brightNavbar={!hasHeader}
       title={props.headTitle || props.pageTitle}
+      redirect={props.redirect}
     >
       <div id="page-content">
         <div

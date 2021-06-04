@@ -23,6 +23,7 @@ export default function Head(props) {
         href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
       />
       <title>{`${title} | Media and Arts Technology`}</title>
+      { props.redirect && <meta http-equiv="refresh" content={`0;URL='${ props.redirect }'`} /> }
     </Helmet>
   )
 }
