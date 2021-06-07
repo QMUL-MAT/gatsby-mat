@@ -97,7 +97,6 @@ body {
   border-top: none;
 }
 
-
 #header nav {
   position: fixed;
   margin: 80px 0 0 0;
@@ -196,7 +195,7 @@ body {
   line-height: 80px;
   text-transform: uppercase;
   text-align: center;
-  font-family: "StencilCreek-50";;
+  font-family: "StencilCreek-50";
 }
 #header-slideshow ul.slick-dots {
   transform: translateY(-6em);
@@ -302,7 +301,7 @@ body {
   font-size: 18px;
 }
 .content-container .text-content a {
-  color: #2CB8EB;
+  color: #2cb8eb;
 }
 
 .content-container .text-content ul,
@@ -445,67 +444,6 @@ a {
   color: #d5df22;
 }
 
-#page-content nav#article-nav {
-  margin: 0 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#page-content nav#article-nav a {
-  color: #000;
-  text-decoration: none;
-}
-
-#page-content nav#article-nav div {
-  padding: 20px;
-}
-
-#page-content nav#article-nav .current {
-  overflow: hidden;
-  background-color: #e7e7e8;
-}
-
-#page-content nav#article-nav .current:hover {
-  background: #646466
-    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_north_west.png)
-    no-repeat left 15px top 15px;
-  background-size: 22px;
-  color: #fff;
-  background-repeat: no-repeat;
-}
-
-#page-content nav#article-nav .next {
-  float: right;
-  width: 200px;
-  margin: 0 0 0 10px;
-  background-color: #e7e7e8;
-}
-
-#page-content nav#article-nav .next:hover {
-  background: #646466
-    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png)
-    no-repeat right 15px bottom 15px;
-  background-size: 22px;
-  color: #fff;
-  background-repeat: no-repeat;
-}
-
-#page-content nav#article-nav .previous {
-  float: left;
-  width: 200px;
-  margin: 0 10px 0 0;
-  background-color: #e7e7e8;
-}
-
-#page-content nav#article-nav .previous:hover {
-  background: #646466
-    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_west.png)
-    no-repeat left 15px bottom 15px;
-  background-size: 22px;
-  color: #fff;
-  background-repeat: no-repeat;
-}
-
 #home-content-start {
   height: 30px;
   background-color: #d5df22;
@@ -547,7 +485,7 @@ a {
 #container .home-projects-more-text:hover div,
 #container .home-projects-more-text.on-mob div,
 #container .home-projects-more.block-open .home-projects-more-text div {
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_grey_south_east.png);
+  background-image: url(/images/arrow_grey_south_east.png);
   background-position: bottom 20px right 20px;
   background-repeat: no-repeat;
   background-size: 22px;
@@ -664,7 +602,7 @@ a {
 
 .home-programmes-info-block-frame:hover,
 #home-programmes-info-blocks a .home-programmes-info-block-frame.block-open {
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_grey_south_east.png);
+  background-image: url(/images/arrow_grey_south_east.png);
   background-position: bottom 20px right 20px;
   background-repeat: no-repeat;
   background-size: 22px;
@@ -712,7 +650,7 @@ a {
 
 #container #home-news-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/home_news.jpg");
+    url(/images/news_header.jpg);
   background-size: cover;
   display: inline-block;
   width: 100%;
@@ -786,9 +724,8 @@ a {
 #container #home-news button:hover {
   padding: 15px 145px 15px 15px;
   text-align: left;
-  background: #fff
-    url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_black_south_east.png)
-    no-repeat right 15px bottom 15px;
+  background: #fff url(/images/arrow_pages_black_south_east.png) no-repeat right
+    15px bottom 15px;
   background-size: 22px;
   background-repeat: no-repeat;
   margin: 60px auto 30px;
@@ -820,7 +757,7 @@ a {
 }
 
 #container #home-partners a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -829,9 +766,9 @@ a {
   display: block;
   border: none;
   background-color: #646466;
-  color: #FFF;
+  color: #fff;
   padding: 15px 70px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
@@ -850,9 +787,10 @@ a {
 #container #home-partners button:hover {
   padding: 15px 145px 15px 15px;
   text-align: left;
-  background: #646466 url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png) no-repeat right 15px bottom 15px;
-      background-repeat: no-repeat;
-      background-size: auto;
+  background: #646466 url(/images/arrow_pages_white_south_east.png) no-repeat
+    right 15px bottom 15px;
+  background-repeat: no-repeat;
+  background-size: auto;
   background-size: 22px;
   background-repeat: no-repeat;
 }
@@ -896,116 +834,6 @@ a {
 #page-content nav ul a:hover {
   background-color: #2cb8eb;
 }
-
-#page-content #contact-home {
-  display: block;
-  padding: 0 0 50px 0;
-}
-
-#page-content #contact-home #contact-home-frame {
-  margin: 0 30px;
-  display: inline-block;
-}
-
-#page-content #contact-home #contact-home-frame #contact-text {
-  width: 50%;
-  float: left;
-}
-
-#page-content #contact-home #contact-home-frame #contact-text img {
-  display: none;
-}
-
-#page-content #contact-home #contact-home-frame #contact-text span {
-  font-weight: 500;
-  margin: 20px 0 5px 0;
-  display: block;
-}
-
-#page-content #contact-home #contact-home-frame #contact-text p {
-  font-size: 14px;
-  line-height: 22px;
-  margin-right: 60px;
-}
-
-#page-content #contact-home #contact-home-frame #contact-media {
-  width: 50%;
-  float: left;
-}
-
-#page-content #contact-home #contact-home-frame #contact-media img {
-  width: 100%;
-  margin: 0;
-}
-
-#page-content #contact-home #contact-home-frame #contact-media #contact-map {
-  position: relative;
-}
-
-#page-content
-  #contact-home
-  #contact-home-frame
-  #contact-media
-  #contact-map
-  #contact-map-frame {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-#page-content
-  #contact-home
-  #contact-home-frame
-  #contact-media
-  #contact-map:hover
-  #contact-map-frame {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-}
-#page-content
-  #contact-home
-  #contact-home-frame
-  #contact-media
-  #contact-map
-  #contact-map-frame
-  p {
-  margin: 30px 0 0 30px;
-  padding: 0;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-  color: #fff;
-  display: none;
-}
-#page-content
-  #contact-home
-  #contact-home-frame
-  #contact-media
-  #contact-map:hover
-  #contact-map-frame
-  p {
-  display: block;
-}
-
-#page-content
-  #contact-home
-  #contact-home-frame
-  #contact-media
-  #contact-map:hover
-  #contact-map-frame
-  #map-arrow {
-  bottom: 0;
-  position: absolute;
-  width: 60px;
-  height: 64px;
-  right: 0;
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_pages_white_south_east.png);
-  background-size: 22px;
-  background-position: right 20px bottom 20px;
-  background-repeat: no-repeat;
-}
-
 
 #std-page {
   margin: 20px 30px 0 30px;
@@ -1203,348 +1031,6 @@ a {
   display: inline-block;
 }
 
-#page-content #students-projects-home #students-projects-frame {
-  margin: 0 30px;
-}
-
-#page-content #students-projects-home #students-projects-categories {
-  border-bottom: 1px solid #000;
-  display: inline-block;
-  width: 100%;
-}
-
-#page-content #students-projects-home #students-projects-categories h3 {
-  margin: 0 30px 10px;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-options {
-  margin: 0 0;
-  padding: 0 0 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option {
-  width: 33.33333333333333%;
-  float: left;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option-block {
-  margin: 0 15px !important;
-  padding: 40px 20px !important;
-  text-align: center;
-  background-color: #d2d3d5;
-  color: #fff;
-  font-family: "StencilCreek-50";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 0;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option-block.mfix {
-  padding: 50px 20px 40px 20px !important;
-}
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option-block.active:hover {
-  background-color: #ecff40;
-  cursor: pointer;
-}
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option-block.active {
-  background-color: #d5df22;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-categories
-  .students-projects-filter-option-block:hover {
-  background-color: #ecff40;
-  cursor: pointer;
-  color: #000;
-}
-
-#page-content #students-projects-home #students-projects-keywords {
-  border-bottom: 1px solid #000;
-  display: inline-block;
-  width: 100%;
-}
-
-#page-content #students-projects-home #students-projects-keywords h3 {
-  margin: 20px 30px 10px 30px;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-options {
-  margin: 0;
-  padding: 0 10px 20px;
-  display: inline-block;
-  width: auto;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-option {
-  float: left;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-option-block {
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  background-color: #d2d3d5;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 14px;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-option-block.active:hover {
-  background-color: #ecff40;
-  cursor: pointer;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-option-block.active {
-  background-color: #d5df22;
-}
-
-#page-content
-  #students-projects-home
-  #students-projects-keywords
-  .students-projects-filter-option-block:hover {
-  background-color: #ecff40;
-  cursor: pointer;
-  color: #000;
-}
-
-#page-content #students-projects-home .students-projects-filter-spacer {
-  margin: 0 15px;
-}
-
-#page-content #students-projects-home .students-projects-box {
-  position: relative;
-  width: 33.33333333333333%;
-  float: left;
-}
-#page-content #students-projects-home .students-projects-box-frame {
-  display: block;
-  padding: 10px 10px 10px 10px !important;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box
-  .students-projects-box-frame
-  .students-projects-info {
-  top: 0;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 1)
-  .students-projects-box-frame {
-  padding: 15px 20px 15px 0;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 1)
-  .students-projects-box-frame
-  .students-projects-info {
-  bottom: 0;
-  margin: 0 20px 0 0;
-  display: block;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:hover
-  .students-projects-box-frame
-  .students-projects-info {
-  transform: translateY(-50%);
-  top: 50% !important;
-}
-#page-content
-  #students-projects-home
-  .students-projects-box
-  .students-projects-box-frame
-  .students-projects-info
-  span {
-  position: relative;
-  position: absolute;
-  width: 100%;
-  bottom: 50px;
-  text-align: left;
-  background: transparent !important;
-}
-#page-content
-  #students-projects-home
-  .students-projects-box:hover
-  .students-projects-box-frame
-  .students-projects-info
-  span {
-  transform: translateY(-50%);
-  top: 50% !important;
-  position: relative;
-  background: none;
-  text-align: center;
-}
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 2)
-  .students-projects-box-frame {
-  padding: 15px 10px;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 3)
-  .students-projects-box-frame {
-  padding: 15px 0 15px 20px;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:hover
-  .students-projects-box-frame
-  .students-projects-info
-  span {
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 2):hover
-  .students-projects-box-frame
-  .students-projects-info
-  span {
-  left: 0;
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content
-  #students-projects-home
-  .students-projects-box:nth-child(3n + 3):hover
-  .students-projects-box-frame
-  .students-projects-info
-  span {
-  left: 10px;
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content #students-projects-home .students-projects-box img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-}
-
-#page-content #students-projects-home .students-projects-box:hover img {
-  opacity: 0.2;
-}
-
-#page-content #students-projects-home .students-projects-box-frame span {
-  background-color: #000 !important;
-  display: block;
-}
-
-#page-content #students-projects-home .students-projects-box-frame:hover span {
-  background-color: #000 !important;
-  display: block;
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
-  background-position: bottom 30px right 30px;
-  background-repeat: no-repeat;
-  background-size: 22px;
-}
-
-#page-content #students-projects-home .students-projects-box div {
-  color: #fff;
-  height: 100%;
-  position: relative;
-  top: 0;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#page-content #students-projects-home .students-projects-box:hover div {
-  padding: 0 !important;
-  margin: 0;
-}
-
-#page-content #students-projects-home .students-projects-box div h2 {
-  bottom: 0;
-  margin: 0 50px 0 50px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-}
-
-#page-content #students-projects-home .students-projects-box div h2 i {
-  font-style: normal;
-  color: #d5df22;
-}
-
-#page-content #students-projects-home .students-projects-box:hover div h2 {
-  text-align: center !important;
-  margin: 0 50px 30px 50px;
-}
-
-#page-content #students-projects-home .students-projects-box div p {
-  display: none;
-}
-#page-content #students-projects-home .students-projects-box:hover div p {
-  bottom: 0;
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  display: block;
-  text-align: center;
-  font-style: italic;
-  width: 100%;
-  color: #d5df22;
-}
-
 #page-content #student-home #student-frame {
   margin: 0 30px;
 }
@@ -1731,163 +1217,6 @@ a {
   color: #666;
   font-style: italic;
   line-height: 20px;
-}
-
-#page-content #student-home .student-box {
-  position: relative;
-  width: 50%;
-  float: left;
-}
-#page-content #student-home .student-box-frame {
-  display: block;
-}
-
-#page-content #student-home .student-box .student-box-frame .student-info {
-  top: 0;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-#page-content
-  #student-home
-  .student-box:hover
-  .student-box-frame
-  .student-info {
-  transform: translateY(-50%);
-  top: 50% !important;
-}
-#page-content #student-home .student-box .student-box-frame .student-info span {
-  position: relative;
-  position: absolute;
-  width: 100%;
-  bottom: 50px;
-  text-align: left;
-  background: transparent !important;
-}
-#page-content
-  #student-home
-  .student-box:hover
-  .student-box-frame
-  .student-info
-  span {
-  transform: translateY(-50%);
-  top: 50% !important;
-  position: relative;
-  background: none;
-  text-align: center;
-}
-#page-content #student-home .student-box .student-box-frame {
-  padding: 10px;
-}
-
-#page-content
-  #student-home
-  .student-box:hover
-  .student-box-frame
-  .student-info
-  span {
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content
-  #student-home
-  .student-box:nth-child(3n + 2):hover
-  .student-box-frame
-  .student-info
-  span {
-  left: 0;
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content
-  #student-home
-  .student-box:nth-child(3n + 3):hover
-  .student-box-frame
-  .student-info
-  span {
-  left: 10px;
-  padding: 0 30px;
-  width: auto;
-}
-
-#page-content #student-home .student-box img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-}
-
-#page-content #student-home .student-box:hover img {
-  opacity: 0.2;
-}
-
-#page-content #student-home .student-box-frame span {
-  background-color: #000 !important;
-  display: block;
-}
-
-#page-content #student-home .student-box-frame:hover span {
-  background-color: #000 !important;
-  display: block;
-  background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
-  background-position: bottom 30px right 30px;
-  background-repeat: no-repeat;
-  background-size: 22px;
-}
-
-#page-content #student-home .student-box div {
-  color: #fff;
-  height: 100%;
-  position: relative;
-  top: 0;
-  z-index: 9;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#page-content #student-home .student-box:hover div {
-  padding: 0 !important;
-  margin: 0;
-}
-
-#page-content #student-home .student-box div h2 {
-  bottom: 0;
-  margin: 0 50px 0 50px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-}
-
-#page-content #student-home .student-box div h2 i {
-  font-style: normal;
-  color: #d5df22;
-}
-
-#page-content #student-home .student-box:hover div h2 {
-  text-align: center !important;
-  margin: 0 50px 30px 50px;
-}
-
-#page-content #student-home .student-box div p {
-  display: none;
-}
-#page-content #student-home .student-box:hover div p {
-  bottom: 0;
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  display: block;
-  text-align: center;
-  font-style: italic;
-  width: 100%;
-  color: #d5df22;
 }
 
 #page-content #student-project #student-project-frame {
@@ -2207,63 +1536,6 @@ footer .footer-block {
     line-height: 22px;
   }
 
-  #page-content #students-projects-home .students-projects-box div h2 {
-    margin: 0 40px 30px 40px;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  #page-content #students-projects-home .students-projects-box:hover div h2 {
-    margin: 0 20px 65px 20px;
-  }
-
-  #page-content #students-projects-home .students-projects-box:hover div p {
-    margin: 0 0 15px 0;
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block {
-    font-size: 35px;
-    margin: 0 15px !important;
-    padding: 20px 15px !important;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block.mfix {
-    padding: 30px 15px 20px 15px !important;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box
-    .students-projects-box-frame
-    .students-projects-info
-    span {
-    bottom: 10px;
-  }
-
-  #page-content #student-home .student-box div h2 {
-    margin: 0 40px 30px 40px;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  #page-content #student-home .student-box:hover div h2 {
-    margin: 0 20px 65px 20px;
-  }
-
-  #page-content #student-home .student-box:hover div p {
-    margin: 0 0 15px 0;
-    font-size: 14px;
-    line-height: 22px;
-  }
-
   #page-content #student-home #student-categories .student-filter-option-block {
     font-size: 35px;
     margin: 0 15px !important;
@@ -2275,15 +1547,6 @@ footer .footer-block {
     #student-categories
     .student-filter-option-block.mfix {
     padding: 30px 15px 20px 15px !important;
-  }
-
-  #page-content
-    #student-home
-    .student-box
-    .student-box-frame
-    .student-info
-    span {
-    bottom: 10px;
   }
 
   footer {
@@ -2452,101 +1715,6 @@ footer .footer-block {
     margin: 10px 5px 20px 5px;
   }
 
-  #page-content #students-projects-home .students-projects-box div h2 {
-    margin: 0 15px 15px 15px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  #page-content #students-projects-home .students-projects-box:hover div h2 {
-    margin: 0 20px 35px 20px;
-  }
-
-  #page-content #students-projects-home .students-projects-box:hover div p {
-    margin: 0 0 5px 0;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box-frame:hover
-    span {
-    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
-    background-position: bottom 10px right 10px;
-    background-repeat: no-repeat;
-    background-size: 22px;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box:nth-child(3n + 1)
-    .students-projects-box-frame {
-    padding: 10px 10px 10px 0;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box:nth-child(3n + 2)
-    .students-projects-box-frame {
-    padding: 10px 5px;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box:nth-child(3n + 3)
-    .students-projects-box-frame {
-    padding: 10px 0 10px 10px;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block {
-    font-size: 30px;
-    margin: 0 15px !important;
-    padding: 20px 10px !important;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block.mfix {
-    padding: 30px 10px 20px 10px !important;
-  }
-
-  #page-content #student-home .student-box div h2 {
-    margin: 0 15px 15px 15px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  #page-content #student-home .student-box:hover div h2 {
-    margin: 0 20px 35px 20px;
-  }
-
-  #page-content #student-home .student-box:hover div p {
-    margin: 0 0 5px 0;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  #page-content #student-home .student-box-frame:hover span {
-    background-image: url(http://www.mat.qmul.ac.uk/wp-content/themes/mat/img/arrow_white_south_east.png);
-    background-position: bottom 10px right 10px;
-    background-repeat: no-repeat;
-    background-size: 22px;
-  }
-
-  #page-content #student-home .student-box {
-    float: none;
-    width: 100%;
-  }
-
-  #page-content #student-home .student-box .student-box-frame {
-    padding: 10px;
-  }
-
   #page-content #student-home #student-categories .student-filter-option-block {
     font-size: 30px;
     margin: 0 15px !important;
@@ -2633,11 +1801,6 @@ footer .footer-block {
 
   #four {
     display: block;
-  }
-
-  #page-content #students-projects-home #students-projects-keywords,
-  #page-content #students-projects-home #students-projects-categories {
-    display: none !important;
   }
 
   #page-content #student-home #student-keywords,
@@ -2935,27 +2098,6 @@ footer .footer-block {
     margin: 20px auto 40px auto;
   }
 
-  #page-content nav#article-nav .current:hover {
-    background-color: #e7e7e8;
-    background-image: none;
-    color: #000;
-  }
-  #page-content nav#article-nav .next:hover {
-    background-color: #e7e7e8;
-    background-image: none;
-    color: #000;
-  }
-
-  #page-content nav#article-nav .previous:hover {
-    background-color: #e7e7e8;
-    background-image: none;
-    color: #000;
-  }
-
-  #page-content nav#article-nav div {
-    padding: 10px;
-  }
-
   #programmes-home #programmes-home-text-block {
     width: 100%;
     float: right;
@@ -2968,81 +2110,6 @@ footer .footer-block {
   #programmes-home #programmes-home-section-block {
     width: 100%;
     float: left;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box:hover
-    .students-projects-box-frame
-    .students-projects-info {
-    margin: 0;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box:hover
-    .students-projects-box-frame
-    .students-projects-info
-    span {
-    padding: 0 30px !important;
-    width: auto !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-
-  #page-content #students-projects-home .students-projects-filter-spacer {
-    margin: 0 15px;
-  }
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-options {
-    margin: 0 0 10px 0;
-    padding: 0 !important;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block {
-    font-size: 12px;
-    margin: 0 5px !important;
-    padding: 14px 10px !important;
-    top: 100px;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-categories
-    .students-projects-filter-option-block.mfix {
-    padding: 20px 10px 14px 10px !important;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-keywords
-    .students-projects-filter-options {
-    padding: 0 0 10px 0;
-    margin: 0 10px;
-  }
-
-  #page-content
-    #students-projects-home
-    #students-projects-keywords
-    .students-projects-filter-option-block {
-    padding: 5px 8px;
-  }
-
-  #page-content #students-projects-home .students-projects-box {
-    width: 100%;
-    float: none;
-  }
-
-  #page-content
-    #students-projects-home
-    .students-projects-box
-    .students-projects-box-frame {
-    padding: 10px 0 !important;
   }
 
   #page-content #student-project #student-project-frame {
@@ -3138,52 +2205,12 @@ footer .footer-block {
     display: block;
   }
 
-  #page-content #contact-home #contact-home-frame #contact-text {
-    width: 100%;
-    float: none;
-  }
-
-  #page-content #contact-home #contact-home-frame #contact-text img {
-    display: block;
-    width: 100%;
-  }
-
-  #page-content #contact-home #contact-home-frame #contact-media {
-    width: 100%;
-    float: none;
-  }
-
-  #page-content #contact-home #contact-home-frame #contact-media img {
-    display: none;
-  }
-
-  #page-content
-    #contact-home
-    #contact-home-frame
-    #contact-media
-    #contact-map
-    img {
-    display: block;
-  }
-
   #news-home #news-home-articles ul li {
     width: 100%;
   }
 
   #news-home #news-home-articles ul li div.news-info {
     height: auto;
-  }
-
-  #page-content nav#article-nav {
-    font-size: 11px;
-  }
-
-  #page-content nav#article-nav .previous {
-    width: 20%;
-  }
-
-  #page-content nav#article-nav .next {
-    width: 20%;
   }
 
   #news-home #news-home-articles ul li div i {
