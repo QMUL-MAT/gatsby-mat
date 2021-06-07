@@ -36,7 +36,6 @@ export const query = graphql`
   }
 `
 export default function Event({ data }) {
-  console.log(data.projects.nodes)
   const element = data.event
   return (
     <ContentPage
