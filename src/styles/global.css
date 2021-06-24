@@ -524,13 +524,13 @@ a {
   display: block;
 }
 
+#container .home-programmes {
+  margin-bottom: 0px;
+}
+
 #container .home-programmes-apply {
-  position: relative;
-  width: 33.33333333333333%;
-  float: left;
-  overflow: hidden;
-  display: inline-block;
   background-color: #2cb8eb;
+  height: 100%;
 }
 #container .home-programmes-apply .home-programmes-apply-text div {
   padding: 3em;
@@ -541,15 +541,11 @@ a {
   font-family: "StencilCreek-50";
   font-weight: 100;
   font-style: normal;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 75px;
   color: #fff;
 }
 
-#container #home-programmes-info {
-  width: 66.66666666666667%;
-  float: left;
-}
 #container #home-programmes-info h2,
 #container #home-news h2,
 #container #home-partners h2 {
@@ -1479,14 +1475,6 @@ footer .footer-block {
   .header-slideshow-item h1 {
     font-size: 70px;
     line-height: 70px;
-  }
-
-  #container .home-programmes-apply {
-    width: 33.33333333333333%;
-  }
-
-  #container #home-programmes-info {
-    width: 66.66666666666667%;
   }
 
   #container #home-programmes-info h2,

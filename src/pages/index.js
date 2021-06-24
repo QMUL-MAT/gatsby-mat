@@ -159,36 +159,42 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div class="home-programmes-apply">
-          <div class="home-programmes-apply-text">
-            <div>
-              <span>Apply Now for September 2021</span>
-              <p>First application deadline is January 31</p>
+        <div class="columns is-gapless home-programmes">
+          <div class="column is-one-third">
+            <div class="home-programmes-apply">
+              <div class="home-programmes-apply-text">
+                <div>
+                  <span>Apply Now for Sep 2021</span>
+                  <p>First application deadline is January 31</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="home-programmes-info">
-          <h2>Programmes</h2>
+          <div class="column is-two-third">
+            <div id="home-programmes-info">
+              <h2>Programmes</h2>
 
-          <div id="home-programmes-info-blocks">
-            <Link to="/programmes/phd-programme/">
-              <div class="home-programmes-info-block-frame block1">
-                <span class="home-programmes-info-block">
-                  <h1>PhD</h1>
-                  <p>Find out more about our PhD Programme and APPLY HERE.</p>
-                </span>
+              <div id="home-programmes-info-blocks">
+                <Link to="/programmes/phd-programme/">
+                  <div class="home-programmes-info-block-frame block1">
+                    <span class="home-programmes-info-block">
+                      <h1>PhD</h1>
+                      <p>Find out more about our PhD Programme and APPLY HERE.</p>
+                    </span>
+                  </div>
+                </Link>
+                <Link to="/programmes/masters-programme/">
+                  <div class="home-programmes-info-block-frame block2">
+                    <span class="home-programmes-info-block">
+                      <h1>Masters</h1>
+                      <p>
+                        Find out more about our Masters Programme and APPLY HERE.
+                      </p>
+                    </span>
+                  </div>
+                </Link>
               </div>
-            </Link>
-            <Link to="/programmes/masters-programme/">
-              <div class="home-programmes-info-block-frame block2">
-                <span class="home-programmes-info-block">
-                  <h1>Masters</h1>
-                  <p>
-                    Find out more about our Masters Programme and APPLY HERE.
-                  </p>
-                </span>
-              </div>
-            </Link>
+            </div>
           </div>
         </div>
         <div id="home-news-bg">
