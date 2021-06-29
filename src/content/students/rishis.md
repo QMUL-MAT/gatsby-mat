@@ -2,6 +2,7 @@
 name: "Rishi Shukla"
 course: "MAT PhD"
 year: "2016"
+website: https://github.com/rishi-s
 alumni: False
 image: "./rishis.jpg"
 ---
