@@ -72,7 +72,11 @@ export default function Student({ data }) {
             {element.frontmatter.website ? (
               <p>
                 <b>Website:</b>{" "}
-                <a href={`${element.frontmatter.website}`}>
+                <a
+                  href={`${element.frontmatter.website}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {element.frontmatter.website}
                 </a>
               </p>
