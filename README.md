@@ -1,99 +1,116 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="http://mat.qmul.ac.uk">
+    <img alt="MAT logo" src="http://mat.qmul.ac.uk/images/logo.gif" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  The Media & Arts Technology centre official website
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This repo contains the official website for the Media & Arts Technology (MAT) centre at Queen Mary University of London. This README contains documentation for:
+- [Students and staff who need to update content on the website](#information-for-students-and-staff).
+- [Developers that maintain or improve the website](#information-for-developers).
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+# Information for students and staff
 
-## 🚀 Quick start
+## Prerequisits
 
-1.  **Create a Gatsby site.**
+- To edit or add content to the website you'll need a [GitHub](https://github.com) account.
+- You need to be a member of the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team on GitHub. Send and email to Tom Gurion at [t.gurion@qmul.ac.uk](mailto:t.gurion@qmul.ac.uk) with the title "Add me to the MAT website editors" and your GitHub username as the content.
+- Wait for your invitation to the team.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+**Note that everyone on the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team has full access to change the content, functionallity, and design of the site. Changes are usually reversibe, but please don't change the anything except for content belong to you (e.g. your student profile and projects) without permission.**
+
+## Editing existing content
+
+You don't need to know much about git or GitHub to edit content on the website. If you would like to, you can browse and edit the content files for this project with an online editor. The explanations here assume that this is your approach.
+
+1. Find the [markdown](https://www.markdownguide.org/) file (.md file extension) you would like to edit in the `src/content` directory. For example, If you're Andrea Guidi you can find your student profile information at `src/content/students/andrea-guidi.md`.
+
+    ![](/readme_pics/students_filepath.png)
+
+1. Click on the filename.
+
+1. Click on the pencil button to open the editor.
+
+    ![](/readme_pics/edit_button.png)
+
+1. Edit the file:
+
+    - The name of the file usually controls the URL of this piece of content. For example, `src/content/students/a-daniele.md` appears on the website at [/students/a-daniele](http://mat.qmul.ac.uk/students/a-daniele).
+    - Images are referred to using relative location to the markdown file. `./` means "in the same directory as this file". For example, the picture `src/content/students/beautiful_me.jpg` should appear in `src/content/students/new_student.md` as `./beautiful_me.jpg`.
+    - For student projects, the `student` frontmatter field should be set to the name of the markdown file, without extension, of the student profile. For example, a project by Antonion Daniele should have `student: a-daniele` in its frontmatter.
+    - Use markdown to write content and check examples from other content files if unsure. The rest should be self explanatory.
+
+1. When done editing, write a meaningful message describing the change you've made and click the `commit changes` button.
+
+    ![](/readme_pics/commit_message_and_button.png)
+
+1. The changes should appear on the website within 10-30 minutes.
+
+## Adding or changing images
+
+1. Browse online to the directory where you would like to upload your new image to. For example, `src/content/students`. Keep images next to the markdown files they appear in if possible. See previous section for details.
+
+1. Click the `Add file` then `Upload files` buttons, and upload your image. You can use the same filename to override an existing image. Try not to upload low quality images (<200kb) or images that are too heavy (>3mb), although nothing stops you from doing so.
+
+    ![](/readme_pics/upload_files.png)
+
+1. If the new images replaces an existing one but has a different filename follow the instructions on the previous section to update the content to point to the new image. Also, don't forget to delete the old image.
+
+    ![](/readme_pics/delete_file.png)
+
+## Adding new content
+
+1. To add new content first upload all necessary images following the instructions in the previous section.
+
+1. Create a new file in the relevant subdirectory of `src/content` by clicking `Add file` then `Create new file`.
+
+1. Follow the instructions for [editing existing content](#editing-existing-content). Make sure the file is saved with `.md` file extension.
+
+# Information for developers
+
+The website is a static site that is built with [gatsby.js](https://www.gatsbyjs.com/).
+
+## Local development
+
+1. Make sure you have `node` and `npm` installed. Folow the [gatsby tutorial](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs) for details.
+
+1. Clone the repo.
 
     ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    git clone git@github.com:QMUL-MAT/gatsby-mat.git
+    cd gatsby-mat
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+1. Install dependencies.
 
     ```shell
-    cd my-hello-world-starter/
-    gatsby develop
+    npm install
     ```
 
-1.  **Open the source code and start editing!**
+1. Either get an API key, secret, and bearer token from twitter, or ask Tom Gurion ([t.gurion@qmul.ac.uk](mailto:t.gurion@qmul.ac.uk)) or Jonathan Winfield ([j.winfield@qmul.ac.uk](mailto:j.winfield@qmul.ac.uk)) for the official credentials if you are maintaining the website for the long run.
 
-    Your site is now running at `http://localhost:8000`!
+1. Create an `.env` file in the root of the repo with the credentials.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    ```shell
+    TWITTER_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxx
+    TWITTER_API_SECRET=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    TWITTER_BEARER_TOKEN=zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+    ```
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+1. Run the development server.
 
-## 🧐 What's inside?
+    ```shell
+    npm run develop
+    ```
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+1. Visit [localhost:8000](http://localhost:8000).
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## Deployment
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+The site is deployed to [GitHub pages](https://pages.github.com/) automatically by [travis-ci](https://travis-ci.com/github/QMUL-MAT/gatsby-mat) on every push to master, or as a CRON job once a week (to update the twitter based news section).
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+The twitter API credentials are kept as environment variables on travis-ci.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+To manage the DNS settings contact helpdesk support, and ask for ITS help, not EECS systems, as `mat.qmul.ac.uk` is not a subdomain of EECS.
