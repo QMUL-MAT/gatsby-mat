@@ -21,6 +21,10 @@ export const query = graphql`
             gatsbyImageData(width: 600)
           }
         }
+        thesis {
+          title
+          url
+        }
       }
       html
     }
@@ -69,6 +73,18 @@ export default function Student({ data }) {
             <p>
               <b>Year:</b> {element.frontmatter.year}
             </p>
+            {element.frontmatter.thesis && (
+              <p>
+                <b>Thesis:</b>{" "}
+                <a
+                  href={element.frontmatter.thesis.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {element.frontmatter.thesis.title}
+                </a>
+              </p>
+            )}
             {element.frontmatter.website ? (
               <p>
                 <b>Website:</b>{" "}
