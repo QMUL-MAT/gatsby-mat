@@ -29,7 +29,7 @@ export const query = graphql`
         }
         image {
           childImageSharp {
-            gatsbyImageData(width: 1000, quality: 100)
+            gatsbyImageData(width: 1000)
           }
         }
       }
