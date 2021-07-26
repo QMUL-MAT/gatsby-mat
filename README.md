@@ -109,8 +109,8 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
 
 ## Deployment
 
-The site is deployed to [GitHub pages](https://pages.github.com/) automatically by [travis-ci](https://travis-ci.com/github/QMUL-MAT/gatsby-mat) on every push to master, or as a CRON job once a week (to update the twitter based news section).
+The site is built and deployed to [GitHub pages](https://pages.github.com/) automatically with GitHub actions. The workflow is triggers on every push to master and in addition scheduled twice a week to keep the news section (fetched from twitter) up to date.
 
-The twitter API credentials are kept as environment variables on travis-ci.
+The twitter API credentials are kept as secrets on the GitHub repo.
 
 To manage the DNS settings contact helpdesk support, and ask for ITS help, not EECS systems, as `mat.qmul.ac.uk` is not a subdomain of EECS.
