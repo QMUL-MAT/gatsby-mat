@@ -2,7 +2,7 @@
 title: "☎️"
 student: "jack-ratcliffe"
 year: "2017"
-image: "./%e2%98%8e%ef%b8%8f.jpg"
+image: "./phone.jpg"
 video_provider: "vimeo"
 video_id: "325681431"
 ---

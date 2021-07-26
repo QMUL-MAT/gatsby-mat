@@ -3,7 +3,7 @@ title: "Mazi"
 abstract: "Sonic Tangible User Interface For Children With Autism"
 student: "ant"
 year: "2018"
-image: "./mazi-%ce%bc%ce%b1%ce%b6%ce%af-2.jpg"
+image: "./mazi.jpg"
 featured: true
 video_provider: "vimeo"
 video_id: "289847754"
