@@ -1,0 +1,8 @@
+---
+title: "Analysis of Sensitivity, Linearity, Hysteresis, Responsiveness, and Fatigue of Textile Knit Stretch Sensors"
+abstract: "This work presents research into electronic textile strain sensors designed specifically for wearable applications which need to be lightweight, robust, and comfortable."
+student: "tangtang-la"
+year: "2018"
+image: "./stretch-sensors.jpg"
+---
+Wearable technology is widely used for collecting information about the human body and its movement by placing sensors on the body. This work presents research into electronic textile strain sensors designed specifically for wearable applications which need to be lightweight, robust, and comfortable. In this work, sixteen stretch sensors, each with different conductive stretch fabrics, are evaluated: EeonTex (Eeonyx Corporation),knitted silver-plated yarn, and knitted spun stainless steel yarn. The sensors’ performance is tested using a tensile tester while monitoring their resistance with a microcontroller. Each sensor was analyzed for its sensitivity, linearity, hysteresis, responsiveness, and fatigue through a series of dynamic and static tests. The findings show that for wearable applications a subset of the silver-plated yarn sensors had better ranked performance in terms of sensitivity, linearity, and steady state.  EeonTex was found to be the most responsive, and the stainless steel yarn performed the worst, which may be due to the characteristics of the knit samples under test.

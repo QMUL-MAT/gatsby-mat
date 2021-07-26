@@ -1,0 +1,8 @@
+---
+title: "Knit Stretch Sensor Placement for Body Movement Sensing"
+abstract: "This work compared the motion data from a dance leotard toile designed with sensor groupings and Vicon motion capture system to examine the sensor placement on the body."
+student: "tangtang-la"
+year: "2020"
+image: "./movement-sensing.jpg"
+---
+Motion capture technology is widely used in movement-related Human-Computer Interaction, especially in digital arts such as digital dance performance. This work presents a knit stretch sensor-based dance leotard design to evaluate the locations where the sensors best capture the movement on the body. Two studies are undertaken: (1) interviews to determine user requirements of a dance movement sensing system; (2) evaluation of sensor placement on the body. Ten interviewees including dancers, choreographers, and technologists describe their requirements and expectations for a body movement sensing system. The centre of the body (the torso) is determined to be the area of primary interest for dancers and choreographers to sense movement, and technologists find the robustness of textile sensors the most challenging for textile sensing system design. A dance leotard toile is then designed with sensor groupings on the torso along the direction of major muscles, based on the interviewees’ preferred movements to be captured. Each group of the sensors are evaluated by comparing their signal output and a Vicon motion capture system. The evaluation shows sensors which are constantly under tension perform better. For example, sensors on the upper back have a higher success rate than the sensors on the lower back. The dance leotard design was found to capture the movements of standing lean back and standing waist twists the best.
