@@ -1,4 +1,6 @@
+const fs = require("fs")
 const path = require("path")
+const Cite = require("citation-js")
 const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
 module.exports.onCreateNode = async ({
@@ -16,11 +18,28 @@ module.exports.onCreateNode = async ({
     const fields = {
       category: path.dirname(path.relative(contentDir, node.fileAbsolutePath)),
       slug: path.basename(node.fileAbsolutePath, ".md").replace("_", "-"),
-      sortYear: node.frontmatter.year || "1970"
+      sortYear: node.frontmatter.year || "1970",
     }
     for (const [name, value] of Object.entries(fields)) {
       createNodeField({ node, name, value })
     }
+  }
+
+  if (node.internal.type === "File" && node.ext === ".bib") {
+    fs.readFile(node.absolutePath, "utf8", (err, content) => {
+      if (err) {
+        console.error(err)
+        return
+      }
+      const citation = new Cite(content)
+      const html = citation.format("bibliography", {
+        format: "html",
+        template: "apa",
+        lang: "en-GB",
+      })
+      createNodeField({ node, name: "bib", value: content })
+      createNodeField({ node, name: "html", value: html })
+    })
   }
 
   if (node.internal.type === "twitterStatusesUserTimelineTimeline") {
@@ -45,31 +64,35 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const queryResults = await graphql(`
-  query {
-    all: allMarkdownRemark {
-      nodes {
-        fields {
-          category
-          slug
+    query {
+      all: allMarkdownRemark {
+        nodes {
+          fields {
+            category
+            slug
+          }
+        }
+      }
+      projects: allMarkdownRemark(
+        filter: { fields: { category: { eq: "projects" } } }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
+        }
+      }
+      arsProjects: allMarkdownRemark(
+        filter: { fields: { category: { eq: "events/ars-2019" } } }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
         }
       }
     }
-    projects: allMarkdownRemark(filter: {fields: {category: {eq: "projects"}}}) {
-      nodes {
-        fields {
-          slug
-        }
-      }
-    }
-    arsProjects: allMarkdownRemark(filter: {fields: {category: {eq: "events/ars-2019"}}}) {
-      nodes {
-        fields {
-          slug
-        }
-      }
-    }
-  }
-`)
+  `)
 
   const templates = {
     programmes: path.resolve("./src/templates/programme.js"),
@@ -124,10 +147,14 @@ module.exports.createPages = async ({ graphql, actions }) => {
   }
 
   queryResults.data.projects.nodes.forEach(project => {
-    redirects[`/students_projects/${project.fields.slug}/`] = `/projects/${project.fields.slug}`
+    redirects[
+      `/students_projects/${project.fields.slug}/`
+    ] = `/projects/${project.fields.slug}`
   })
   queryResults.data.arsProjects.nodes.forEach(project => {
-    redirects[`/ars-2019/${project.fields.slug}/`] = `/events/ars-2019/${project.fields.slug}`
+    redirects[
+      `/ars-2019/${project.fields.slug}/`
+    ] = `/events/ars-2019/${project.fields.slug}`
   })
 
   for (const [from, to] of Object.entries(redirects)) {
@@ -152,7 +179,11 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           resolve: (source, args, context, info) => {
             return context.nodeModel
               .getAllNodes({ type: "MarkdownRemark" })
-              .find(node => node.fields.category === "students" && node.fields.slug === source.student)
+              .find(
+                node =>
+                  node.fields.category === "students" &&
+                  node.fields.slug === source.student
+              )
           },
         },
       },

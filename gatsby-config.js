@@ -18,6 +18,15 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-git",
+      options: {
+        name: "orcid-publications",
+        remote: "https://github.com/QMUL-MAT/orcid-publications.git",
+        branch: "gh-pages",
+        patterns: "*.bib",
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [

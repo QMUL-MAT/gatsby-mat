@@ -950,6 +950,10 @@ a {
   margin: 0 0 20px 0;
 }
 
+#page-content .csl-entry {
+  padding-bottom: 1em;
+}
+
 #news-home #section-menu ul li {
   background-color: #e7e7e8 !important;
 }

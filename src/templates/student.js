@@ -51,6 +51,11 @@ export const query = graphql`
         }
       }
     }
+    bib: file(name: { eq: $slug }, ext: { eq: ".bib" }) {
+      fields {
+        html
+      }
+    }
   }
 `
 export default function Student({ data }) {
@@ -115,6 +120,15 @@ export default function Student({ data }) {
               </div>
             ))}
           </div>
+          {data.bib && (
+            <>
+              <hr />
+              <h1 class="title">Publications</h1>
+              <div
+                dangerouslySetInnerHTML={{ __html: data.bib.fields.html }}
+              ></div>
+            </>
+          )}
         </div>
       </div>
     </ContentPage>

@@ -39,6 +39,7 @@ You don't need to know much about git or GitHub to edit content on the website. 
 
     - The name of the file usually controls the URL of this piece of content. For example, `src/content/students/a-daniele.md` appears on the website at [/students/a-daniele](http://mat.qmul.ac.uk/students/a-daniele).
     - Images are referred to using relative location to the markdown file. `./` means "in the same directory as this file". For example, the picture `src/content/students/beautiful_me.jpg` should appear in `src/content/students/new_student.md` as `./beautiful_me.jpg`.
+    - There's an integration with ORCID. If you want your publications to appear on your profile set your ORCID ID like that: `orcid_id: 0000-0002-7245-4402`. Note that it takes about 1 week until any change in publications is visible on the website.
     - For student projects, the `student` frontmatter field should be set to the name of the markdown file, without extension, of the student profile. For example, a project by Antonion Daniele should have `student: a-daniele` in its frontmatter.
     - Use markdown to write content and check examples from other content files if unsure. The rest should be self explanatory.
 
