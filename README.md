@@ -13,19 +13,19 @@ This repo contains the official website for the Media & Arts Technology (MAT) ce
 
 # Information for students and staff
 
-## Prerequisits
+## Prerequisites
 
 - To edit or add content to the website you'll need a [GitHub](https://github.com) account.
 - You need to be a member of the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team on GitHub. Send and email to Tom Gurion at [t.gurion@qmul.ac.uk](mailto:t.gurion@qmul.ac.uk) with the title "Add me to the MAT website editors" and your GitHub username as the content.
 - Wait for your invitation to the team.
 
-**Note that everyone on the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team has full access to change the content, functionallity, and design of the site. Changes are usually reversibe, but please don't change the anything except for content belong to you (e.g. your student profile and projects) without permission.**
+**Note that everyone on the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team has full access to change the content, functionality, and design of the site. Changes are usually reversible, but please don't change content that doesn't belong to you (e.g. your student profile and projects) without permission.**
 
 ## Editing existing content
 
 You don't need to know much about git or GitHub to edit content on the website. If you would like to, you can browse and edit the content files for this project with an online editor. The explanations here assume that this is your approach.
 
-1. Find the [markdown](https://www.markdownguide.org/) file (.md file extension) you would like to edit in the `src/content` directory. For example, If you're Andrea Guidi you can find your student profile information at `src/content/students/andrea-guidi.md`.
+1. Find the [markdown](https://www.markdownguide.org/) file (`.md` file extension) you would like to edit in the `src/content` directory. For example, If you're Andrea Guidi you can find your student profile information at `src/content/students/andrea-guidi.md`.
 
     ![](/readme_pics/students_filepath.png)
 
@@ -39,9 +39,9 @@ You don't need to know much about git or GitHub to edit content on the website. 
 
     - The name of the file usually controls the URL of this piece of content. For example, `src/content/students/a-daniele.md` appears on the website at [/students/a-daniele](http://mat.qmul.ac.uk/students/a-daniele).
     - Images are referred to using relative location to the markdown file. `./` means "in the same directory as this file". For example, the picture `src/content/students/beautiful_me.jpg` should appear in `src/content/students/new_student.md` as `./beautiful_me.jpg`.
-    - There's an integration with ORCID. If you want your publications to appear on your profile set your ORCID ID like that: `orcid_id: 0000-0002-7245-4402`. Note that it takes about 1 week until any change in publications is visible on the website.
-    - For student projects, the `student` frontmatter field should be set to the name of the markdown file, without extension, of the student profile. For example, a project by Antonion Daniele should have `student: a-daniele` in its frontmatter.
-    - Use markdown to write content and check examples from other content files if unsure. The rest should be self explanatory.
+    - There's an integration with [ORCID](https://orcid.org/) to present students' publications on their profile page. If you want your publications that are registered in ORCID to appear on your profile set your ORCID ID as a frontmatter (metadata) field like that: `orcid_id: 0000-0002-7245-4402`. Note that it takes about 1 week until any change in publications is visible on the website.
+    - For student projects, the `student` frontmatter field should be set to the name of the markdown file, without extension, of the student profile. For example, a project by Antonio Daniele should have `student: a-daniele` in its frontmatter.
+    - Use markdown to write content and check examples from other content files if unsure.
 
 1. When done editing, write a meaningful message describing the change you've made and click the `commit changes` button.
 
@@ -57,7 +57,7 @@ You don't need to know much about git or GitHub to edit content on the website. 
 
     ![](/readme_pics/upload_files.png)
 
-1. If the new images replaces an existing one but has a different filename follow the instructions on the previous section to update the content to point to the new image. Also, don't forget to delete the old image.
+1. If the new image replaces an existing one but has a different filename follow the instructions on the previous section to update the content to point to the new image. Also, don't forget to delete the old image.
 
     ![](/readme_pics/delete_file.png)
 
@@ -75,7 +75,7 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
 
 ## Local development
 
-1. Make sure you have `node` and `npm` installed. Folow the [gatsby tutorial](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs) for details.
+1. Make sure you have `node` and `npm` installed. Follow the [gatsby tutorial](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs) for details.
 
 1. Clone the repo.
 
@@ -107,6 +107,10 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
     ```
 
 1. Visit [localhost:8000](http://localhost:8000).
+
+## ORCID integration
+
+TODO.
 
 ## Deployment
 
