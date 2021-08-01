@@ -110,7 +110,7 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
 
 ## ORCID integration
 
-TODO.
+A [separate repo](https://github.com/QMUL-MAT/orcid-publications) facilitates the integration of ORCID publications into the MAT website. It fetches ORCID IDs from the students' profiles, pulls publications from ORCID, and builds a GitHub pages site with the `.bib` files, one for each student, with the same filename as that student's profile filename. The GitHub pages site is available [here](https://qmul-mat.github.io/orcid-publications/). This offloads pulling the publications from the build of the MAT website, and helps keeping builds straightforwards and quick.
 
 ## Deployment
 
