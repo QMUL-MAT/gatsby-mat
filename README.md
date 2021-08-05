@@ -19,7 +19,7 @@ This repo contains the official website for the Media & Arts Technology (MAT) ce
 - You need to be a member of the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team on GitHub. Send and email to Tom Gurion at [t.gurion@qmul.ac.uk](mailto:t.gurion@qmul.ac.uk) with the title "Add me to the MAT website editors" and your GitHub username as the content.
 - Wait for your invitation to the team.
 
-**Note that everyone on the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team has full access to change the content, functionality, and design of the site. Changes are usually reversible, but please don't change content that doesn't belong to you (e.g. your student profile and projects) without permission.**
+**Note that everyone on the [@QMUL-MAT/website-editors](https://github.com/orgs/QMUL-MAT/teams/website-editors/) team has full access to change the content, functionality, and design of the site. Changes are usually reversible, but please only edit content that belongs to you (i.e. your student profile and your projects). Do not attempt to edit any other site content.**
 
 ## Editing existing content
 
