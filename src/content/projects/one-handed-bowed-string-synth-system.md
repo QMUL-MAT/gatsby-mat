@@ -1,5 +1,5 @@
 ---
-title: "One-handed bowed string synth system"
+title: "One-handed Bowed String Synth System"
 abstract: "Synthesis of realistic bowed string instrument gestures using single hand interaction"
 student: "rishis"
 year: "2017"
