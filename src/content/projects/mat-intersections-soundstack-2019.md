@@ -3,7 +3,6 @@ title: "MAT Intersections: Soundstack"
 abstract: "A free two-day, two-track series of workshops, concerts & masterclasses on the art and technologies of spatial sound. Soundstack took place on Friday 8th and Saturday 9th November 2019"
 student: "angela-mcarthur"
 year: "2019"
-featured: true
 image: "./mat-intersections-soundstack-2019.png"
 ---
 Soundstack focused on the aesthetics of sound as space, in an attempt to address this often under-considered area. Relative to the technologies with which we can create spatial sound, aesthetic strategies and conceptual frameworks seem undeveloped, scarce, and disparate. How can this concern be moved forward, and how?
