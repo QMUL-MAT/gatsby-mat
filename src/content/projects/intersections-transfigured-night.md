@@ -2,7 +2,6 @@
 title: "MAT Intersections Transfigured Night"
 year: "2016"
 image: "./intersections-transfigured-night.png"
-featured: true
 video_provider: "vimeo"
 video_id: "185675071"
 ---

@@ -2,7 +2,6 @@
 title: "MAT Intersections Magnetic Attraction"
 year: "2016"
 image: "./intersections-magnetic-attraction.png"
-featured: true
 video_provider: "vimeo"
 video_id: "185694346"
 ---

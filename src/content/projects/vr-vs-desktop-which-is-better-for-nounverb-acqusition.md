@@ -3,6 +3,7 @@ title: "Virtual reality environment for studying embodied cognition"
 abstract: "Many believe that the affordances of virtual reality mean it could be superior to traditional interfaces for learning, but is there evidence for language acquisition?"
 student: "jack-ratcliffe"
 year: "2019"
+featured: true
 host: "Conference paper @ COG2020"
 host_website: "https://ieee-cog.org/2020/papers/paper_167.pdf"
 image: "./vr-vs-desktop-which-is-better-for-nounverb-acqusition.png"

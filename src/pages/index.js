@@ -238,7 +238,7 @@ export default function Home() {
         </div>
         <div id="home-partners">
           <h2>Partners</h2>
-          <p>Some of the organisations we work with:</p>
+          <p>Some of the organisations we have worked with:</p>
           <div id="home-partners-logos">
             <Slider {...partnersCarouselSettings}>
               {data.partners.nodes.map(element => (
@@ -254,7 +254,7 @@ export default function Home() {
               <p>
                 The Organisations
                 <br />
-                we work with
+                we have worked with
               </p>
             </button>
           </Link>

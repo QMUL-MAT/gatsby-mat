@@ -43,7 +43,7 @@ module.exports.onCreateNode = async ({
   }
 
   if (node.internal.type === "twitterStatusesUserTimelineTimeline") {
-    const image_url = node?.retweeted_status?.user?.profile_banner_url
+    const image_url = node.retweeted_status.user.profile_banner_url
     if (image_url) {
       const fileNode = await createRemoteFileNode({
         url: image_url,

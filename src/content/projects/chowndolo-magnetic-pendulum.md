@@ -4,6 +4,7 @@ abstract: "Interactive Sonic Sculpture"
 student: "lalepre"
 year: "2018"
 image: "./chowndolo-magnetic-pendulum.jpeg"
+featured: true
 video_provider: "vimeo"
 video_id: "325707625"
 ---

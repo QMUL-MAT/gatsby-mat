@@ -2,7 +2,6 @@
 title: "MAT Intersections"
 year: "2016"
 image: "./intersections.png"
-featured: true
 video_provider: "vimeo"
 video_id: "188005932"
 ---
