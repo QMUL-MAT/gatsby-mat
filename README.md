@@ -90,7 +90,7 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
     npm install
     ```
 
-1. Either get an API key, secret, and bearer token from twitter, or ask Tom Gurion ([t.gurion@qmul.ac.uk](mailto:t.gurion@qmul.ac.uk)) or Jonathan Winfield ([j.winfield@qmul.ac.uk](mailto:j.winfield@qmul.ac.uk)) for the official credentials if you are maintaining the website for the long run.
+1. Either get an API key, secret, and bearer token from twitter, or ask Teo Dannemann ([t.dannemann@qmul.ac.uk](mailto:t.dannemann@qmul.ac.uk)) or Jonathan Winfield ([j.winfield@qmul.ac.uk](mailto:j.winfield@qmul.ac.uk)) for the official credentials if you are maintaining the website for the long run.
 
 1. Create an `.env` file in the root of the repo with the credentials.
 
