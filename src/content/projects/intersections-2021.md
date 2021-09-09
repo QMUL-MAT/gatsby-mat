@@ -2,6 +2,7 @@
 title: "MAT Intersections - Bridging Distance"
 year: "2021"
 image: "./intersections.png"
+featured: true
 video_provider: "vimeo"
 video_id: "548793111"
 ---
