@@ -81,15 +81,12 @@ export default function Project({ data }) {
               <></>
             )}
           </div>
-          <p>
-            <b>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: element.frontmatter.abstract,
-                }}
-              ></div>
-            </b>
-          </p>
+          <div
+            className={ProjectStyle.abstract}
+            dangerouslySetInnerHTML={{
+              __html: element.frontmatter.abstract,
+            }}
+          ></div>
           <div dangerouslySetInnerHTML={{ __html: element.html }}></div>
         </div>
         <div class="column is-two-third">
