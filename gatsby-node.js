@@ -45,7 +45,7 @@ module.exports.onCreateNode = async ({
   if (node.internal.type === "twitterStatusesUserTimelineTimeline") {
     const image_url = node?.retweeted_status?.user?.profile_banner_url
     if (image_url) {
-      const fileNode = await createRemoteFileNode({
+      await createRemoteFileNode({
         url: image_url,
         parentNodeId: node.id,
         store,
@@ -53,9 +53,12 @@ module.exports.onCreateNode = async ({
         createNode,
         createNodeId,
       })
-      if (fileNode) {
-        node.image___NODE = fileNode.id
-      }
+        .then(fileNode => {
+          node.image___NODE = fileNode.id
+        })
+        .catch(x => {
+          console.warn("Fail to fetch twitter profile image:", x)
+        })
     }
   }
 }
