@@ -1,6 +1,8 @@
 ---
 title: Masters Programme
 subtitle: The Masters in Media and Arts Technology is our cross-disciplinary one-year full-time Postgraduate programme in creative computing, unique in the UK.
+registration_link:
+registration_text:
 image: ./masters_programme_frame.jpg
 images:
   - ./masters_programme_1.jpg
