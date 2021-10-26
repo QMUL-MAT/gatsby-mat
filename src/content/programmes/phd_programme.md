@@ -1,6 +1,8 @@
 ---
 title: PhD Programme
 subtitle: The PhD in Media and Arts Technology is an innovative four year full time programme, unique in the UK.
+registration_link: https://mysis.qmul.ac.uk/urd/sits.urd/run/siw_ipp_lgn.login?process=siw_ipp_app&code1=PFQM-I4U6-09&code2=0001
+registration_text: Application dates to be confirmed
 image: ./phd_programme_frame.jpg
 images:
   - ./phd_programme_1.jpg
