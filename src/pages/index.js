@@ -12,6 +12,14 @@ import Layout from "../components/layout"
 export default function Home() {
   const data = useStaticQuery(graphql`
     {
+      meta: markdownRemark(
+        fields: {slug: {eq: "index"}, category: {eq: "pages"}}
+      ) {
+        frontmatter {
+          applyNowTitle
+          applyNowSubtitle
+        }
+      }
       slideshow: allMarkdownRemark(
         filter: { fields: { category: { eq: "slideshow" } } }
         sort: { order: ASC, fields: fields___slug }
@@ -164,8 +172,8 @@ export default function Home() {
             <div class="home-programmes-apply">
               <div class="home-programmes-apply-text">
                 <div>
-                  <span>Apply Now for Sep 2021</span>
-                  <p>First application deadline is January 31</p>
+                  <span>{data.meta.frontmatter.applyNowTitle}</span>
+                  <p>{data.meta.frontmatter.applyNowSubtitle}</p>
                 </div>
               </div>
             </div>
