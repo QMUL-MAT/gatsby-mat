@@ -2,7 +2,7 @@
 title: Masters Programme
 subtitle: The Masters in Media and Arts Technology is our cross-disciplinary one-year full-time Postgraduate programme in creative computing, unique in the UK.
 registration_link: https://mysis.qmul.ac.uk/urd/sits.urd/run/siw_ipp_lgn.login?process=siw_ipp_app&code1=PFQM-I4U6-09&code2=0001
-registration_text: Apply Now to start in September 2021
+registration_text: Application dates soming soon
 image: ./masters_programme_frame.jpg
 images:
   - ./masters_programme_1.jpg
