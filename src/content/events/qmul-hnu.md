@@ -3,7 +3,7 @@ title: QMUL-HNU co-supervised PhD CSC scholarships
 ---
 Two CSC PhD scholarships and associated QMUL fee waivers are available per year for students recruited from Hunan University (HNU, China) to undertake a PhD at QMUL supervised by a QMUL academic with an academic from HNU on the supervisory team. Students would be from the HNU School of Design and so the PhD would usually to be in the Digital Media/ Media Arts Technology areas. Typically students would enrol on the Media and Arts Technology PhD programme which includes taught EECS modules in the first year. Note that these CSC scholarships are directly allocated by Hunan University rather than through the usual CSC competition.
 
-If you are interested in possibly supervising a CSC funded PhD student under this arrangement then please contact me by 31 Oct 2022 so that we can discuss potential PhD topics and supervisors with HNU. We need to match HNU applicants with QMUL academics and PhD topics and then conduct PhD application interviews and selection.
+If you are interested in possibly supervising a CSC funded PhD student under this arrangement then please contact me by 4 Nov 2022 so that we can discuss potential PhD topics and supervisors with HNU. We need to match HNU applicants with QMUL academics and PhD topics and then conduct PhD application interviews and selection.
 
 The following conditions are the same as with our other general CSC allocations:
 
