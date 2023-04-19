@@ -25,7 +25,6 @@
     "gatsby-remark-images": "^5.1.0",
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-source-git": "^1.1.0",
-    "gatsby-source-twitter": "^4.0.0",
     "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.3.0",
     "react": "^17.0.1",

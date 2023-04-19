@@ -90,16 +90,6 @@ The website is a static site that is built with [gatsby.js](https://www.gatsbyjs
     npm install
     ```
 
-1. Either get an API key, secret, and bearer token from twitter, or ask Teo Dannemann ([t.dannemann@qmul.ac.uk](mailto:t.dannemann@qmul.ac.uk)) or Jonathan Winfield ([j.winfield@qmul.ac.uk](mailto:j.winfield@qmul.ac.uk)) for the official credentials if you are maintaining the website for the long run.
-
-1. Create an `.env` file in the root of the repo with the credentials.
-
-    ```shell
-    TWITTER_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxx
-    TWITTER_API_SECRET=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-    TWITTER_BEARER_TOKEN=zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-    ```
-
 1. Run the development server.
 
     ```shell
@@ -114,8 +104,6 @@ A [separate repo](https://github.com/QMUL-MAT/orcid-publications) facilitates th
 
 ## Deployment
 
-The site is built and deployed to [GitHub pages](https://pages.github.com/) automatically with GitHub actions. The workflow is triggers on every push to master and in addition scheduled twice a week to keep the news section (fetched from twitter) up to date.
-
-The twitter API credentials are kept as secrets on the GitHub repo.
+The site is built and deployed to [GitHub pages](https://pages.github.com/) automatically with GitHub actions. The workflow is triggers on every push to master and in addition scheduled twice a week to keep the ORCID publications up to date.
 
 To manage the DNS settings contact helpdesk support, and ask for ITS help, not EECS systems, as `mat.qmul.ac.uk` is not a subdomain of EECS.

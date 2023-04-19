@@ -77,25 +77,6 @@ export default function Home() {
           }
         }
       }
-      news: allTwitterStatusesUserTimelineTimeline(limit: 3) {
-        edges {
-          node {
-            full_text
-            id_str
-            image {
-              childImageSharp {
-                gatsbyImageData(height: 200, width: 600)
-              }
-            }
-            retweeted_status {
-              user {
-                name
-                profile_banner_url
-              }
-            }
-          }
-        }
-      }
     }
   `)
   const slideshowCarouselSettings = {
@@ -203,45 +184,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="home-news-bg">
-          <div class="block" id="home-news">
-            <h2>News</h2>
-            <div id="home-news-articles">
-              {data.news.edges.map(element => (
-                <article>
-                  <div>
-                    <GatsbyImage image={getImage(element.node.image)} />
-                    <hr />
-                    <p>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: element.node.full_text,
-                        }}
-                      ></div>
-                      <a
-                        href={`https://twitter.com/QMUL_MAT/status/${element.node.id_str}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Read more
-                      </a>
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <Link to="/news/">
-              <button>
-                View All
-                <p>
-                  The latest News &amp;
-                  <br />
-                  Tweets from MAT
-                </p>
-              </button>
-            </Link>
           </div>
         </div>
         <div id="home-partners">

@@ -110,9 +110,6 @@ export default class NavBar extends Component {
                 <Link className="navbar-item navbar-outer-item" to="/partners/">
                   Partners
                 </Link>
-                <Link className="navbar-item navbar-outer-item" to="/news/">
-                  News
-                </Link>
                 <Link className="navbar-item navbar-outer-item" to="/contact/">
                   Contact
                 </Link>
