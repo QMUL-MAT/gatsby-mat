@@ -15,8 +15,8 @@ The PhD built on the outstanding success of Queen Mary’s Media and Arts Techno
 
 The PhD in Media and Arts Technology programme had three main components:
 
-1. Six advanced taught modules ranging from advanced technical skills to interaction design;
-2. An advanced research project;
+1. Six advanced taught modules ranging from advanced technical skills to interaction design.
+2. An advanced research project.
 3. PhD research examined by thesis and viva.
    
 The main research groups contributing to the programme were:
