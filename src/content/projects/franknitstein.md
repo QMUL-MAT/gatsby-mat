@@ -2,6 +2,7 @@
 title: "FranKnitStein"
 year: "2023"
 image: "./franknitstein.jpg"
+student: "teodannemann"
 video_provider: "youtube"
 video_id: "WSR_MstctUc"
 ---
