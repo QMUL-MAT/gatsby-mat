@@ -1,4 +1,4 @@
-![image](https://github.com/QMUL-MAT/gatsby-mat/assets/22625248/a069b060-03b5-4017-960f-bab64f22a0c6)---
+---
 title: PhD Programme
 subtitle: The PhD in Media and Arts Technology was an innovative four year full time programme, unique in the UK.
 registration_link: ""
